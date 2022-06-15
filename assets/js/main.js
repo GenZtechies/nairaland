@@ -16,7 +16,7 @@ tailwind.config = {
 
 
 // HTML Includes
-(function () {
+(function includeHTML() {
 	var z, i, elmnt, file, xhttp;
 	/* Loop through a collection of all HTML elements: */
 	z = document.getElementsByTagName("*");
@@ -37,6 +37,7 @@ tailwind.config = {
 					}
 					/* Remove the attribute, and call this function once more: */
 					elmnt.removeAttribute("include-component");
+					includeHTML();
 				}
 			};
 			xhttp.open("GET", file, true);
