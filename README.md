@@ -3,7 +3,7 @@
 Let's get started 🚀🚀
 
 ## About
-Our goal is to build the new [NairaLand Design]() using plain HTML/CSS. The reason for this is to allow more people contribute. Yes, the code will later be implemented using a framework when approved
+Our goal is to build the new [NairaLand Design](https://www.figma.com/file/HwRRwdEXA5Nx6GhbUHM04F/Nairaland-Web-Design?node-id=19%3A3791) using plain HTML/CSS. The reason for this is to allow more people contribute. Yes, the code will later be implemented using a framework when approved
 
 ## Contributing Code
 There are three folder 
