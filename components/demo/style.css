@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #e6e6e6;
+    font-family: "Sans-Serif";
+}
+#whole-space{
+    width: 75%;
+    height: 120vh;
+    border: 2px dashed purple;
+    margin: auto;
+    text-align: center;
+}
+table {
+    table-layout: fixed;
+    width: 100%;
+    height: 92%;
+    margin: auto;
+}
+table, td {
+    border-spacing: 15px;
+    vertical-align: top;
+    text-align: left;
+}
+tr{
+    background-color: white;
+    word-wrap: break-word;
+}
+.username {
+    font-size: 1.2em;
+    margin: 28px 0;
+    text-indent: 17px;
+    font-weight: bold;
+}
+.box-1, .box-2{
+    background-color: #d2f9ed;
+    width: contain;
+    height: 52px;
+    padding-top: 5px;
+    padding-right: 3px;
+    border-radius: 6px;
+    margin-left: 12px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.total-topics{
+    font-weight: bold;
+    color: #149F75;
+    text-indent: 12px;
+    font-size: 1em;
+    margin-bottom: 3px;
+}
+.total-name{
+    font-size: 0.8em;
+    text-indent: 5px;
+}
+.details{
+    clear: left;
+    margin-bottom: 25px;
+}
+.image-border{
+    background-color: #e6e6e6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px 0px 12px;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+svg{
+    margin: auto;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.image-detail-1{
+    font-size: 0.8em;
+    color: grey;
+}
+.image-detail-2{
+    font-size: 1.1em;
+    color: black;
+    font-weight: bold;
+}
+.sign{
+    font-size: 0.8em;
+    color: grey;
+    text-indent: 17px;
+    margin-bottom: 4px;
+}
+.sign-details{
+    color: black;
+    font-size: 1em;
+    margin-left: 17px;
+    margin-bottom: 25px;
+}
+.activity{
+    text-indent: 17px;
+    margin-bottom: 4px;
+}
+.active-background{
+    display: inline;
+    border-radius: 3px;
+    padding: 2px 3px 2px 3px;
+    background-color: #e6e6e6;
+    margin-left: 17px;
+    text-align: center;
+}
