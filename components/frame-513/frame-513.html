@@ -1,17 +1,25 @@
 <div class="flex flex-col justify-evenly mx-3 md:w-3/4 sm:mx-auto my-2 border border-solid rounded-xl">
     <div class="flex flex-row px-5 py-3">
         <div class="flex flex-row justify-center">
-            <div class="w-20 h-20 rounded-full mr-3 bg-gray-200 border-none">
+            <div class="w-20 h-20 rounded-full mr-3 bg-[#C4C4C4] border-none">
             </div>
             <div class="flex flex-col justify-center">
-                <p class="font-bold text-md">@Eniola</p>
+                <p class="font-normal text-md">@Eniola</p>
                 <p class="pr-2 text-sm text-slate-500">Today - 3:48AM</p>
             </div>
         </div>
         <button
-            class="flex-none text-primary text-2xl font-bold flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
+            class="flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
             type="button">
-            &#8942;
+           <!-- &#8942; -->
+           <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="14" fill="#F5F5F5"/>
+            <path d="M14.5 14.125C14.8452 14.125 15.125 13.8452 15.125 13.5C15.125 13.1548 14.8452 12.875 14.5 12.875C14.1548 12.875 13.875 13.1548 13.875 13.5C13.875 13.8452 14.1548 14.125 14.5 14.125Z" stroke="#149F75" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.5 9.75C14.8452 9.75 15.125 9.47018 15.125 9.125C15.125 8.77982 14.8452 8.5 14.5 8.5C14.1548 8.5 13.875 8.77982 13.875 9.125C13.875 9.47018 14.1548 9.75 14.5 9.75Z" stroke="#149F75" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.5 18.5C14.8452 18.5 15.125 18.2202 15.125 17.875C15.125 17.5298 14.8452 17.25 14.5 17.25C14.1548 17.25 13.875 17.5298 13.875 17.875C13.875 18.2202 14.1548 18.5 14.5 18.5Z" stroke="#149F75" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+            
         </button>
     </div>
     <div class="flex px-5 flex-col justify-center">
@@ -26,9 +34,9 @@
     </div>
     <div class="flex flex-row border-t">
         <div class="flex flex-row px-5 py-3 flex-wrap">
-            <div class="flex flex-row items-center pr-5">
+            <div class="mb-3 md:mb-0 flex flex-row items-center pr-5">
                 <button
-                    class="flex bg-gray-100 items-center justify-center w-8 h-8 rounded-full text-slate-300 border border-slate-200"
+                    class="flex bg-gray-100 mr-3 items-center justify-center w-8 h-8 rounded-full text-slate-300 border border-slate-200"
                     type="button" aria-label="Like">
                     <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -40,9 +48,9 @@
                 <span class="text-primary px-1">&bull; </span>
                 <p class="text-sm text-slate-500">Likes</p>
             </div>
-            <div class="flex flex-row items-center pr-5">
+            <div class="mb-3 md:mb-0 flex flex-row items-center pr-5">
                 <button
-                    class="flex bg-gray-100 items-center justify-center w-8 h-8 rounded-full text-slate-300 border border-slate-200"
+                    class="flex bg-gray-100 items-center mr-3 justify-center w-8 h-8 rounded-full text-slate-300 border border-slate-200"
                     type="button" aria-label="Comment">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -54,9 +62,9 @@
                 <span class="text-primary px-1">&bull; </span>
                 <p class="text-sm text-slate-500">Comments</p>
             </div>
-            <div class="flex flex-row items-center pr-5">
+            <div class="mb-3 md:mb-0 flex flex-row items-center pr-5">
                 <button
-                    class="flex bg-gray-100 items-center justify-center w-8 h-8 rounded-full text-slate-300 border border-slate-200"
+                    class="flex bg-gray-100 items-center mr-3 justify-center w-8 h-8 rounded-full text-slate-300 border border-slate-200"
                     type="button" aria-label="Share">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -72,9 +80,9 @@
                 <span class="text-primary px-1">&bull; </span>
                 <p class="text-sm text-slate-500">Shares</p>
             </div>
-            <div class="flex flex-row items-center pr-5">
+            <div class="mb-3 md:mb-0 flex flex-row items-center pr-5">
                 <button
-                    class="flex bg-gray-100 items-center justify-center w-8 h-8 rounded-full text-slate-300 border border-slate-200"
+                    class="flex bg-gray-100 mr-3 items-center justify-center w-8 h-8 rounded-full text-slate-300 border border-slate-200"
                     type="button" aria-label="Views">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -91,9 +99,13 @@
             </div>
         </div>
         <button
-            class="flex-none bg-gray-100 items-center justify-center mx-5 my-3  w-10 h-10 rounded-full text-primary font-bold ml-auto border border-slate-200"
+            class="flex bg-gray-100 items-center justify-center mx-5 my-3  w-12 h-12 rounded-full text-primary font-bold ml-auto"
             type="button" aria-label="More">
-            &gt;
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="12" fill="#F5F5F5"/>
+                <path d="M10.5 15L13.5 12L10.5 9" stroke="#149F75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
         </button>
     </div>
 </div>
