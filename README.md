@@ -17,10 +17,11 @@ There are three folders:
 - The folder should contain all the elements required to build the component and be implemented in an index.html file.
 - All images, CSS, or JavaScript files should be in their corresponding folder.
 - Do not create any new JS or CSS file. Use the one already in place.
+- Do not alter code where you are not supposed to.
 - When the component is complete, implement it in "components/index.html" using the demo guide.
 
 ### Assets
-- place images in the "images/" folder.
+- Place images in the "images/" folder.
 - CSS and JavaScript go into the main.css or main.js
 
 ### Pages
