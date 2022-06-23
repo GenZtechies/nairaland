@@ -3,5 +3,9 @@
 @tailwind utilities;
 html,
 body {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+.active-menu {
+  border-bottom: 5px solid white;
 }
