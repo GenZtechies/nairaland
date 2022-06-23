@@ -5,7 +5,3 @@ html,
 body {
   scroll-behavior: smooth;
 }
-
-.active-menu {
-  border-bottom: 5px solid white;
-}
