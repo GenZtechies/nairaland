@@ -3,5 +3,5 @@
 @tailwind utilities;
 html,
 body {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
