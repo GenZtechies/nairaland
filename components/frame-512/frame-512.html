@@ -1,28 +1,30 @@
-<html>
-  <body>
-<div class="flex flex-col justify-evenly md:w-3/4 md:mx-auto my-2 border border-solid rounded-xl font-primary">
-  <div class="top-component flex flex-row justify-between px-5 py-3">
+<div class="md:w-3/4 md:mx-auto w-fit flex flex-col justify-evenly  my-2 border border-solid rounded-xl font-primary">
+  <div class="top-component flex flex-col md:flex-row-reverse md:items-center justify-between px-5 py-3">
+    <div class="">
+      <button
+        class="flex-none flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full text-slate-300 border border-slate-200"
+        type="button" aria-label="More">
+        <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.75 10.5L5.25 6L0.75 1.5" stroke="#149F75" stroke-width="1.4" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
     <div class="flex flex-col justify-center">
+    
       <h1 class="flex-auto text-2xl py-2 font-normal text-slate-900">
         Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells
         Nigerians
       </h1>
       <div class="flex flex-row w-fit items-center">
-        <span class="text-primary pr-2 font-bold text-sm">Security</span>
-        <span class="text-primary pr-2 font-bold text-2xl">&bull;</span>
+        <span class="text-primary pr-2 font-bold text-sm text-green-700">Security</span>
+        <span class="text-primary pr-2 font-bold text-2xl text-green-600">&bull;</span>
         <span class="pr-2 text-sm text-slate-500">Read more...</span>
       </div>
     </div>
-    <button
-      class="flex-none flex bg-gray-100 items-center align-top justify-center w-10 h-10 rounded-full text-slate-300 border border-slate-200"
-      type="button" aria-label="More">
-      <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0.75 10.5L5.25 6L0.75 1.5" stroke="#149F75" stroke-width="1.4" stroke-linecap="round"
-          stroke-linejoin="round" />
-      </svg>
-    </button>
+  
   </div>
-  <div class="flex flex-row border-t px-5 py-3 space-x-6 ">
+  <div class="flex  justify-between border-t-2 border-gray-300 md:border-2 md:border-gray-300 rounded-lg px-5 py-3 w-full">
     <div class="flex flex-row items-center w-fit">
       <button
         class="flex bg-gray-100 items-center justify-center w-8 h-8 rounded-full text-slate-300 border border-slate-200"
@@ -34,8 +36,10 @@
         </svg>
       </button>
       <span class="pl-2 text-sm">433.3k</span>
+      <span class="text-primary hidden md:pl-1 text-green-600 md:block">&bull; </span>
+      <span class="pl-1 text-sm hidden text-slate-500 md:text-sm md:block">Likes</span>
     </div>
-    <div class="flex flex-row items-center w-fit">
+    <div class="flex flex-row  items-center w-fit">
       <button
         class="flex bg-gray-100 items-center justify-center w-8 h-8 rounded-full text-slate-300 border border-slate-200"
         type="button" aria-label="Comment">
@@ -46,8 +50,10 @@
         </svg>
       </button>
       <span class="pl-2 text-sm">1280</span>
+      <span class="text-primary hidden md:pl-1 text-green-600 md:block">&bull; </span>
+      <span class="pl-1 text-sm hidden text-slate-500 md:text-sm md:block">Comments</span>
     </div>
-    <div class="flex flex-row items-center w-fit">
+    <div class="flex flex-row  items-center w-fit">
       <button
         class="flex bg-gray-100 items-center justify-center w-8 h-8 rounded-full text-slate-300 border border-slate-200"
         type="button" aria-label="Share">
@@ -62,6 +68,8 @@
         </svg>
       </button>
       <span class="pl-2 text-sm">13.3k</span>
+      <span class="text-primary hidden md:pl-1 text-green-600 md:block">&bull;</span>
+      <span class="pl-1 text-sm hidden text-slate-500 md:text-sm md:block">Shares</span>
     </div>
     <div class="flex flex-row items-center w-fit">
       <button
@@ -77,8 +85,8 @@
         </svg>
       </button>
       <span class="pl-2 text-sm">13.3k</span>
+      <span class="text-primary hidden md:pl-1 text-green-600 md:block">&bull;</span>
+      <span class="pl-1 text-sm hidden text-slate-500 md:text-sm md:block">Views</span>
     </div>
   </div>
 </div>
-</body>
-</html>
