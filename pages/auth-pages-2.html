@@ -17,11 +17,13 @@
 
 <body class="w-full bg-[#F8F9F6]">
     <!-- Start your code here -->
-    <header class="w-full" include-component="/components/navbar-signup/navbar-signup.html"></header>
-    <main class="md:flex mb-0 pb-0">
+    <!-- HEADER -->
+    <header class="absolute w-full" include-component="/components/navbar-signup/navbar-signup.html"></header>
+    <!-- BODY -->
+    <main class="md:flex">
         <!-- Left image -->
-        <div class="self-center md:shrink-0 bg-[url('/assets/Images/Frame583.svg')]mt-8 mb-0 pb-0 mr-0 md:mr-20 w-4/5 md:w-1/2">
-            <img src="/assets/Images/signup.svg" alt="A smiling lady holding a black phone" class="relative top-40 hidden pb-0 mb-0 md:inline w-100%">
+        <div class="self-center md:shrink-0 bg-[url('/assets/Images/Frame583.svg')]mt-8 md:mr-20 w-4/5 md:w-1/2">
+            <img src="/assets/Images/signup.svg" alt="A smiling lady holding a black phone" class="relative inset-y-44 hidden pb-0 mb-0 md:inline w-100%">
         </div>
         <!-- hero mobile -->
         <div class="flex md:hidden justify-center my-12 ml-auto mr-0">
@@ -36,8 +38,8 @@
             </div>
         </div>
 
-
-        <div class="md:w-1/2 w-full h-full justify-center items-center mx-0 md:mx-6 md:ml-12 md:mt-20">
+        <!-- FORM SECTION -->
+        <div class="md:w-1/2 w-full h-full justify-center items-center mx-0 md:mx-6 md:ml-12 md:mt-60">
             <!-- Form header -->
             <h1 class="hidden md:block font-medium text-[24px] text-[#0E7153] items-center py-300px leading-8 h-62px w-100px">Create an
                 Account. It's </h1>
@@ -95,7 +97,8 @@
             </form>
         </div>
     </main>
-    <footer include-component="/components/footer/footer.html" class="absolute"></footer>
+    <!-- FOOTER -->
+    <footer include-component="/components/footer/footer.html" class="absolute w-full"></footer>
     <!-- End your code here -->
 
 
