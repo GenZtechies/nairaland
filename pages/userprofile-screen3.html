@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>User profile screen 3</title>
+
+  <!-- DO NOT TOUCH ==== FROM HERE -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="https://cdn.tailwindcss.com/"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- DO NOT TOUCH ==== TO HERE -->
+</head>
+
+<body class="w-full">
+
+  <!-- Start your code here -->
+  <!-- Header section -->
+  <header class="hidden lg:inline-block w-full"
+    include-component="/components/navbar-desktop/navbar-desktop-default.html"></header>
+  <header class="w-full inline-block lg:hidden" include-component="/components/mobile-navbar/mobile-navbar.html">
+  </header>
+
+  <!-- Main body  -->
+  <main class=" mx-24">
+    <section>
+      <p>Nairaland > <span class="text-primary">Oluwaseun's profile</span></p>
+    </section>
+
+    <section>
+      <div>
+        <img class="bg-primary bg-opacity-75 rounded" src="/assets/Images/Frame 74.svg" alt="Green background-img">
+        <img class="-mt-8 w-20" src="/assets/Images/Rectangle 23.png" alt="Oluwaseun profile">
+      </div>
+      <!-- Profile container -->
+      <div class="flex w-full space-between">
+        <!-- Profile details -->
+        <div>
+          <p class="font-semibold text-base">@SeunOsewa</p>
+          <img src="/assets/icons/verified.svg" alt="Verified">
+          <p class="w-2/3 text-gray-600">A billionaire in the future, not by my will but by he that created me</p>
+          <!-- Followers and following -->
+          <div class="flex gap-4">
+            <div class="flex gap-1">
+              <p class="font-semibold"> 12.3k
+                <span class="hidden lg:inline text-primary">&bull; </span>
+              </p>
+              <p class="text-gray-400 hidden lg:inline"> Followers </p>
+            </div>
+            <div class="flex gap-1">
+              <p class="font-semibold"> 365
+                <span class="hidden lg:inline text-primary">&bull; </span>
+              </p>
+              <p class="text-gray-400 hidden lg:inline"> Following </p>
+            </div>
+          </div>
+        </div>
+        <!-- Social media icons -->
+        <div class="flex w-8 gap-4">
+          <img src="/assets/icons/instagramIconSolid.svg" alt="Camera icon">
+          <img src="/assets/icons/linkedinIcon.svg" alt="Linkedin">
+          <img class="text-primary" src="/assets/icons/twitter.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Seun post and following container-->
+    <section>
+      <!-- Tabs for seun post and following -->
+      <div>
+        <ul class="list-none flex space-x-7">
+          <!-- active tab -->
+          <li class="relative h-20 flex flex-col justify-center">
+            <div class="text-primary font-semibold">All Topics</div>
+            <div class="bg-primary h-1 w-full absolute bottom-0"></div>
+          </li>
+
+          <!-- inactive tabs -->
+          <li class="relative h-20 flex flex-col justify-center">
+            <div>Followers</div>
+            <div class="h-1 w-full absolute bottom-0"></div>
+          </li>
+          <li class="relative h-20 flex flex-col justify-center">
+            <div>Following</div>
+            <div class="h-1 w-full absolute bottom-0"></div>
+          </li>
+          <li class="relative h-20 flex flex-col justify-center">
+            <div>Thread & Replies</div>
+            <div class="h-1 w-full absolute bottom-0"></div>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+      <!-- Body container for post and statistics -->
+      <div>
+        <!-- View post container-->
+        <div class="flex flex-col items-center justify-center bg-gray-100 h-screen w-3/4">
+          <p class="font-semibold text-2xl text-center mt-4">Hi
+            there, you need to be logged in to view followers of @SeunOsewa</p>
+          <div class="mt-10 mr-4">
+            <button
+              class="rounded-lg w-60 h-12 mx-2 text-white cursor-pointer hover:scale-105 ease-in-out duration-300 bg-primary">Join
+              Nairaland
+            </button>
+          </div>
+        </div>
+
+        <!-- View statistics -->
+        <div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="w-full" include-component="/components/footer/footer.html" class="absolute"></footer>
+  <!-- End your code here -->
+
+
+  <!-- DO NOT TOUCH ==== FROM HERE -->
+  <script src="/assets/js/main.js"></script>
+  <!-- DO NOT TOUCH ==== TO HERE -->
+</body>
+
+</html>
