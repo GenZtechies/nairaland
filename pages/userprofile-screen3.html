@@ -21,49 +21,69 @@
   <!-- Header section -->
   <header class="hidden lg:inline-block w-full"
     include-component="/components/navbar-desktop/navbar-desktop-default.html"></header>
-  <header class="w-full inline-block lg:hidden" include-component="/components/mobile-navbar/mobile-navbar.html">
+  <header class="w-screen inline-block lg:hidden" include-component="/components/mobile-navbar/mobile-navbar.html">
   </header>
+  <!-- Mobile background space -->
+  <div class="lg:hidden h-40 bg-primary flex justify-between px-4">
+    <img class="w-8" src="/assets/icons/arrow-left.svg" alt="Arrow left">
+    <img class="w-8" src="/assets/icons/ellipsis-right.svg" alt="Arrow left">
+  </div>
 
   <!-- Main body  -->
-  <main class=" mx-24">
-    <section>
-      <p>Nairaland > <span class="text-primary">Oluwaseun's profile</span></p>
+  <main class="mx-4 lg:mx-24">
+    <section class="hidden lg:inline-block py-4">
+      <p class="text-gray-500">Nairaland <span class="text-black font-bold"> > </span> <span
+          class="text-primary font-semibold">Oluwaseun's
+          profile</span></p>
     </section>
 
     <section>
       <div>
-        <img class="bg-primary bg-opacity-75 rounded" src="/assets/Images/Frame 74.svg" alt="Green background-img">
+        <img class="hidden lg:inline-block bg-primary bg-opacity-75 rounded" src="/assets/Images/Frame 74.svg"
+          alt="Green background-img">
         <img class="-mt-8 w-20" src="/assets/Images/Rectangle 23.png" alt="Oluwaseun profile">
       </div>
-      <!-- Profile container -->
-      <div class="flex w-full space-between">
-        <!-- Profile details -->
+      <!-- User Profile container -->
+      <div class="flex flex-col lg:flex-row w-full space-between">
+        <!-- User Profile details -->
         <div>
           <p class="font-semibold text-base">@SeunOsewa</p>
           <img src="/assets/icons/verified.svg" alt="Verified">
-          <p class="w-2/3 text-gray-600">A billionaire in the future, not by my will but by he that created me</p>
+          <p class="w-2/3 text-gray-600">A billionaire in the future, not by my will but by he that
+            created me</p>
           <!-- Followers and following -->
           <div class="flex gap-4">
             <div class="flex gap-1">
               <p class="font-semibold"> 12.3k
-                <span class="hidden lg:inline text-primary">&bull; </span>
+                <span class=" text-primary">&bull; </span>
               </p>
-              <p class="text-gray-400 hidden lg:inline"> Followers </p>
+              <p class="text-gray-400"> Followers </p>
             </div>
             <div class="flex gap-1">
               <p class="font-semibold"> 365
-                <span class="hidden lg:inline text-primary">&bull; </span>
+                <span class="lg:inline text-primary">&bull; </span>
               </p>
-              <p class="text-gray-400 hidden lg:inline"> Following </p>
+              <p class="text-gray-400"> Following </p>
             </div>
           </div>
         </div>
         <!-- Social media icons -->
-        <div class="flex w-8 gap-4">
-          <img src="/assets/icons/instagramIconSolid.svg" alt="Camera icon">
-          <img src="/assets/icons/linkedinIcon.svg" alt="Linkedin">
-          <img class="text-primary" src="/assets/icons/twitter.svg" alt="">
+        <div class="flex justify-between">
+          <div class="flex w-8 gap-4 cursor-pointer mt-2">
+            <img src="/assets/icons/instagramIconSolid.svg" alt="Camera icon">
+            <img src="/assets/icons/linkedinIcon.svg" alt="Linkedin">
+            <img src="/assets/icons/twitter.svg" alt="Twitter icon">
+          </div>
+          <!-- Notification bell -->
+          <div>
+            <img class="justify-end lg:hidden cursor-pointer" src="/assets/icons/bell.svg" alt="Bell svg">
+          </div>
         </div>
+
+
+      </div>
+
+
       </div>
     </section>
 
@@ -71,18 +91,19 @@
     <section>
       <!-- Tabs for seun post and following -->
       <div>
-        <ul class="list-none flex space-x-7">
-          <!-- active tab -->
-          <li class="relative h-20 flex flex-col justify-center">
-            <div class="text-primary font-semibold">All Topics</div>
-            <div class="bg-primary h-1 w-full absolute bottom-0"></div>
-          </li>
+        <ul class="list-none flex gap-3 lg:gap-6 text-gray-500 text-sm lg:text-base">
 
           <!-- inactive tabs -->
           <li class="relative h-20 flex flex-col justify-center">
-            <div>Followers</div>
+            <div>All Topics</div>
             <div class="h-1 w-full absolute bottom-0"></div>
           </li>
+          <!-- active tab -->
+          <li class="relative h-20 flex flex-col justify-center">
+            <div class="text-primary font-semibold">Followers</div>
+            <div class="bg-primary h-1 w-full absolute bottom-0"></div>
+          </li>
+          <!-- Inactive tab continues -->
           <li class="relative h-20 flex flex-col justify-center">
             <div>Following</div>
             <div class="h-1 w-full absolute bottom-0"></div>
@@ -98,13 +119,23 @@
       <!-- Body container for post and statistics -->
       <div>
         <!-- View post container-->
-        <div class="flex flex-col items-center justify-center bg-gray-100 h-screen w-3/4">
-          <p class="font-semibold text-2xl text-center mt-4">Hi
+        <div class="flex flex-col items-center justify-center bg-gray-100 h-screen w-full lg:w-3/4 my-8">
+          <!-- Smiley face -->
+          <img class="lg:hidden" src="/assets/icons/smiley-face.svg" alt="Smiley face">
+          <!-- Text to show -->
+          <p class="font-semibold text-base lg:text-2xl text-center mt-4">Hi
             there, you need to be logged in to view followers of @SeunOsewa</p>
-          <div class="mt-10 mr-4">
+          <div class="mt-10 mr-4 hidden lg:inline-block">
             <button
               class="rounded-lg w-60 h-12 mx-2 text-white cursor-pointer hover:scale-105 ease-in-out duration-300 bg-primary">Join
               Nairaland
+            </button>
+          </div>
+          <div class="mt-10 mr-4 lg:hidden">
+            <button
+              class="rounded-lg w-60 h-12 mx-2 text-white cursor-pointer hover:scale-105 ease-in-out duration-300 bg-primary">Log
+              in to
+              Nairaland to view
             </button>
           </div>
         </div>
