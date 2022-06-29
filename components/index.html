@@ -18,10 +18,10 @@
   <style type="text/tailwindcss">
     @layer utilities {
         .nav-link {
-          @apply cursor-pointer hover:border-b-4 hover:border-primary hover:pb-2
+          @apply text-white/75 md:text-black cursor-pointer hover:text-white md:hover:text-primary hover:font-bold hover:border-b-4 hover:border-white md:hover:border-primary hover:pb-2
         }
         .nav-link__active {
-          @apply text-primary font-bold border-b-4 border-primary pb-2
+          @apply text-white md:text-primary font-bold border-b-4 border-white md:border-primary pb-2
         }
       }
     </style>
@@ -29,17 +29,15 @@
 
 <body>
   <!-- All components here -->
-  <!-- <div include-component="/components/demo/demo.html"></div> -->
+  <div include-component="/components/demo/demo.html"></div>
   <div include-component="/components/navbar-desktop/navbar-desktop-default.html"></div>
-  <!-- <div
-      include-component="/components/navbar-desktop/navbar-desktop-logged-in.html"
-    ></div>
-    <div include-component="/components/button/button.html"></div>
-    <div include-component="/components/replies/reply.html"></div>
-    <div include-component="/components/content1/content1.html"></div>
-    <div include-component="/components/frame-509/frame-509.html"></div>
-    <div include-component="/components/frame-513/frame-513.html"></div>
-    <div include-component="/components/frame-514-mobile/post.html"></div> -->
+  <div include-component="/components/navbar-desktop/navbar-desktop-logged-in.html"></div>
+  <div include-component="/components/button/button.html"></div>
+  <div include-component="/components/replies/reply.html"></div>
+  <div include-component="/components/content1/content1.html"></div>
+  <div include-component="/components/frame-509/frame-509.html"></div>
+  <div include-component="/components/frame-513/frame-513.html"></div>
+  <div include-component="/components/frame-514-mobile/post.html"></div>
   <!-- End components here -->
 
   <!-- DO NOT TOUCH ==== FROM HERE -->
