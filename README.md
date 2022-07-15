@@ -22,6 +22,7 @@ There are three folders:
 
 ### Assets
 - Place images in the "images/" folder.
+- Place icons in the "icons/" folder.
 - CSS and JavaScript go into the main.css or main.js
 
 ### Pages
