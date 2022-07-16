@@ -197,32 +197,130 @@
             class="border-b-2 flex flex-row items-center justify-between md:justify-start md:space-x-5"
           >
             <button class="py-5">All topics</button>
-            <button
-              class="text-primary py-5 font-semibold border-b-4 border-primary"
-            >
-              Followers
-            </button>
+            <button class="py-5">Followers</button>
             <button class="py-5">Following</button>
-            <button class="py-5">Threads & Replies</button>
+            <button
+              class="py-5 text-primary font-semibold border-b-4 border-primary"
+            >
+              Threads & Replies
+            </button>
           </div>
         </div>
         <div></div>
-        <div class="col-span-2">
-          <div class="bg-white rounded-lg h-full p-5">
-            <div
-              class="bg-gray-100 rounded-md h-full flex flex-col items-center justify-center p-10"
+        <div class="col-span-2 space-y-5">
+          <div
+            class="bg-white rounded-lg"
+            include-component="/components/replies/reply.html"
+          ></div>
+          <div
+            class="bg-white rounded-lg"
+            include-component="/components/replies/reply.html"
+          ></div>
+          <div class="flex items-center justify-end">
+            <button
+              class="flex items-center justify-center rounded w-10 h-10 mx-2 text-xs text-black cursor-pointer bg-white"
             >
-              <p class="text-2xl text-center my-10">
-                Hi there, you need to be logged in to view followers of
-                @SeunOsewa
-              </p>
-              <button class="bg-primary text-white py-3 px-9 rounded-lg h-max">
-                Join Nairaland
-              </button>
-            </div>
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.0833 15.5837L5.5 11.0003L10.0833 6.41699"
+                  stroke="black"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16.5001 15.5837L11.9167 11.0003L16.5001 6.41699"
+                  stroke="black"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button
+              class="flex items-center justify-center rounded ring-offset-2 ring-2 ring-primary w-10 h-10 mx-2 text-xs text-white cursor-pointer bg-primary"
+            >
+              1
+            </button>
+            <button
+              class="flex items-center justify-center rounded w-10 h-10 mx-2 text-xs text-black cursor-pointer bg-white"
+            >
+              2
+            </button>
+            <button
+              class="flex items-center justify-center rounded w-10 h-10 mx-2 text-xs text-black cursor-pointer bg-white"
+            >
+              3
+            </button>
+            <button
+              class="flex items-center justify-center rounded w-10 h-10 mx-2 text-xs text-black cursor-pointer bg-white"
+            >
+              4
+            </button>
+            <button
+              class="flex items-center justify-center rounded w-10 h-10 mx-2 text-xs text-black cursor-pointer bg-white"
+            >
+              <svg
+                width="10"
+                height="4"
+                viewBox="0 0 10 4"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.91663 3.05736C1.58996 3.05736 1.3193 2.95469 1.10463 2.74936C0.899298 2.54403 0.796631 2.29669 0.796631 2.00736C0.796631 1.70869 0.899298 1.45669 1.10463 1.25136C1.3193 1.04603 1.58996 0.943359 1.91663 0.943359C2.2433 0.943359 2.5093 1.04603 2.71463 1.25136C2.9293 1.45669 3.03663 1.70869 3.03663 2.00736C3.03663 2.29669 2.9293 2.54403 2.71463 2.74936C2.5093 2.95469 2.2433 3.05736 1.91663 3.05736Z"
+                  fill="black"
+                />
+                <path
+                  d="M4.99991 3.05736C4.67325 3.05736 4.40258 2.95469 4.18791 2.74936C3.98258 2.54403 3.87991 2.29669 3.87991 2.00736C3.87991 1.70869 3.98258 1.45669 4.18791 1.25136C4.40258 1.04603 4.67325 0.943359 4.99991 0.943359C5.32658 0.943359 5.59258 1.04603 5.79791 1.25136C6.01258 1.45669 6.11991 1.70869 6.11991 2.00736C6.11991 2.29669 6.01258 2.54403 5.79791 2.74936C5.59258 2.95469 5.32658 3.05736 4.99991 3.05736Z"
+                  fill="black"
+                />
+                <path
+                  d="M8.08319 3.05736C7.75653 3.05736 7.48586 2.95469 7.27119 2.74936C7.06586 2.54403 6.96319 2.29669 6.96319 2.00736C6.96319 1.70869 7.06586 1.45669 7.27119 1.25136C7.48586 1.04603 7.75653 0.943359 8.08319 0.943359C8.40986 0.943359 8.67586 1.04603 8.88119 1.25136C9.09586 1.45669 9.20319 1.70869 9.20319 2.00736C9.20319 2.29669 9.09586 2.54403 8.88119 2.74936C8.67586 2.95469 8.40986 3.05736 8.08319 3.05736Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+            <button
+              class="flex items-center justify-center rounded w-fit min-w-10 h-10 px-2 mx-2 text-xs text-black cursor-pointer bg-white"
+            >
+              25,000
+            </button>
+            <button
+              class="flex items-center justify-center rounded w-10 h-10 mx-2 text-xs text-black cursor-pointer bg-white"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.9167 6.41634L16.5 10.9997L11.9167 15.583"
+                  stroke="black"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5.49992 6.41634L10.0833 10.9997L5.49992 15.583"
+                  stroke="black"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
           </div>
         </div>
-        <div class="bg-white rounded-lg h-full p-5 space-y-5">
+        <div class="bg-white rounded-lg h-fit p-5 space-y-5">
           <p class="text-lg mb-10">Oluwaseun’s Stats</p>
           <div class="flex flex-row items-center space-x-3">
             <a
