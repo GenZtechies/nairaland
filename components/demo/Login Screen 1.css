@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+}
+.whole{
+    width: 1440px;
+    height: 2932px;
+    background-color: #F5F5F5;
+    margin: auto;
+}
+.nav-bar{
+    width: 1440px;
+    height: 80px;
+    background-color: white;
+    border: 0.3px solid #A8ABBD;
+    box-sizing: content-box;
+}
+.header{
+    color: #149F75;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0px 60px 10px 63px;
+    line-height: 70px;
+}
+input{
+    width: 260px;
+    height: 30px;
+    font-size: 13px;
+    margin: 0 56px 0 10px;
+    border-radius: 8px;
+    border: 0.7px solid #A8ABBD;
+}
+.trending, .recent, .latest{
+    font-size: 15px;
+    margin-right: 28px;
+}
+.latest{
+    margin-right: 260px;
+}
+.join, .sign-in{
+    padding: 5px 7px;
+    font-size: 16px;
+    border-radius: 3px;
+    color: #149F75;
+    font-weight: 500;
+}
+.join{
+    color: white;
+    background-color: #149F75;
+}
+.linkedin, .instagram, .twitter{
+    float: right;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+.twitter{
+    margin-right: 170px;
+}
+
+.sub-head{
+    text-indent: 160px;
+    margin: 15px 0;
+}
+.arrow-right{
+    width: 20px;
+    height: 15px;
+    vertical-align: middle;
+}
+.name{
+    color: #149F75;
+}
+.green-background{
+    background-color: #149F75;
+    border-radius: 12px;
+    width: 1120px;
+    height: 157px;
+    margin: 4px auto 50px auto;
+}
+.profile-pic{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    left: 20px;
+    position: relative;
+    margin-bottom: 60px;
+}
+.profile-detail{
+    margin-left: 160px;
+}
+.profile-name{
+    font-weight: 500;
+    font-size: 22px;
+}
+.verified{
+    vertical-align: middle;
+}
+.profile-about{
+    font-size: 14px;
+    font-weight: 400;
+}
+.followers{
+    font-size: 12px;
+    margin-right: 9px;
+    
+    top: 10px;
+}
+.dot{
+    margin-bottom: 2px;
+}
+.value{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+
+.menu-bar{
+    margin-top: 38px;
+}
+.topics, .followers-list, .following-list, .thread{
+    margin-right: 18px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.topics{
+    color: #149F75;
+    margin-left: 160px;
+    font-weight: 700;
+}
+.one{
+    width: 71px;
+    height: 4px;
+    background-color: #149F75;
+    margin: 8px 0 0 160px;
+    border: none;
+}
+.two{
+    width: 711px;
+    margin-left: 160px;
+}
+.table1{
+    margin-left: 160px;
+    margin-top: 8px;
+    width: 1120px;
+}
+.topic-section{
+    padding-right: 24px;
+}
+.post-background{
+    width: 712px;
+    height: 164px;
+    background-color: white;
+    margin: 0px 0 20px 0;
+    border-radius: 8px;
+}
+.post-pic{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    float: left;
+    margin: 10px 5px 8px 16px;
+}
+.post-name{
+    font-weight: 500;
+    padding-top: 12px;
+    font-size: 12px;
+}
+.menu-background{
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    float: right;
+    vertical-align: middle;
+    margin-right: 25px;
+}
+.menu-svg{
+    vertical-align: middle;
+    margin-top: 4px;
+}
+.post-date{
+    font-size: 10px;
+}
+.post{
+    margin-top: 10px;
+    margin-left: 16px;
+    line-height: 25px;
+}
+.security{
+    margin-left: 16px;
+    color: #149F75;
+    margin-right: 5px;
+}
+.three{
+    margin-top: 12px;
+    margin-bottom: 5px;
+    width: 712px;
+    border: none;
+    height: 0.34px;
+    background-color: #DBDBDB;
+}
+.icon-background{
+    width: 24px;
+    height: 24px;
+    background-color: #F5F5F5;
+    margin-left: 16px;
+    margin-top: 0px;
+    border-radius: 50px;
+    margin-right: 5px;
+    display: inline;
+    text-align: center;
+}
+.like-icon, .comment-icon, .share-icon, .view-icon{
+    margin: auto 0 auto 4px;
+    vertical-align: middle;
+}
+.icon-value{
+    font-weight: 400;
+    font-size: 15px;
+}
+.tiny-dot{
+    vertical-align: middle;
+}
+.icon-name{
+    font-weight: 300;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+
+.profile-card{
+    width: 360px;
+    height: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+.username {
+    font-size: 20px;
+    margin: 40px 0 32px 0;
+    text-indent: 20px;
+    font-weight: 400;
+}
+.details{
+    clear: left;
+    margin-bottom: 25px;
+}
+.image-border{
+    background-color: #F5F5F5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 12px 28px 20px;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    margin: auto;
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #149F75;
+}
+.image-detail-1{
+    font-size: 14px;
+    color: #595959;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+.image-detail-2{
+    font-size: 18px;
+    color: black;
+    font-weight: 400;
+}
+.sign{
+    font-size: 14px;
+    color: #737373;
+    font-weight: 400;
+    margin: 4px 0 7px 0;
+    text-indent: 20px;
+}
+.sign-details{
+    color: black;
+    font-size: 14px;
+    margin: 0 0 32px 22px;
+    font-weight: 400;
+}
+
+
+
+.paginator{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.page, .page-2{
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: white;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.page-2{
+    width: 42px;
+}
+.page-no{
+    line-height: 36px;
+    font-weight: 500px;
+}
+
+
+
+.bottom-line{
+    background-color: #149F75;
+    width: 1440px;
+    height: 48px;
+    color: white;
+    font-size: 16px;
+    margin: 20px auto;
+}
+.disclaim{
+    font-weight: 700;
+    margin-left: 66px;
+    padding-top: 14px;
+}
+.disclaim-details{
+    font-weight: 400;
+}
+
+.table2{
+    margin: auto;
+    border-spacing: 90px;
+}
+.foot{
+    vertical-align: top;
+    font-size: 15px;
+}
+.foot-head{
+    color: #149F75;
+    font-size: 18px;
+    font-weight: 500;
+}
+.foot-detail{
+    line-height: 30px;
+}
+.joining{
+  padding: 5px;
+  background-color: #149F75;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 5px;
+}
+.login{
+    color: #149F75;
+    font-weight: 500px;
+    text-align: center;
+    margin-top: 8px;
+}
+.four{
+    width: 1300px;
+    height: 0.5px;
+    margin: auto;
+}
+.attribute{
+    font-size: 12px;
+    margin: 15px 40px 0 66px;
+}
+.attribute svg{
+    vertical-align: middle;
+}
+.footer-icon{
+    margin-left: 770px;
+}
