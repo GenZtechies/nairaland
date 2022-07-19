@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Demo Page</title>
+
+    <!-- DO NOT TOUCH ==== FROM HERE -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- DO NOT TOUCH ==== TO HERE -->
+</head>
+
+<body class="p-0 m-0 box-border">
+
+    <!-- Start your code here -->
+    <header class="px-16 flex items-center relative">
+        <nav class="flex h-20 justify-between items-center w-full">
+            <!-- Left Side -->
+            <div class="flex space-x-14 items-center">
+                <!-- brand -->
+                <div>
+                    <h1 class="text-2xl font-bold text-primary">Nairaland Forum</h1>
+                </div>
+            
+                <!-- search -->
+                <div class="hidden py-3 px-4 rounded-lg border border-[#A8ABBD] w-64
+                            sm:flex
+                ">
+                    <input
+                    type="text"
+                    placeholder="Search anything..."
+                    class="w-full outline-none"
+                    />
+                    <div include-component="../../assets/icons/Search.svg"></div>
+                </div>
+            
+                
+                <!-- nav links -->
+                <div class="hidden
+                            lg:block
+                ">
+                    <ul class="list-none flex space-x-7">
+                    <!-- active tab -->
+                    <li class="relative h-20 flex flex-col justify-center">
+                        <div class="text-primary font-bold">Trending</div>
+                        <div class="bg-primary h-1 w-full absolute bottom-0"></div>
+                    </li>
+            
+                    <!-- inactive tabs -->
+                    <li class="relative h-20 flex flex-col justify-center">
+                        <div>Recent</div>
+                        <div class="h-1 w-full absolute bottom-0"></div>
+                    </li>
+                    <li class="relative h-20 flex flex-col justify-center">
+                        <div>Latest</div>
+                        <div class="h-1 w-full absolute bottom-0"></div>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        
+            <!-- Right Side -->
+            <div class="hidden space-x-8 items-center
+                        lg:flex
+            ">
+                <button class="bg-[#F1FDFA] p-2 rounded-lg h-max">
+                    <div include-component="../../assets/icons/bell.svg"></div>
+                </button>
+                <div class="rounded-full border border-primary p-1 overflow-hidden">
+                    <img
+                    src="../../assets/images/profile.png"
+                    alt="profile"
+                    class="w-full h-full object-cover"
+                    />
+                </div>
+            </div>
+            <!-- mobile burger -->
+            <div class="flex flex-col space-y-2 items-end
+                        lg:hidden
+            ">
+                <div class="bg-black rounded-full w-6 h-0.5"></div>
+                <div class="bg-black rounded-full w-5 h-0.5"></div>
+                <div class="bg-black rounded-full w-6 h-0.5"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SEARCH FILTERS -->
+    <span id="searchFilters" class="flex text-white justify-start items-center bg-primary text-lg px-16 h-16">
+        <h3>Filter:</h3>
+        <ul class="flex w-full justify-between pl-16
+                    lg:w-1/2
+            
+        ">
+            <li class="flex flex-col text-center justify-center items-center
+                        sm:flex-row sm:text-left sm:justify-start
+            ">
+                All Sections 
+                <img src="/assets/icons/chevron-down.svg" class="invert cursor-pointer" alt="chevron down"></li>
+            <li class="flex flex-col text-center justify-center items-center
+                        sm:flex-row sm:text-left sm:justify-start
+            ">
+                Sort by 
+                <img src="/assets/icons/chevron-down.svg" class="invert cursor-pointer" alt="chevron down">
+            </li>
+            <li class="flex flex-col text-center justify-center items-center
+                        sm:flex-row sm:text-left sm:justify-start
+            ">
+                Media Type 
+                <img src="/assets/icons/chevron-down.svg" class="invert cursor-pointer" alt="chevron down">
+            </li>
+        </ul>
+    </span>
+    <main class="pb-16 px-16 bg-stone-100 w-full">
+        <h3 class="flex text-lg whitespace-pre py-8">100 results found for the word <div class="text-primary">eni4sure</div> </h3>
+        <div class="flex justify-between">
+            <section class="w-2/3 flex-col mr-8
+                            lg:w-2/3
+            ">
+                <!-- first post -->
+                <div class="flex flex-col p-4 w-full h-max bg-white rounded-lg mb-8">
+                    <div class="original-post">
+                        <div class="flex flex-col p-4 border border-solid w-full rounded-lg">
+                            <div id="" class="topic-location flex mb-2"><img class="mr-2" src="/assets/icons/search-topic.svg" alt=""> Phones <img class="mx-2 mr-8" src="/assets/icons/single-chevron-right.svg" alt="single chevron right"> <span class="font-semibold whitespace-nowrap text-ellipsis overflow-hidden w-full">Phone Engineers on Nairaland willing to assist you</span></div>
+                            <div class="subject-preview"> A chieftain of the Peoples Democratic Party (PDP), Prince Kassim Afegbua has urged Nigerians to appeal to former Vice-President Atiku Abubakar to drop his presidential ambition in 2023......</div>
+                        </div>
+                        <div class="post-profile-link-line h-8 border-l border-solid w-px ml-6"></div>
+                        <div class="post-profile flex h-12">
+                            <div class="post-profile-photo bg-primary rounded-full w-12 h-12"></div>
+                            <div class="post-user-details h-full grid gap-1 grid-cols-[1fr_auto_1fr] grid-rows-2  ml-12 ">
+                                <div class="post-username cursor-pointer flex justify-center items-center">
+                                    @dragnet
+                                </div>
+                                <div class="post-interpunct font-bold text-2xl mx-1 flex justify-center items-center">
+                                    ·
+                                </div>
+                                <div class="post-follow-user text-primary text-xs font-bold cursor-pointer flex justify-start items-center">
+                                    Follow
+                                </div>
+                                <div class="post-time text-xs flex flex-col justify-start text-zinc-500">
+                                    1:18AM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="searched-post mt-4">
+                        <div class="flex flex-col p-4 border border-solid w-full rounded-lg">
+                            <div id="result-preview-section flex flex-col"> 
+                                <div class="result-preview">
+                                    Hey guys, i use Nokia N95(Not 8G),n it gets hot n restart on its own,espcially wen i am runin applications. I can only play game n music videos for like 2-3mins n it restarts. Pls wat can i do,i rili nid your help guys eni4sure@yahoo.co.uk.
+                                </div>
+                                <div class="found-result bg-primary w-max px-2 rounded-lg bg-[#D2F9ED] mb-4">
+                                    eni4sure
+                                </div>
+                                <div class="flex gap-y-1 p-4 border border-solid w-full rounded-lg
+                                    flex-wrap
+                                    
+                                    text-ellipsis
+                                
+                                ">
+                                    <div class="likes-container flex items-center mr-4
+                                        after:content-['Likes'] after:text-[#808080]
+                                        ">
+                                        <div class="likes-icon-container mr-4 h-8 w-8 overflow-hidden bg-[#F5F5F5] flex justify-center items-center rounded-full">
+                                            <img class="w-[11] h-[11]" src="/assets/icons/likes.svg" alt="likes">
+                                        </div>
+                                        433.3K 
+                                        <div class="post-interpunct font-bold text-2xl text-primary mx-1 flex justify-center items-center">
+                                            ·
+                                        </div>
+                                    </div>
+                                    <div class="comments-container flex items-center mr-4
+                                        after:content-['Comments'] after:text-[#808080]
+                                        ">
+                                        <div class="comments-icon-container mr-4 h-8 w-8 overflow-hidden bg-[#F5F5F5] flex justify-center items-center rounded-full">
+                                            <img class="w-[11] h-[11]" src="/assets/icons/message-square.svg" alt="comments">
+                                        </div>
+                                        1280
+                                        <div class="-interpunct font-bold text-2xl text-primary mx-1 flex justify-center items-center">
+                                            ·
+                                        </div>
+                                    </div>
+                                    <div class="share-container flex items-center mr-4
+                                        after:content-['Shares'] after:text-[#808080]
+                                        ">
+                                        <div class="share-icon-container mr-4 h-8 w-8 overflow-hidden bg-[#F5F5F5] flex justify-center items-center rounded-full">
+                                            <img class="w-[11] h-[11]" src="/assets/icons/share.svg" alt="share">
+                                        </div>
+                                        13.3K
+                                        <div class="post-interpunct font-bold text-2xl text-primary mx-1 flex justify-center items-center">
+                                            ·
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second post -->
+                <div class="flex flex-col p-4 w-full h-max bg-white rounded-lg mb-8">
+                    <div class="original-post">
+                        <div class="flex flex-col p-4 border border-solid w-full rounded-lg">
+                            <div class="topic-location flex mb-2"><img class="mr-2" src="/assets/icons/search-topic.svg" alt=""> Security <img class="mx-2 mr-8" src="/assets/icons/single-chevron-right.svg" alt="single chevron right"> <span class="font-semibold whitespace-nowrap text-ellipsis overflow-hidden w-full">Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells Nigerians</span></div>
+                            <div class="subject-preview"> only play game n music videos for like 2-3mins n it restarts. Pls wat can i do,i rili nid your help guys eni4sure@yahoo.co.uk.</div>
+                            <div class="found-result bg-primary w-max px-2 rounded-lg bg-[#4EE9BA]">
+                                eni4sure
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third post -->
+                <div class="flex flex-col p-4 w-full h-max bg-white rounded-lg mb-8">
+                    <div class="original-post">
+                        <div class="flex flex-col p-4 border border-solid w-full rounded-lg">
+                            <div id="" class="topic-location flex mb-2"><img class="mr-2" src="/assets/icons/search-topic.svg" alt=""> TV/Movies <img class="mx-2 mr-8" src="/assets/icons/single-chevron-right.svg" alt="single chevron right"> <span class="font-semibold whitespace-nowrap text-ellipsis overflow-hidden w-full">24 Season 8 Begins 17th Jan</span></div>
+                            <div class="subject-preview"> @Semidy4lyf, probably dis is nt d ryt way or place 2 post dis, i'm kinda new here. But i rili your help or any1 dat can help.  My E.mail -eni4sure@yahoo.co.uk. </div>
+                        </div>
+                        <div class="post-profile-link-line h-8 border-l border-solid w-px ml-6"></div>
+                        <div class="post-profile flex h-12">
+                            <div class="post-profile-photo bg-primary rounded-full w-12 h-12"></div>
+                            <div class="post-user-details h-full grid gap-1 grid-cols-[1fr_auto_1fr] grid-rows-2  ml-12">
+                                <div class="post-username flex justify-center items-center">
+                                    @Semidy4lyf
+                                </div>
+                                <div class="post-interpunct font-bold text-2xl mx-1 flex justify-center items-center">
+                                    ·
+                                </div>
+                                <div class="post-follow-user text-primary text-xs font-bold cursor-pointer flex justify-start items-center">
+                                    Follow
+                                </div>
+                                <div class="post-time text-xs flex flex-col justify-start text-zinc-500">
+                                    3:48AM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="searched-post mt-4">
+                        <div class="flex flex-col p-4 border border-solid w-full rounded-lg">
+                            <div id="result-preview-section flex flex-col"> 
+                                <div class="result-preview">
+                                    Hey guys, i use Nokia N95(Not 8G),n it gets hot n restart on its own,espcially wen i am runin applications. I can only play game n music videos for like 2-3mins n it restarts. Pls wat can i do,i rili nid your help guys eni4sure@yahoo.co.uk.
+                                </div>
+                                <div class="found-result bg-primary w-max px-2 rounded-lg bg-[#4EE9BA] mb-4">
+                                    eni4sure
+                                </div>
+                                <div class="flex gap-y-1 p-4 border border-solid w-full rounded-lg
+                                    flex-wrap
+                                    
+                                    text-ellipsis
+                                
+                                ">
+                                    <div class="likes-container flex items-center mr-4
+                                        after:content-['Likes'] after:text-[#808080]
+                                        ">
+                                        <div class="likes-icon-container mr-4 h-8 w-8 overflow-hidden bg-[#F5F5F5] flex justify-center items-center rounded-full">
+                                            <img class="w-[11] h-[11]" src="/assets/icons/likes.svg" alt="likes">
+                                        </div>
+                                        433.3K 
+                                        <div class="post-interpunct font-bold text-2xl text-primary mx-1 flex justify-center items-center">
+                                            ·
+                                        </div>
+                                    </div>
+                                    <div class="comments-container flex items-center mr-4
+                                        after:content-['Comments'] after:text-[#808080]
+                                        ">
+                                        <div class="comments-icon-container mr-4 h-8 w-8 overflow-hidden bg-[#F5F5F5] flex justify-center items-center rounded-full">
+                                            <img class="w-[11] h-[11]" src="/assets/icons/message-square.svg" alt="comments">
+                                        </div>
+                                        1280
+                                        <div class="-interpunct font-bold text-2xl text-primary mx-1 flex justify-center items-center">
+                                            ·
+                                        </div>
+                                    </div>
+                                    <div class="share-container flex items-center mr-4
+                                        after:content-['Shares'] after:text-[#808080]
+                                        ">
+                                        <div class="share-icon-container mr-4 h-8 w-8 overflow-hidden bg-[#F5F5F5] flex justify-center items-center rounded-full">
+                                            <img class="w-[11] h-[11]" src="/assets/icons/share.svg" alt="share">
+                                        </div>
+                                        13.3K
+                                        <div class="post-interpunct font-bold text-2xl text-primary mx-1 flex justify-center items-center">
+                                            ·
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAGINATION - PAGE SELECTOR -->
+                <span class="pagination-count flex w-full justify-end items-center gap-x-3 mb-8">
+                    <div class="pagination-chevron-left flex justify-center items-center bg-white h-8 w-8 rounded-md cursor-pointer">
+                        <img src="/assets/icons/chevrons-left.svg" alt="pagination left" />
+                    </div>
+                    <div class="pagination-chevron-left flex justify-center items-center bg-primary outline outline-2 outline-primary outline-offset-4 h-8 w-8 rounded-md">
+                        1
+                    </div>
+                    <div class="pagination-chevron-left flex justify-center items-center bg-white h-8 w-8 rounded-md cursor-pointer">
+                        ...
+                    </div>
+                    <div class="pagination-chevron-left flex justify-center items-center bg-white h-8 w-8 rounded-md cursor-pointer">
+                        2
+                    </div>
+                    <div class="pagination-chevron-left flex justify-center items-center bg-white h-8 w-8 rounded-md cursor-pointer">
+                        <img src="/assets/icons/chevrons-right.svg" alt="pagination right" />
+                    </div>
+                </span>
+                <span class="google-search flex items-center p-4 h-max w-full bg-white mb-8 rounded-lg font-bold text-sm">
+                    <img src="/assets/icons/web-search.svg" alt="web search"  class="mr-4 w-[56] h-[56]"/>
+                    Not satisfied? <a href="https://google.com" class="inline mx-1 text-primary">Click Here</a> To Try Google Search!
+                </span>
+            </section>
+
+            <!-- SIDE TOPICS AND ADS -->
+            <aside class="w-1/3 max-w-[350px] h-max bg-white p-5 flex flex-col gap-y-8 rounded-lg 
+                            lg:w-1/3
+                ">
+                <div class="aside-heading flex">
+                    <img class="mr-2" src="/assets/icons/topics-icon.svg" alt="topics">
+                    <h2 class="text-primary font-bold text-lg">Topics</h2>
+                </div>
+                <div class="topic-selector flex flex-wrap justify-start gap-y-4">
+                    <div class="topic-selector-option overflow-hidden text-ellipsis w-full px-3 mr-2 border-solid border border-[#BFBFBF] rounded-md cursor-pointer active:bg-green-50 select-none
+                                md:w-max
+                    ">
+                        Politics
+                    </div>
+                    <div class="topic-selector-option overflow-hidden text-ellipsis w-full px-3 mr-2 border-solid border border-[#BFBFBF] rounded-md cursor-pointer active:bg-green-50 select-none
+                                md:w-max
+                    ">
+                        Career
+                    </div>
+                    <div class="topic-selector-option overflow-hidden text-ellipsis w-full px-3 mr-2 border-solid border border-[#BFBFBF] rounded-md cursor-pointer active:bg-green-50 select-none
+                                md:w-max
+                    ">
+                        Education
+                    </div>
+                    <div class="topic-selector-option overflow-hidden text-ellipsis w-full px-3 mr-2 border-solid border border-[#BFBFBF] rounded-md cursor-pointer active:bg-green-50 select-none
+                                md:w-max
+                    ">
+                        Schools
+                    </div>
+                    <div class="topic-selector-option overflow-hidden text-ellipsis w-full px-3 mr-2 border-solid border border-[#BFBFBF] rounded-md cursor-pointer active:bg-green-50 select-none
+                                md:w-max
+                    ">
+                        Music
+                    </div>
+                    <div class="topic-selector-option overflow-hidden text-ellipsis w-full px-3 mr-2 border-solid border border-[#BFBFBF] rounded-md cursor-pointer active:bg-green-50 select-none
+                                md:w-max
+                    ">
+                        Tv-movies
+                    </div>
+                    <div class="topic-selector-option overflow-hidden text-ellipsis w-full px-3 mr-2 border-solid border border-[#BFBFBF] rounded-md cursor-pointer active:bg-green-50 select-none
+                                md:w-max
+                    ">
+                        Autos
+                    </div>
+                    <div class="topic-selector-option overflow-hidden text-ellipsis w-full px-3 mr-2 border-solid border border-[#BFBFBF] rounded-md cursor-pointer active:bg-green-50 select-none
+                                md:w-max
+                    ">
+                        Business
+                    </div>
+                    <div class="topic-selector-option overflow-hidden text-ellipsis w-full px-3 mr-2 border-solid border border-[#BFBFBF] rounded-md cursor-pointer active:bg-green-50 select-none
+                                md:w-max
+                    ">
+                        Sports
+                    </div>
+                    <div class="topic-selector-option overflow-hidden text-ellipsis w-full px-3 mr-2 border-solid border border-[#BFBFBF] rounded-md cursor-pointer active:bg-green-50 select-none
+                                md:w-max
+                    ">
+                        Romance
+                    </div>
+                    <div class="topic-selector-option overflow-hidden text-ellipsis w-full px-3 mr-2 border-solid border border-[#BFBFBF] rounded-md cursor-pointer active:bg-green-50 select-none
+                                md:w-max
+                    ">
+                        Jobs
+                    </div>
+                </div>
+
+                <!-- ABEG AD -->
+                <div class="side-ad w-full bg-red-500 h-min overflow-hidden rounded-lg">
+                    <img class="object-contain w-full h-full" src="/assets/images/abeg.png" alt="side ad">
+                </div>
+
+                <!-- CALL TO ACTION FOR NEW AD -->
+                <div class="side-ad border border-[#BFBFBF] border-dashed overflow-hidden rounded-lg text-center p-3 mb-64">
+                    <div class="ad-call my-4 text-2xl">
+                        Want to place an Ad?
+                    </div>
+                    <button class="rounded w-full h-10 text-white cursor-pointer bg-primary">
+                        Get in Touch
+                    </button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <div class="bg-white" include-component="/components/footer/footer.html"></div>
+
+    <!-- End your code here -->
+
+
+    <!-- DO NOT TOUCH ==== FROM HERE -->
+    <script src="/assets/js/main.js"></script>
+    <!-- DO NOT TOUCH ==== TO HERE -->
+</body>
+
+</html>
