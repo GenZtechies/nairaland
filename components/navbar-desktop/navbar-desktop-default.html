@@ -1,53 +1,52 @@
-<header class="md:px-16 flex items-center relative mb-16">
-  <nav class="flex h-20 justify-between items-center w-full">
-    <!-- Left Side -->
-    <div class="flex flex-col md:flex-row md:space-x-14 items-center w-full md:w-max">
-      <!-- brand -->
-      <div class="flex md:block items-center w-full justify-between md:w-max px-7 pt-12 pb-5 md:p-0">
-        <h1 class="text-md md:text-2xl font-bold text-primary">Nairaland Forum</h1>
-        <div class="flex md:hidden space-x-5 items-center">
-          <!-- Mobile Join Nairaland Button -->
-          <button class="md:hidden bg-primary text-white px-4 py-2 text-sm rounded-lg">Join Nairaland</button>
+<header class="md:px-16 flex items-center relative mb-5 md:mb-16 shadow-lg md:py-3">
+    <nav class="flex justify-between items-center w-full">
+        <!-- Left Side -->
+        <div class="flex flex-col md:flex-row md:space-x-14 items-center w-full md:w-max">
+            <!-- brand -->
+            <div class="flex md:block items-center w-full justify-between md:w-max px-4 md:px-7 pt-4 pb-4 md:p-0">
+                <h1 class="text-md md:text-2xl font-bold text-primary">Nairaland Forum</h1>
+                <div class="flex md:hidden space-x-5 items-center">
+                    <!-- Mobile Join Nairaland Button -->
+                    <button class="md:hidden bg-primary text-white px-4 py-2 text-sm rounded-lg">Join Nairaland</button>
 
-          <!-- Bugger Icon -->
-          <div class="flex flex-col space-y-2 items-end">
-            <div class="bg-black rounded-full w-6 h-0.5"></div>
-            <div class="bg-black rounded-full w-5 h-0.5"></div>
-            <div class="bg-black rounded-full w-6 h-0.5"></div>
-          </div>
+                    <!-- Bugger Icon -->
+                    <div class="flex flex-col space-y-1 md:space-y-2 items-end">
+                        <div class="bg-black rounded-full w-4 h-[.13rem] md:w-6 md:h-0.5"></div>
+                        <div class="bg-black rounded-full w-3 h-[.13rem] md:w-5 md:h-0.5"></div>
+                        <div class="bg-black rounded-full w-4 h-[.13rem] md:w-6 md:h-0.5"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- search -->
+            <div class="hidden py-3 px-4 md:flex rounded-lg border border-[#A8ABBD] w-64">
+                <input type="text" placeholder="Search anything..." class="w-full outline-none" />
+                <div include-component="../../assets/icons/Search.svg"></div>
+            </div>
+
+            <!-- nav links -->
+            <div class="bg-primary w-full md:w-max md:bg-transparent hidden md:flex items-center justify-between md:block pt-2 md:pt-0 px-7">
+                <ul class="list-none flex space-x-7 pt-2">
+                    <li class="nav-link nav-link__active">Trending</li>
+                    <li class="nav-link">Recent</li>
+                    <li class="nav-link">Latest</li>
+                </ul>
+
+                <!-- Mobile Search -->
+                <div class="space-x-5 md:hidden flex items-center">
+                    <div class="h-5 w-0.5 bg-white/50"></div>
+                    <img src="/assets/icons/MobileSearchIcon.svg" alt="search">
+                </div>
+            </div>
+
         </div>
-      </div>
 
-      <!-- search -->
-      <div class="hidden py-3 px-4 md:flex rounded-lg border border-[#A8ABBD] w-64">
-        <input type="text" placeholder="Search anything..." class="w-full outline-none" />
-        <div include-component="../../assets/icons/Search.svg"></div>
-      </div>
-
-      <!-- nav links -->
-      <div
-        class="bg-primary w-full md:w-max md:bg-transparent flex items-center justify-between md:block pt-2 md:pt-0 px-7">
-        <ul class="list-none flex space-x-7 pt-2">
-          <li class="nav-link nav-link__active">Trending</li>
-          <li class="nav-link">Recent</li>
-          <li class="nav-link">Latest</li>
-        </ul>
-
-        <!-- Mobile Search -->
-        <div class="space-x-5 md:hidden flex items-center">
-          <div class="h-5 w-0.5 bg-white/50"></div>
-          <img src="/assets/icons/MobileSearchIcon.svg" alt="search">
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Right Side -->
-    <div class="hidden md:flex space-x-4">
-      <button class="text-primary py-3 px-6 h-max">Sign in</button>
-      <button class="bg-primary text-white py-3 px-9 rounded-lg h-max">
+        <!-- Right Side -->
+        <div class="hidden md:flex space-x-4">
+            <button class="text-primary py-3 px-6 h-max">Sign in</button>
+            <button class="bg-primary text-white py-3 px-9 rounded-lg h-max">
         Join Nairaland
       </button>
-    </div>
-  </nav>
+        </div>
+    </nav>
 </header>
