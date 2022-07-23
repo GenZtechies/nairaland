@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>All Available Components</title>
+
+    <!-- DO NOT TOUCH ==== FROM HERE -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <!-- DO NOT TOUCH ==== TO HERE -->
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .nav-link {
+          @apply text-white/75 md:text-black cursor-pointer hover:text-white md:hover:text-primary hover:font-bold hover:border-b-4 hover:border-white md:hover:border-primary hover:pb-2;
+        }
+        .nav-link__active {
+          @apply text-white md:text-primary font-bold border-b-4 border-white md:border-primary pb-2;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      include-component="/components/navbar-desktop/navbar-desktop-logged-in.html"
+    ></div>
+
+    <div class="flex justify-evenly px-20">
+      <div class="w-1/2">
+        <h2 class="text-3xl">Create a Topic...</h2>
+<div class="flex flex-col my-6">
+            <label class="font-medium text-green-600 text-xs pb-1" for="label">Topic Subject</label>
+            <input type="password" id="label" class="rounded-md  h-10 px-3 text-black bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary" placeholder="" />
+            <p class="font-light text-green-600 text-[0.6rem] pt-1">Information about the input</p>
+        </div>
+        <div include-component="/components/content2/content2.html"></div>
+                <div class="border mt-6 py-4 border-dashed w-[689px] flex justify-center items-center mx-auto rounded-[8px]">
+https://user-images.githubusercontent.com/20ec-49d6-93e3-615b3b9864cb.png
+        </div>
+
+                 <div class="w-full my-4 px-4 py-4 border-solid border border-green-500 rounded-md h-16 mb-7 flex justify-start">
+                     <!-- Put the three icons here -->
+                     <button class="bg-green-100 rounded-full w-9 h-9 flex justify-center items-center mr-3">
+                         <img src="../../assets/icons/picture.svg" alt="" class="h-6 w-6">
+                     </button>
+                     <button class="bg-green-100 rounded-full w-9 h-9 flex justify-center items-center mr-3">
+                         <img src="../../assets/icons/video.svg" alt="" class="h-6 w-6">
+                     </button>
+                     <button class="bg-green-100 rounded-full w-9 h-9 flex justify-center items-center mr-3">
+                         <img src="../../assets/icons/link-down-2.svg" alt="" class="h-6 w-6">
+                     </button>
+                     <button class="bg-green-100 rounded-full w-9 h-9 flex justify-center items-center mr-3">
+                         <img src="../../assets/icons/bar-chart-2.svg" alt="" class="h-6 w-6">
+                     </button>
+                 </div>
+        <div class="flex justify-end py-4 mt-10 mr-4">
+          <button
+            class="rounded-lg w-60 h-12 mx-2 text-white cursor-pointer hover:scale-105 ease-in-out duration-300 bg-primary"
+          >
+           Submit Post
+        </div>
+      </div>
+      <div
+        class="w-1/2"
+        include-component="/components/frame-509/frame-509.html"
+      ></div>
+    </div>
+
+    <div include-component="/components/footer/footer.html"></div>
+
+    <!-- DO NOT TOUCH ==== FROM HERE -->
+    <script src="/assets/js/main.js"></script>
+    <!-- DO NOT TOUCH ==== TO HERE -->
+  </body>
+</html>

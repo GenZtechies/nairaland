@@ -1,0 +1,178 @@
+<div class="relaltive">
+  <div
+    include-component="/components/navbar-desktop/navbar-desktop-logged-in.html"
+  ></div>
+  <main
+    class="w-full h-auto flex justify-center items-center p-[7rem] bg-[#F8F9F6]"
+  >
+    <div class="w-[1000px] h-auto rounded-[15px] bg-[#fff]">
+      <div
+        class="bg-[#4E9F76] w-full h-[100px] rounded-t-[15px] relative px-[20px]"
+      >
+        <div
+          class="rounded-full border-[5px] border-[#fff] w-[100px] h-[100px] absolute top-[3rem] bg-[url('../../assets/images/pfp.jpeg')] bg-center bg-cover"
+        ></div>
+      </div>
+      <form class="w-full h-auto mt-[6rem] px-[20px]">
+        <div class="flex justify-between items-center">
+          <div class="w-full h-auto">
+            <div class="flex">
+              <!-- text input 1 -->
+              <div class="flex flex-col w-full">
+                <label
+                  class="font-medium text-green-400 text-[15px] pb-1"
+                  for="fullname"
+                  >Fullname</label
+                >
+                <input
+                  type="text"
+                  id="fullname"
+                  class="rounded-md w-full py-[12px] px-3 text-black bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary"
+                />
+              </div>
+
+              <!--text input 2-->
+              <div class="flex flex-col w-full ml-[1rem]">
+                <label
+                  class="font-medium text-green-400 text-[15px] pb-1"
+                  for="username"
+                  >Username</label
+                >
+                <input
+                  id='username'
+                  type="text"
+                  class="rounded-md w-full py-[12px] px-3 text-black bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary"
+                />
+              </div>
+            </div>
+
+            <div class='flex mt-[2rem]'>
+              <div class="flex flex-col w-full">
+                <label
+                  for="gender"
+                  class="font-medium text-green-400 text-[15px] pb-1"
+                  >Gender</label
+                >
+
+                <select
+                  id="gender"
+                  name="gender"
+                  class="w-full border border-gray-200 hover:border-primary focus:outline-none focus:border-primary rounded-md py-[12px] px-3"
+                >
+                  <option value=""></option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              <div class="flex flex-col w-full ml-[1rem]">
+                <label
+                  for="date2"
+                  class="font-medium text-green-400 text-[15px] pb-1"
+                  >Date of birth</label
+                >
+                <input
+                  id="date2"
+                  type="date"
+                  class="rounded-md w-full py-[12px] px-3 text-black bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="w-[450px] h-auto ml-[1.5rem]">
+            <div class="flex flex-col w-full">
+              <label
+                class="font-medium text-green-400 text-[15px] pb-1"
+                for="bio"
+                >Bio</label
+              >
+              <textarea
+                placeholder="Type your bio..."
+                rows="3"
+                class="form-control text-black block rounded-md w-full h-[150px] bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary px-3 py-1.5"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between items-center mt-[2rem]">
+          <div class="w-full h-auto">
+            <!-- text input 1 -->
+            <div class="flex flex-col w-full">
+              <label
+                class="font-medium text-green-400 text-[15px] pb-1"
+                for="location"
+                >Location</label
+              >
+              <input
+                type="text"
+                id="location"
+                class="rounded-md w-full py-[12px] px-3 text-black bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary"
+              />
+            </div>
+
+            <div class="flex mt-[1.5rem]">
+              <!-- text input 1 -->
+              <div class="flex flex-col w-full">
+                <label
+                  class="font-medium text-green-400 text-[15px] pb-1"
+                  for="fullname"
+                  >YIM</label
+                >
+                <input
+                  type="text"
+                  id="fullname"
+                  class="rounded-md w-full py-[12px] px-3 text-black bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary"
+                />
+              </div>
+
+              <!--text input 2-->
+              <div class="flex flex-col w-full ml-[1rem]">
+                <label
+                  class="font-medium text-green-400 text-[15px] pb-1"
+                  for="username"
+                  >Twitter</label
+                >
+                <input
+                  id="username"
+                  type="text"
+                  class="rounded-md w-full py-[12px] px-3 text-black bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="w-[450px] h-auto ml-[1.5rem]">
+            <div class="flex flex-col">
+              <label class="font-medium text-green-400 text-[15px] pb-1"
+                >Textarea</label
+              >
+              <textarea
+                placeholder="Type your content here..."
+                rows="3"
+                class="form-control text-black block rounded-md w-full h-[150px] bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary px-3 py-1.5"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <button
+          class="rounded px-[50px] py-[12px] mt-[2.5rem] text-white cursor-pointer bg-primary"
+        >
+          Save Profile Update
+        </button>
+      </form>
+      <div class="w-full h-auto mt-[5rem] p-[20px]">
+        <h1 class="font-semibold text-[18px]">Danger Zone</h1>
+        <div class="border-2 border-[#e46255] w-full h-auto p-[20px] rounded-md mt-[1rem] flex justify-between items-center">
+          <div class="w-[550px] h-auto">
+            <h1 class="font-medium text-[18px] mb-[0.5rem]">Deactivate Account</h1>
+            <p>Once you deactivate this account, theres no going back. Please be certain</p>
+          </div>
+          <button
+          class="rounded px-[40px] py-[12px] ml-[2rem] text-white cursor-pointer bg-[#e46255]"
+        >
+          Deactivate Account
+        </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer include-component="/components/footer/footer.html" class=""></footer>
+</div>
