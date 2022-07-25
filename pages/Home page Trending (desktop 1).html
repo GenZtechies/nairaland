@@ -252,7 +252,7 @@
     </section>
 
     <!--Main body-->  
-    <section class="p-4 mt-20 sm:mt-0 pt-8 sm:p-9 lg:px-1 md:px-0 basis-full sm:basis-1/2 sm:-mx-4">
+    <section class="p-4 mt-5 sm:mt-0 pt-8 sm:p-9 lg:px-1 md:px-0 basis-full sm:basis-1/2 sm:-mx-4">
 
       <!-------- Welcome message ---------->
       <div class="w-full flex items-center mt-4 sm:mt-0">
@@ -405,7 +405,7 @@
 
       <!--- Heading title ------>
       <div>
-        <h2 class="text-lg md:text-2xl font-medium text-black mt-7 -mb-2">Trending Gist</h2>
+        <h2 class="text-lg md:text-2xl font-medium text-black mt-3 sm:mt-7 -mb-2">Trending Gist</h2>
       </div>
 
       <!-------- Posts Section ---------->
@@ -415,13 +415,13 @@
 
           <!--------- User Profile ------------>
           <div class="flex flex-row px-5 py-3">
-            <div class="flex flex-row justify-center">
-              <div class="w-16 h-16 rounded-full">
+            <div class="flex flex-row items-center justify-center">
+              <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full">
                 <img class="rounded-full" src="/assets/Images/segun.jpg" alt="Img">
               </div>
               <div class="flex flex-col mx-3 justify-center">
-                <div class="flex flex-row py-1 items-center">
-                  <p class="font-semibold text-xl">@SeunOswewa</p>
+                <div class="flex flex-row sm:py-1 items-center">
+                  <p class="font-semibold text:base sm:text-xl">@SeunOswewa</p>
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M8.24616 3.57631C8.96103 2.11859 11.039 2.11859 11.7538 3.57631C12.1505 4.38521 13.049 4.81788 13.9287 4.62369C15.5142 4.27372 16.8097 5.89832 16.1157 7.3661C15.7307 8.18059 15.9526 9.1528 16.6529 9.71953C17.915 10.7409 17.4526 12.7667 15.8724 13.1393C14.9955 13.346 14.3737 14.1257 14.3673 15.0266C14.3557 16.6501 12.4835 17.5517 11.207 16.5485C10.4986 15.9918 9.50139 15.9918 8.79302 16.5485C7.51646 17.5517 5.64431 16.6501 5.63271 15.0266C5.62627 14.1257 5.00452 13.346 4.12763 13.1393C2.54738 12.7667 2.085 10.7409 3.3471 9.71953C4.04745 9.1528 4.26935 8.18059 3.88426 7.3661C3.19028 5.89832 4.48585 4.27372 6.07126 4.62369C6.95101 4.81788 7.84947 4.38521 8.24616 3.57631Z"
@@ -430,11 +430,11 @@
                       stroke-linejoin="round" />
                   </svg>
                 </div>
-                <p class="pr-2 text-sm text-slate-500">Today - 3:48AM</p>
+                <p class="pr-2 text-xs sm:text-sm text-slate-500">Today - 3:48AM</p>
               </div>
             </div>
             <button
-              class="flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
+              class="sm:flex hidden bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
               type="button">
               <!-- &#8942; -->
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -456,35 +456,36 @@
 
           <!----------- Post Content --------------->
           <div class="flex px-5 flex-col justify-center">
-            <h1 class="text-l font-semibold">
+            <h1 class="text-sm sm:text-lg font-semibold">
               We now have a new Nairaland design. You can blog better with nairaland once again!.
             </h1>
             <div class="flex flex-row my-2 items-center">
-              <p class="text-primary text-green-600 font-semibold text-sm">Security</p>
+              <p class="text-primary text-green-600 font-semibold text-xs sm:text-sm">Security</p>
               <span class="text-xl text-green-600 px-2">&bull;</span>
-              <p class="pr-2 text-sm text-slate-500">Read more...</p>
+              <p class="pr-2 text-xs sm:text-sm text-slate-500">Read more...</p>
             </div>
           </div>
 
           <!--------- Posts reactions -------------->
-          <div class="flex flex-row border-t">
+          <div class="flex flex-row justify-around border-t w-full">
 
             <!-- Likes reaction -->
-            <div class="flex flex-row items-center gap-1.5 p-3">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-5 lg:w-6"
-                  src="/assets/icons/thumbs-up.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 433.3k
+            <div class="flex  flex-row items-center gap-1.5 py-3 p-1 sm:p-3">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/thumbs-up.svg" alt="thumbs up icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 433.3k
                 <span class="hidden lg:inline text-primary ml-1 text-primary">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Likes </p>
-              </p>
             </div>
             
             <!-- Comments reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6"
-                  src="/assets/icons/message-square.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 1280
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/message-square.svg" alt="message icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 1280
                 <span class=" hidden lg:inline text-primary ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Comments </p>
@@ -492,10 +493,11 @@
             </div>
             
             <!-- Shares reaction -->
-            <div class="flex flex-row items-center gap-1.5">
-              <button class="bg-gray-100 p-2 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/share.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex  flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/share.svg" alt="share icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Shares </p>
@@ -503,10 +505,11 @@
             </div>
 
             <!-- Views reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/eye.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/eye.svg" alt="eye icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Views </p>
@@ -527,19 +530,19 @@
 
           <!--------- User Profile ------------>
           <div class="flex flex-row px-5 py-3">
-            <div class="flex flex-row justify-center">
-              <div class="w-16 h-16 rounded-full">
+            <div class="flex flex-row items-center justify-center">
+              <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full">
                 <img class="rounded-full" src="/assets/Images/segun.jpg" alt="Img">
               </div>
               <div class="flex flex-col mx-3 justify-center">
-                <div class="flex flex-row py-1 items-center">
-                  <p class="font-semibold text-xl">@Eniola</p>                  
+                <div class="flex flex-row sm:py-1 items-center">
+                  <p class="font-semibold text:base sm:text-xl">@Eniola</p>
                 </div>
-                <p class="pr-2 text-sm text-slate-500">Today - 3:48AM</p>
+                <p class="pr-2 text-xs sm:text-sm text-slate-500">Today - 3:48AM</p>
               </div>
             </div>
             <button
-              class="flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
+              class="sm:flex hidden bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
               type="button">
               <!-- &#8942; -->
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -561,35 +564,36 @@
 
           <!----------- Post Content --------------->
           <div class="flex px-5 flex-col justify-center">
-            <h1 class="text-l font-semibold">
+            <h1 class="text-sm sm:text-lg font-semibold">
               Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells Nigerians...
             </h1>
             <div class="flex flex-row my-2 items-center">
-              <p class="text-primary text-green-600 font-semibold text-sm">Security</p>
-              <span class="text-xl text-primary px-2">&bull;</span>
-              <p class="pr-2 text-sm text-slate-500">Read more...</p>
+              <p class="text-primary text-green-600 font-semibold text-xs sm:text-sm">Security</p>
+              <span class="text-xl text-green-600 px-2">&bull;</span>
+              <p class="pr-2 text-xs sm:text-sm text-slate-500">Read more...</p>
             </div>
           </div>
 
           <!--------- Posts reactions -------------->
-          <div class="flex flex-row border-t">
+          <div class="flex flex-row justify-around border-t w-full">
 
             <!-- Likes reaction -->
-            <div class="flex flex-row items-center gap-1.5 p-3">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-5 lg:w-6"
-                  src="/assets/icons/thumbs-up.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 433.3k
+            <div class="flex  flex-row items-center gap-1.5 py-3 p-1 sm:p-3">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/thumbs-up.svg" alt="thumbs up icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 433.3k
                 <span class="hidden lg:inline text-primary ml-1 text-primary">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Likes </p>
-              </p>
             </div>
             
             <!-- Comments reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6"
-                  src="/assets/icons/message-square.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 1280
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/message-square.svg" alt="message icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 1280
                 <span class=" hidden lg:inline text-primary ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Comments </p>
@@ -597,10 +601,11 @@
             </div>
             
             <!-- Shares reaction -->
-            <div class="flex flex-row items-center gap-1.5">
-              <button class="bg-gray-100 p-2 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/share.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex  flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/share.svg" alt="share icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Shares </p>
@@ -608,10 +613,11 @@
             </div>
 
             <!-- Views reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/eye.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/eye.svg" alt="eye icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Views </p>
@@ -632,19 +638,19 @@
 
           <!--------- User Profile ------------>
           <div class="flex flex-row px-5 py-3">
-            <div class="flex flex-row justify-center">
-              <div class="w-16 h-16 rounded-full">
+            <div class="flex flex-row items-center justify-center">
+              <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full">
                 <img class="rounded-full" src="/assets/Images/segun.jpg" alt="Img">
               </div>
               <div class="flex flex-col mx-3 justify-center">
-                <div class="flex flex-row py-1 items-center">
-                  <p class="font-semibold text-xl">@Eniola</p>                  
+                <div class="flex flex-row sm:py-1 items-center">
+                  <p class="font-semibold text:base sm:text-xl">@Eniola</p>
                 </div>
-                <p class="pr-2 text-sm text-slate-500">Today - 3:48AM</p>
+                <p class="pr-2 text-xs sm:text-sm text-slate-500">Today - 3:48AM</p>
               </div>
             </div>
             <button
-              class="flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
+              class="sm:flex hidden bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
               type="button">
               <!-- &#8942; -->
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -666,35 +672,36 @@
 
           <!----------- Post Content --------------->
           <div class="flex px-5 flex-col justify-center">
-            <h1 class="text-l font-semibold">
+            <h1 class="text-sm sm:text-lg font-semibold">
               Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells Nigerians...
             </h1>
             <div class="flex flex-row my-2 items-center">
-              <p class="text-primary text-green-600 font-semibold text-sm">Security</p>
-              <span class="text-xl text-primary px-2">&bull;</span>
-              <p class="pr-2 text-sm text-slate-500">Read more...</p>
+              <p class="text-primary text-green-600 font-semibold text-xs sm:text-sm">Security</p>
+              <span class="text-xl text-green-600 px-2">&bull;</span>
+              <p class="pr-2 text-xs sm:text-sm text-slate-500">Read more...</p>
             </div>
           </div>
 
           <!--------- Posts reactions -------------->
-          <div class="flex flex-row border-t">
+          <div class="flex flex-row justify-around border-t w-full">
 
             <!-- Likes reaction -->
-            <div class="flex flex-row items-center gap-1.5 p-3">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-5 lg:w-6"
-                  src="/assets/icons/thumbs-up.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 433.3k
+            <div class="flex  flex-row items-center gap-1.5 py-3 p-1 sm:p-3">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/thumbs-up.svg" alt="thumbs up icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 433.3k
                 <span class="hidden lg:inline text-primary ml-1 text-primary">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Likes </p>
-              </p>
             </div>
             
             <!-- Comments reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6"
-                  src="/assets/icons/message-square.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 1280
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/message-square.svg" alt="message icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 1280
                 <span class=" hidden lg:inline text-primary ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Comments </p>
@@ -702,10 +709,11 @@
             </div>
             
             <!-- Shares reaction -->
-            <div class="flex flex-row items-center gap-1.5">
-              <button class="bg-gray-100 p-2 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/share.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex  flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/share.svg" alt="share icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Shares </p>
@@ -713,10 +721,11 @@
             </div>
 
             <!-- Views reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/eye.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/eye.svg" alt="eye icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Views </p>
@@ -737,19 +746,19 @@
 
           <!--------- User Profile ------------>
           <div class="flex flex-row px-5 py-3">
-            <div class="flex flex-row justify-center">
-              <div class="w-16 h-16 rounded-full">
+            <div class="flex flex-row items-center justify-center">
+              <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full">
                 <img class="rounded-full" src="/assets/Images/segun.jpg" alt="Img">
               </div>
               <div class="flex flex-col mx-3 justify-center">
-                <div class="flex flex-row py-1 items-center">
-                  <p class="font-semibold text-xl">@Eniola</p>                  
+                <div class="flex flex-row sm:py-1 items-center">
+                  <p class="font-semibold text:base sm:text-xl">@Eniola</p>
                 </div>
-                <p class="pr-2 text-sm text-slate-500">Today - 3:48AM</p>
+                <p class="pr-2 text-xs sm:text-sm text-slate-500">Today - 3:48AM</p>
               </div>
             </div>
             <button
-              class="flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
+              class="sm:flex hidden bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
               type="button">
               <!-- &#8942; -->
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -771,35 +780,36 @@
 
           <!----------- Post Content --------------->
           <div class="flex px-5 flex-col justify-center">
-            <h1 class="text-l font-semibold">
+            <h1 class="text-sm sm:text-lg font-semibold">
               Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells Nigerians...
             </h1>
             <div class="flex flex-row my-2 items-center">
-              <p class="text-primary text-green-600 font-semibold text-sm">Security</p>
-              <span class="text-xl text-primary px-2">&bull;</span>
-              <p class="pr-2 text-sm text-slate-500">Read more...</p>
+              <p class="text-primary text-green-600 font-semibold text-xs sm:text-sm">Security</p>
+              <span class="text-xl text-green-600 px-2">&bull;</span>
+              <p class="pr-2 text-xs sm:text-sm text-slate-500">Read more...</p>
             </div>
           </div>
 
           <!--------- Posts reactions -------------->
-          <div class="flex flex-row border-t">
+          <div class="flex flex-row justify-around border-t w-full">
 
             <!-- Likes reaction -->
-            <div class="flex flex-row items-center gap-1.5 p-3">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-5 lg:w-6"
-                  src="/assets/icons/thumbs-up.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 433.3k
+            <div class="flex  flex-row items-center gap-1.5 py-3 p-1 sm:p-3">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/thumbs-up.svg" alt="thumbs up icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 433.3k
                 <span class="hidden lg:inline text-primary ml-1 text-primary">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Likes </p>
-              </p>
             </div>
             
             <!-- Comments reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6"
-                  src="/assets/icons/message-square.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 1280
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/message-square.svg" alt="message icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 1280
                 <span class=" hidden lg:inline text-primary ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Comments </p>
@@ -807,10 +817,11 @@
             </div>
             
             <!-- Shares reaction -->
-            <div class="flex flex-row items-center gap-1.5">
-              <button class="bg-gray-100 p-2 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/share.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex  flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/share.svg" alt="share icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Shares </p>
@@ -818,10 +829,11 @@
             </div>
 
             <!-- Views reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/eye.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/eye.svg" alt="eye icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Views </p>
@@ -842,19 +854,19 @@
 
           <!--------- User Profile ------------>
           <div class="flex flex-row px-5 py-3">
-            <div class="flex flex-row justify-center">
-              <div class="w-16 h-16 rounded-full">
+            <div class="flex flex-row items-center justify-center">
+              <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full">
                 <img class="rounded-full" src="/assets/Images/segun.jpg" alt="Img">
               </div>
               <div class="flex flex-col mx-3 justify-center">
-                <div class="flex flex-row py-1 items-center">
-                  <p class="font-semibold text-xl">@Eniola</p>                  
+                <div class="flex flex-row sm:py-1 items-center">
+                  <p class="font-semibold text:base sm:text-xl">@Eniola</p>
                 </div>
-                <p class="pr-2 text-sm text-slate-500">Today - 3:48AM</p>
+                <p class="pr-2 text-xs sm:text-sm text-slate-500">Today - 3:48AM</p>
               </div>
             </div>
             <button
-              class="flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
+              class="sm:flex hidden bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
               type="button">
               <!-- &#8942; -->
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -876,35 +888,36 @@
 
           <!----------- Post Content --------------->
           <div class="flex px-5 flex-col justify-center">
-            <h1 class="text-l font-semibold">
+            <h1 class="text-sm sm:text-lg font-semibold">
               Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells Nigerians...
             </h1>
             <div class="flex flex-row my-2 items-center">
-              <p class="text-primary text-green-600 font-semibold text-sm">Security</p>
-              <span class="text-xl text-primary px-2">&bull;</span>
-              <p class="pr-2 text-sm text-slate-500">Read more...</p>
+              <p class="text-primary text-green-600 font-semibold text-xs sm:text-sm">Security</p>
+              <span class="text-xl text-green-600 px-2">&bull;</span>
+              <p class="pr-2 text-xs sm:text-sm text-slate-500">Read more...</p>
             </div>
           </div>
 
           <!--------- Posts reactions -------------->
-          <div class="flex flex-row border-t">
+          <div class="flex flex-row justify-around border-t w-full">
 
             <!-- Likes reaction -->
-            <div class="flex flex-row items-center gap-1.5 p-3">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-5 lg:w-6"
-                  src="/assets/icons/thumbs-up.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 433.3k
+            <div class="flex  flex-row items-center gap-1.5 py-3 p-1 sm:p-3">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/thumbs-up.svg" alt="thumbs up icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 433.3k
                 <span class="hidden lg:inline text-primary ml-1 text-primary">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Likes </p>
-              </p>
             </div>
             
             <!-- Comments reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6"
-                  src="/assets/icons/message-square.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 1280
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/message-square.svg" alt="message icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 1280
                 <span class=" hidden lg:inline text-primary ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Comments </p>
@@ -912,10 +925,11 @@
             </div>
             
             <!-- Shares reaction -->
-            <div class="flex flex-row items-center gap-1.5">
-              <button class="bg-gray-100 p-2 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/share.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex  flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/share.svg" alt="share icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Shares </p>
@@ -923,10 +937,11 @@
             </div>
 
             <!-- Views reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/eye.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/eye.svg" alt="eye icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Views </p>
@@ -947,19 +962,19 @@
 
           <!--------- User Profile ------------>
           <div class="flex flex-row px-5 py-3">
-            <div class="flex flex-row justify-center">
-              <div class="w-16 h-16 rounded-full">
+            <div class="flex flex-row items-center justify-center">
+              <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full">
                 <img class="rounded-full" src="/assets/Images/segun.jpg" alt="Img">
               </div>
               <div class="flex flex-col mx-3 justify-center">
-                <div class="flex flex-row py-1 items-center">
-                  <p class="font-semibold text-xl">@Eniola</p>                  
+                <div class="flex flex-row sm:py-1 items-center">
+                  <p class="font-semibold text:base sm:text-xl">@Eniola</p>
                 </div>
-                <p class="pr-2 text-sm text-slate-500">Today - 3:48AM</p>
+                <p class="pr-2 text-xs sm:text-sm text-slate-500">Today - 3:48AM</p>
               </div>
             </div>
             <button
-              class="flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
+              class="sm:flex hidden bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
               type="button">
               <!-- &#8942; -->
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -981,35 +996,36 @@
 
           <!----------- Post Content --------------->
           <div class="flex px-5 flex-col justify-center">
-            <h1 class="text-l font-semibold">
+            <h1 class="text-sm sm:text-lg font-semibold">
               Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells Nigerians...
             </h1>
             <div class="flex flex-row my-2 items-center">
-              <p class="text-primary text-green-600 font-semibold text-sm">Security</p>
-              <span class="text-xl text-primary px-2">&bull;</span>
-              <p class="pr-2 text-sm text-slate-500">Read more...</p>
+              <p class="text-primary text-green-600 font-semibold text-xs sm:text-sm">Security</p>
+              <span class="text-xl text-green-600 px-2">&bull;</span>
+              <p class="pr-2 text-xs sm:text-sm text-slate-500">Read more...</p>
             </div>
           </div>
 
           <!--------- Posts reactions -------------->
-          <div class="flex flex-row border-t">
+          <div class="flex flex-row justify-around border-t w-full">
 
             <!-- Likes reaction -->
-            <div class="flex flex-row items-center gap-1.5 p-3">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-5 lg:w-6"
-                  src="/assets/icons/thumbs-up.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 433.3k
+            <div class="flex  flex-row items-center gap-1.5 py-3 p-1 sm:p-3">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/thumbs-up.svg" alt="thumbs up icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 433.3k
                 <span class="hidden lg:inline text-primary ml-1 text-primary">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Likes </p>
-              </p>
             </div>
             
             <!-- Comments reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6"
-                  src="/assets/icons/message-square.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 1280
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/message-square.svg" alt="message icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 1280
                 <span class=" hidden lg:inline text-primary ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Comments </p>
@@ -1017,10 +1033,11 @@
             </div>
             
             <!-- Shares reaction -->
-            <div class="flex flex-row items-center gap-1.5">
-              <button class="bg-gray-100 p-2 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/share.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex  flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/share.svg" alt="share icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Shares </p>
@@ -1028,10 +1045,11 @@
             </div>
 
             <!-- Views reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/eye.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/eye.svg" alt="eye icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Views </p>
@@ -1052,19 +1070,19 @@
 
           <!--------- User Profile ------------>
           <div class="flex flex-row px-5 py-3">
-            <div class="flex flex-row justify-center">
-              <div class="w-16 h-16 rounded-full">
+            <div class="flex flex-row items-center justify-center">
+              <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full">
                 <img class="rounded-full" src="/assets/Images/segun.jpg" alt="Img">
               </div>
               <div class="flex flex-col mx-3 justify-center">
-                <div class="flex flex-row py-1 items-center">
-                  <p class="font-semibold text-xl">@Eniola</p>                  
+                <div class="flex flex-row sm:py-1 items-center">
+                  <p class="font-semibold text:base sm:text-xl">@Eniola</p>
                 </div>
-                <p class="pr-2 text-sm text-slate-500">Today - 3:48AM</p>
+                <p class="pr-2 text-xs sm:text-sm text-slate-500">Today - 3:48AM</p>
               </div>
             </div>
             <button
-              class="flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
+              class="sm:flex hidden bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
               type="button">
               <!-- &#8942; -->
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1086,35 +1104,36 @@
 
           <!----------- Post Content --------------->
           <div class="flex px-5 flex-col justify-center">
-            <h1 class="text-l font-semibold">
+            <h1 class="text-sm sm:text-lg font-semibold">
               Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells Nigerians...
             </h1>
             <div class="flex flex-row my-2 items-center">
-              <p class="text-primary text-green-600 font-semibold text-sm">Security</p>
-              <span class="text-xl text-primary px-2">&bull;</span>
-              <p class="pr-2 text-sm text-slate-500">Read more...</p>
+              <p class="text-primary text-green-600 font-semibold text-xs sm:text-sm">Security</p>
+              <span class="text-xl text-green-600 px-2">&bull;</span>
+              <p class="pr-2 text-xs sm:text-sm text-slate-500">Read more...</p>
             </div>
           </div>
 
           <!--------- Posts reactions -------------->
-          <div class="flex flex-row border-t">
+          <div class="flex flex-row justify-around border-t w-full">
 
             <!-- Likes reaction -->
-            <div class="flex flex-row items-center gap-1.5 p-3">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-5 lg:w-6"
-                  src="/assets/icons/thumbs-up.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 433.3k
+            <div class="flex  flex-row items-center gap-1.5 py-3 p-1 sm:p-3">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/thumbs-up.svg" alt="thumbs up icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 433.3k
                 <span class="hidden lg:inline text-primary ml-1 text-primary">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Likes </p>
-              </p>
             </div>
             
             <!-- Comments reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6"
-                  src="/assets/icons/message-square.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 1280
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/message-square.svg" alt="message icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 1280
                 <span class=" hidden lg:inline text-primary ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Comments </p>
@@ -1122,10 +1141,11 @@
             </div>
             
             <!-- Shares reaction -->
-            <div class="flex flex-row items-center gap-1.5">
-              <button class="bg-gray-100 p-2 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/share.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex  flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/share.svg" alt="share icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Shares </p>
@@ -1133,10 +1153,11 @@
             </div>
 
             <!-- Views reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/eye.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/eye.svg" alt="eye icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Views </p>
@@ -1157,19 +1178,19 @@
 
           <!--------- User Profile ------------>
           <div class="flex flex-row px-5 py-3">
-            <div class="flex flex-row justify-center">
-              <div class="w-16 h-16 rounded-full">
+            <div class="flex flex-row items-center justify-center">
+              <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full">
                 <img class="rounded-full" src="/assets/Images/segun.jpg" alt="Img">
               </div>
               <div class="flex flex-col mx-3 justify-center">
-                <div class="flex flex-row py-1 items-center">
-                  <p class="font-semibold text-xl">@Eniola</p>                  
+                <div class="flex flex-row sm:py-1 items-center">
+                  <p class="font-semibold text:base sm:text-xl">@Eniola</p>
                 </div>
-                <p class="pr-2 text-sm text-slate-500">Today - 3:48AM</p>
+                <p class="pr-2 text-xs sm:text-sm text-slate-500">Today - 3:48AM</p>
               </div>
             </div>
             <button
-              class="flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
+              class="sm:flex hidden bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
               type="button">
               <!-- &#8942; -->
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1191,35 +1212,36 @@
 
           <!----------- Post Content --------------->
           <div class="flex px-5 flex-col justify-center">
-            <h1 class="text-l font-semibold">
+            <h1 class="text-sm sm:text-lg font-semibold">
               Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells Nigerians...
             </h1>
             <div class="flex flex-row my-2 items-center">
-              <p class="text-primary text-green-600 font-semibold text-sm">Security</p>
-              <span class="text-xl text-primary px-2">&bull;</span>
-              <p class="pr-2 text-sm text-slate-500">Read more...</p>
+              <p class="text-primary text-green-600 font-semibold text-xs sm:text-sm">Security</p>
+              <span class="text-xl text-green-600 px-2">&bull;</span>
+              <p class="pr-2 text-xs sm:text-sm text-slate-500">Read more...</p>
             </div>
           </div>
 
           <!--------- Posts reactions -------------->
-          <div class="flex flex-row border-t">
+          <div class="flex flex-row justify-around border-t w-full">
 
             <!-- Likes reaction -->
-            <div class="flex flex-row items-center gap-1.5 p-3">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-5 lg:w-6"
-                  src="/assets/icons/thumbs-up.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 433.3k
+            <div class="flex  flex-row items-center gap-1.5 py-3 p-1 sm:p-3">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/thumbs-up.svg" alt="thumbs up icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 433.3k
                 <span class="hidden lg:inline text-primary ml-1 text-primary">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Likes </p>
-              </p>
             </div>
             
             <!-- Comments reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6"
-                  src="/assets/icons/message-square.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 1280
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/message-square.svg" alt="message icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 1280
                 <span class=" hidden lg:inline text-primary ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Comments </p>
@@ -1227,10 +1249,11 @@
             </div>
             
             <!-- Shares reaction -->
-            <div class="flex flex-row items-center gap-1.5">
-              <button class="bg-gray-100 p-2 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/share.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex  flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/share.svg" alt="share icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Shares </p>
@@ -1238,10 +1261,11 @@
             </div>
 
             <!-- Views reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/eye.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/eye.svg" alt="eye icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Views </p>
@@ -1262,19 +1286,19 @@
 
           <!--------- User Profile ------------>
           <div class="flex flex-row px-5 py-3">
-            <div class="flex flex-row justify-center">
-              <div class="w-16 h-16 rounded-full">
+            <div class="flex flex-row items-center justify-center">
+              <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full">
                 <img class="rounded-full" src="/assets/Images/segun.jpg" alt="Img">
               </div>
               <div class="flex flex-col mx-3 justify-center">
-                <div class="flex flex-row py-1 items-center">
-                  <p class="font-semibold text-xl">@Eniola</p>                  
+                <div class="flex flex-row sm:py-1 items-center">
+                  <p class="font-semibold text:base sm:text-xl">@Eniola</p>
                 </div>
-                <p class="pr-2 text-sm text-slate-500">Today - 3:48AM</p>
+                <p class="pr-2 text-xs sm:text-sm text-slate-500">Today - 3:48AM</p>
               </div>
             </div>
             <button
-              class="flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
+              class="sm:flex hidden bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
               type="button">
               <!-- &#8942; -->
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1296,35 +1320,36 @@
 
           <!----------- Post Content --------------->
           <div class="flex px-5 flex-col justify-center">
-            <h1 class="text-l font-semibold">
+            <h1 class="text-sm sm:text-lg font-semibold">
               Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells Nigerians...
             </h1>
             <div class="flex flex-row my-2 items-center">
-              <p class="text-primary text-green-600 font-semibold text-sm">Security</p>
-              <span class="text-xl text-primary px-2">&bull;</span>
-              <p class="pr-2 text-sm text-slate-500">Read more...</p>
+              <p class="text-primary text-green-600 font-semibold text-xs sm:text-sm">Security</p>
+              <span class="text-xl text-green-600 px-2">&bull;</span>
+              <p class="pr-2 text-xs sm:text-sm text-slate-500">Read more...</p>
             </div>
           </div>
 
           <!--------- Posts reactions -------------->
-          <div class="flex flex-row border-t">
+          <div class="flex flex-row justify-around border-t w-full">
 
             <!-- Likes reaction -->
-            <div class="flex flex-row items-center gap-1.5 p-3">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-5 lg:w-6"
-                  src="/assets/icons/thumbs-up.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 433.3k
+            <div class="flex  flex-row items-center gap-1.5 py-3 p-1 sm:p-3">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/thumbs-up.svg" alt="thumbs up icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 433.3k
                 <span class="hidden lg:inline text-primary ml-1 text-primary">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Likes </p>
-              </p>
             </div>
             
             <!-- Comments reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6"
-                  src="/assets/icons/message-square.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 1280
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/message-square.svg" alt="message icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 1280
                 <span class=" hidden lg:inline text-primary ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Comments </p>
@@ -1332,10 +1357,11 @@
             </div>
             
             <!-- Shares reaction -->
-            <div class="flex flex-row items-center gap-1.5">
-              <button class="bg-gray-100 p-2 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/share.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex  flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/share.svg" alt="share icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Shares </p>
@@ -1343,10 +1369,11 @@
             </div>
 
             <!-- Views reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/eye.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/eye.svg" alt="eye icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Views </p>
@@ -1367,19 +1394,19 @@
 
           <!--------- User Profile ------------>
           <div class="flex flex-row px-5 py-3">
-            <div class="flex flex-row justify-center">
-              <div class="w-16 h-16 rounded-full">
+            <div class="flex flex-row items-center justify-center">
+              <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full">
                 <img class="rounded-full" src="/assets/Images/segun.jpg" alt="Img">
               </div>
               <div class="flex flex-col mx-3 justify-center">
-                <div class="flex flex-row py-1 items-center">
-                  <p class="font-semibold text-xl">@Eniola</p>                  
+                <div class="flex flex-row sm:py-1 items-center">
+                  <p class="font-semibold text:base sm:text-xl">@Eniola</p>
                 </div>
-                <p class="pr-2 text-sm text-slate-500">Today - 3:48AM</p>
+                <p class="pr-2 text-xs sm:text-sm text-slate-500">Today - 3:48AM</p>
               </div>
             </div>
             <button
-              class="flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
+              class="sm:flex hidden bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
               type="button">
               <!-- &#8942; -->
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1401,35 +1428,36 @@
 
           <!----------- Post Content --------------->
           <div class="flex px-5 flex-col justify-center">
-            <h1 class="text-l font-semibold">
+            <h1 class="text-sm sm:text-lg font-semibold">
               Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells Nigerians...
             </h1>
             <div class="flex flex-row my-2 items-center">
-              <p class="text-primary text-green-600 font-semibold text-sm">Security</p>
-              <span class="text-xl text-primary px-2">&bull;</span>
-              <p class="pr-2 text-sm text-slate-500">Read more...</p>
+              <p class="text-primary text-green-600 font-semibold text-xs sm:text-sm">Security</p>
+              <span class="text-xl text-green-600 px-2">&bull;</span>
+              <p class="pr-2 text-xs sm:text-sm text-slate-500">Read more...</p>
             </div>
           </div>
 
           <!--------- Posts reactions -------------->
-          <div class="flex flex-row border-t">
+          <div class="flex flex-row justify-around border-t w-full">
 
             <!-- Likes reaction -->
-            <div class="flex flex-row items-center gap-1.5 p-3">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-5 lg:w-6"
-                  src="/assets/icons/thumbs-up.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 433.3k
+            <div class="flex  flex-row items-center gap-1.5 py-3 p-1 sm:p-3">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/thumbs-up.svg" alt="thumbs up icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 433.3k
                 <span class="hidden lg:inline text-primary ml-1 text-primary">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Likes </p>
-              </p>
             </div>
             
             <!-- Comments reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6"
-                  src="/assets/icons/message-square.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 1280
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/message-square.svg" alt="message icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 1280
                 <span class=" hidden lg:inline text-primary ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Comments </p>
@@ -1437,10 +1465,11 @@
             </div>
             
             <!-- Shares reaction -->
-            <div class="flex flex-row items-center gap-1.5">
-              <button class="bg-gray-100 p-2 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/share.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex  flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/share.svg" alt="share icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Shares </p>
@@ -1448,10 +1477,11 @@
             </div>
 
             <!-- Views reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/eye.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/eye.svg" alt="eye icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Views </p>
@@ -1472,19 +1502,19 @@
 
           <!--------- User Profile ------------>
           <div class="flex flex-row px-5 py-3">
-            <div class="flex flex-row justify-center">
-              <div class="w-16 h-16 rounded-full">
+            <div class="flex flex-row items-center justify-center">
+              <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full">
                 <img class="rounded-full" src="/assets/Images/segun.jpg" alt="Img">
               </div>
               <div class="flex flex-col mx-3 justify-center">
-                <div class="flex flex-row py-1 items-center">
-                  <p class="font-semibold text-xl">@Eniola</p>                  
+                <div class="flex flex-row sm:py-1 items-center">
+                  <p class="font-semibold text:base sm:text-xl">@Eniola</p>
                 </div>
-                <p class="pr-2 text-sm text-slate-500">Today - 3:48AM</p>
+                <p class="pr-2 text-xs sm:text-sm text-slate-500">Today - 3:48AM</p>
               </div>
             </div>
             <button
-              class="flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
+              class="sm:flex hidden bg-gray-100 items-center justify-center w-10 h-10 rounded-full border border-slate-200 ml-5 ml-auto"
               type="button">
               <!-- &#8942; -->
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1506,35 +1536,36 @@
 
           <!----------- Post Content --------------->
           <div class="flex px-5 flex-col justify-center">
-            <h1 class="text-l font-semibold">
+            <h1 class="text-sm sm:text-lg font-semibold">
               Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells Nigerians...
             </h1>
             <div class="flex flex-row my-2 items-center">
-              <p class="text-primary text-green-600 font-semibold text-sm">Security</p>
-              <span class="text-xl text-primary px-2">&bull;</span>
-              <p class="pr-2 text-sm text-slate-500">Read more...</p>
+              <p class="text-primary text-green-600 font-semibold text-xs sm:text-sm">Security</p>
+              <span class="text-xl text-green-600 px-2">&bull;</span>
+              <p class="pr-2 text-xs sm:text-sm text-slate-500">Read more...</p>
             </div>
           </div>
 
           <!--------- Posts reactions -------------->
-          <div class="flex flex-row border-t">
+          <div class="flex flex-row justify-around border-t w-full">
 
             <!-- Likes reaction -->
-            <div class="flex flex-row items-center gap-1.5 p-3">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-5 lg:w-6"
-                  src="/assets/icons/thumbs-up.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 433.3k
+            <div class="flex  flex-row items-center gap-1.5 py-3 p-1 sm:p-3">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/thumbs-up.svg" alt="thumbs up icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 433.3k
                 <span class="hidden lg:inline text-primary ml-1 text-primary">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Likes </p>
-              </p>
             </div>
             
             <!-- Comments reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6"
-                  src="/assets/icons/message-square.svg" alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 1280
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/message-square.svg" alt="message icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 1280
                 <span class=" hidden lg:inline text-primary ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Comments </p>
@@ -1542,10 +1573,11 @@
             </div>
             
             <!-- Shares reaction -->
-            <div class="flex flex-row items-center gap-1.5">
-              <button class="bg-gray-100 p-2 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/share.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex  flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/share.svg" alt="share icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Shares </p>
@@ -1553,10 +1585,11 @@
             </div>
 
             <!-- Views reaction -->
-            <div class="flex flex-row items-center p-3 gap-1.5">
-              <button class="bg-gray-100 p-1.5 lg:p-3 rounded-full"><img class="w-4 lg:w-6" src="/assets/icons/eye.svg"
-                  alt="Thumbs up"></button>
-              <p class="font-semibold flex"> 13.3k
+            <div class="flex flex-row items-center p-1 py-3 sm:p-3 gap-1.5">
+              <button class="bg-gray-100 rounded-full sm:w-9 sm:h-9 w-5 h-5 flex justify-center items-center">
+                <img src="../../assets/icons/eye.svg" alt="eye icon" class="h-4 w-4 sm:w-6 sm:h-6">
+              </button>
+              <p class="font-semibold text-xs sm:text-base flex"> 13.3k
                 <span class="text-primary hidden lg:inline ml-1">&bull; </span>
               </p>
               <p class="text-gray-400 hidden lg:inline"> Views </p>
