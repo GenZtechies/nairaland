@@ -1,5 +1,6 @@
 {
     "liveServer.settings.CustomBrowser": "chrome",
     "liveServer.settings.useBrowserPreview": false,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "liveServer.settings.port": 5501
 }
