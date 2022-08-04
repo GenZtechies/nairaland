@@ -1,64 +1,102 @@
 <!-- Desktop view -->
-<nav class=" hidden bg-white md:flex px-12 py- 8 h-20 justify-between items-center w-full">
-    <!-- Left Side -->
-    <div class="flex space-x-14 items-center">
-        <!-- brand -->
-        <div>
-            <h1 class="text-2xl font-bold text-primary">Nairaland Forum</h1>
-        </div>
-
-        <!-- search -->
-        <div class="py-3 px-4 flex rounded-lg border border-[#A8ABBD] w-64">
-            <input type="text" placeholder="Search anything..." class="w-full outline-none" />
-            <div include-component="../../assets/icons/Search.svg"></div>
-        </div>
-
-        <!-- nav links -->
-        <div>
-            <ul class="list-none flex space-x-7">
-                <!-- active tab -->
-                <li class="relative h-20 flex flex-col justify-center">
-                    <div class="text-primary font-bold">Trending</div>
-                    <div class="bg-primary h-1 w-full absolute bottom-0"></div>
-                </li>
-
-                <!-- inactive tabs -->
-                <li class="relative h-20 flex flex-col justify-center">
-                    <div>Recent</div>
-                    <div class="h-1 w-full absolute bottom-0"></div>
-                </li>
-                <li class="relative h-20 flex flex-col justify-center">
-                    <div>Latest</div>
-                    <div class="h-1 w-full absolute bottom-0"></div>
-                </li>
-            </ul>
-        </div>
+<nav
+  class="hidden bg-white md:flex px-12 py- 8 h-20 justify-between items-center w-full"
+>
+  <!-- Left Side -->
+  <div class="flex space-x-14 items-center">
+    <!-- brand -->
+    <div>
+      <h1 class="text-2xl font-bold text-primary">Nairaland Forum</h1>
     </div>
 
-    <!-- Right Side -->
-    <div class="flex space-x-4">
-        <button class="text-primary py-3 px-6 h-max">Sign in</button>
-        <button class="bg-primary opacity-5 text-white py-3 px-9 rounded-lg h-max">
-            Join Nairaland
-        </button>
+    <!-- search -->
+    <div class="py-3 px-4 flex rounded-lg border border-[#A8ABBD] w-64">
+      <input
+        type="text"
+        placeholder="Search anything..."
+        class="w-full outline-none"
+      />
+      <div include-component="../../assets/icons/Search.svg"></div>
     </div>
+
+    <!-- nav links -->
+    <div>
+      <ul class="list-none flex space-x-7">
+        <!-- active tab -->
+        <li class="relative h-20 flex flex-col justify-center">
+          <div class="text-primary font-bold">Trending</div>
+          <div class="bg-primary h-1 w-full absolute bottom-0"></div>
+        </li>
+
+        <!-- inactive tabs -->
+        <li class="relative h-20 flex flex-col justify-center">
+          <div>Recent</div>
+          <div class="h-1 w-full absolute bottom-0"></div>
+        </li>
+        <li class="relative h-20 flex flex-col justify-center">
+          <div>Latest</div>
+          <div class="h-1 w-full absolute bottom-0"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Right Side -->
+  <div class="flex space-x-4">
+    <button class="text-primary py-3 px-6 h-max">Sign in</button>
+    <button class="bg-primary opacity-5 text-white py-3 px-9 rounded-lg h-max">
+      Join Nairaland
+    </button>
+  </div>
 </nav>
 
 <!-- Mobile view -->
-<nav class="md:hidden flex flex-row bg-white items-center px-4 pt-8 my-2 h-35 md:mx-auto border border-solid font-primary">
-    <h1 class="flex-auto text-2xl py-2 mb-3 font-normal text-primary font-bold">
-        Nairaland Forum
-    </h1>
-    <div class="flex flex-row items-center grow justify-around">
-        <button class="h-35px w-105px py-2 mb-3 px-8 bg-[#EAF1EF] rounded-lg font-normal text-[#0B5B43] text-[12px]">Sign In</button>
-        <button class="flex-none flex items-center justify-center mb-2 w-10 h-10 rounded-full text-slate-300" type="button"
-            aria-label="More">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M27.6667 16H9" stroke="black" stroke-width="1.4" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                <path d="M28 8H4" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M28 24H4" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </button>
-    </div>
+<nav
+  class="md:hidden flex flex-row bg-white items-center px-4 pt-8 h-35 md:mx-auto border border-solid font-primary"
+>
+  <h1 class="flex-auto text-2xl py-2 mb-3 font-normal text-primary font-bold">
+    Nairaland Forum
+  </h1>
+  <div class="flex flex-row items-center grow justify-around">
+    <button
+      class="h-35px w-105px py-2 mb-3 px-8 bg-[#EAF1EF] rounded-lg font-normal text-[#0B5B43] text-[12px]"
+    >
+      Sign In
+    </button>
+    <button
+      class="flex-none flex items-center justify-center mb-2 w-10 h-10 rounded-full text-slate-300"
+      type="button"
+      aria-label="More"
+    >
+      <svg
+        width="32"
+        height="32"
+        viewBox="0 0 32 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M27.6667 16H9"
+          stroke="black"
+          stroke-width="1.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M28 8H4"
+          stroke="black"
+          stroke-width="1.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M28 24H4"
+          stroke="black"
+          stroke-width="1.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+  </div>
 </nav>
