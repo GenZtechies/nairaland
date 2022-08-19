@@ -2,251 +2,1422 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>User profile screen 3</title>
+    <title>User profile screen 2</title>
 
-  <!-- DO NOT TOUCH ==== FROM HERE -->
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <script src="https://cdn.tailwindcss.com/"></script>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <!-- DO NOT TOUCH ==== TO HERE -->
+    <!-- DO NOT TOUCH ==== FROM HERE -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- DO NOT TOUCH ==== TO HERE -->
 </head>
 
 <body class="w-full bg-gray-100">
 
-  <!-- Start your code here -->
-  <!-- Header section -->
-  <header class="hidden lg:inline-block w-full bg-white"
-    include-component="/components/navbar-desktop/navbar-desktop-default.html"></header>
-  <header class="w-screen inline-block lg:hidden bg-white"
-    include-component="/components/mobile-navbar/mobile-navbar.html">
-  </header>
+    <!-- Start your code here -->
+    <!-- Header section -->
+    <header class="hidden lg:inline-block w-full bg-white"
+        include-component="/components/navbar-desktop/navbar-desktop-default.html"></header>
+    <header class="w-screen inline-block lg:hidden bg-white"
+        include-component="/components/navbar-desktop/navbar-desktop-default.html">
+    </header>
 
-  <!-- Mobile green background space -->
-  <div class="lg:hidden h-40 bg-primary flex justify-between px-4">
-    <img class="w-8" src="/assets/icons/arrow-left.svg" alt="Arrow left">
-    <img class="w-8" src="/assets/icons/ellipsis-right.svg" alt="Arrow left">
-  </div>
-
-  <!-- Main body  -->
-  <main class="mx-4 lg:mx-24">
-    <section class="hidden lg:inline-block py-4">
-      <p class="text-gray-500">Nairaland <span class="text-black font-bold"> > </span> <span
-          class="text-primary font-semibold">Oluwaseun's
-          profile</span></p>
-    </section>
-
-    <section>
-      <div>
-        <img class="hidden lg:inline-block w-full" src="/assets/Images/cover.svg" alt="Green background-img">
-        <img class="h-24 lg:h-32 w-24 lg:w-32 rounded-full lg:ml-4 -mt-8 lg:mt-[-100px]"
-          src="/assets/Images/Rectangle 23.png" alt="Oluwaseun face" />
-      </div>
-      <!-- User Profile container -->
-      <div class="flex flex-col lg:flex-row w-full justify-between lg:pr-24">
-        <!-- User Profile details -->
-        <div>
-          <p class="font-semibold text-base">@SeunOsewa</p>
-          <img src="/assets/icons/verified.svg" alt="Verified">
-          <p class="w-full lg:w-2/3 text-gray-600 pb-1">A billionaire in the future, not by my will but by he that
-            created me</p>
-          <!-- Followers and following -->
-          <div class="flex gap-4">
-            <div class="flex gap-1">
-              <p class="font-bold"> 12.3k
-                <span class=" text-primary">&bull; </span>
-              </p>
-              <p class="text-gray-400"> Followers </p>
-            </div>
-            <div class="flex gap-1">
-              <p class="font-bold"> 356
-                <span class="lg:inline text-primary">&bull; </span>
-              </p>
-              <p class="text-gray-400"> Following </p>
-            </div>
-          </div>
-        </div>
-        <!-- Social media icons -->
-        <div class="flex justify-between">
-          <div class="flex w-8 gap-4 cursor-pointer mt-2">
-            <img src="/assets/icons/instagram-on-profile.svg" alt="Black Instagram icon">
-            <img src="/assets/icons/linkedin-for-profile.svg" alt="Blue Linkedin">
-            <img src="/assets/icons/twitter-for-profile.svg" alt="Twitter icon">
-          </div>
-          <!-- Notification bell -->
-          <div>
-            <img class="lg:hidden mt-3 rounded-full cursor-pointer" src="/assets/icons/bell-for-profile.svg"
-              alt="Bell svg">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- User post and following container-->
-    <section>
-      <!-- Tabs for User post and following -->
-      <div>
-        <ul class="list-none flex gap-3 lg:gap-6 text-gray-500 text-sm lg:text-base">
-          <!-- inactive tabs -->
-          <li class="relative h-20 flex flex-col justify-center cursor-pointer">
-            <div>All Topics</div>
-            <div class="h-1 w-full absolute bottom-0"></div>
+    <nav class="flex flex-row items-center bg-primary px-4">
+        <ul class="flex flex-row min-h-fit space-x-5 py-4">
+          <li>
+            <a href="#" class="py-4 text-white hover:border-b-2 hover:font-semibold">Trending</a>
           </li>
-          <li class="relative h-20 flex flex-col justify-center cursor-pointer">
-            <div>Followers</div>
-            <div class="h-1 w-full absolute bottom-0"></div>
+          <li>
+            <a href="#" class="text-white py-4 hover:border-b-2 hover:font-semibold">Recent</a>
           </li>
-          <!-- active tab -->
-          <li class="relative h-20 flex flex-col justify-center cursor-pointer">
-            <div class="text-primary font-semibold">Following</div>
-            <div class="bg-primary h-1 w-full absolute bottom-0"></div>
-          </li>
-          <!-- Inactive tab continues -->
-          <li class="relative h-20 flex flex-col justify-center cursor-pointer">
-            <div>Thread & Replies</div>
-            <div class="h-1 w-full absolute bottom-0"></div>
+          <li>
+            <a href="#" class="text-white py-4 hover:border-b-2 hover:font-semibold">New</a>
           </li>
         </ul>
-      </div>
-      <hr>
-
-      <!-- Body container for post and statistics -->
-      <div class="flex gap-3 pt-5 pb-24">
-        <div class="col-span-2 w-full">
-          <div class="bg-white rounded-lg h-full p-5">
-            <!-- View post container -->
-            <div class="bg-gray-100 rounded-md h-full flex flex-col items-center justify-center p-10">
-              <!-- Smiley face -->
-              <img class="lg:hidden" src="/assets/icons/smiley-face.svg" alt="Smiley face">
-              <!-- Text to show -->
-              <p class="font-semibold text-base lg:text-2xl text-center mt-4">Hi
-                there, you need to be logged in to see those following @SeunOsewa</p>
-              <div class="mt-10 mr-4 hidden lg:inline-block">
-                <button
-                  class="rounded-lg w-60 h-12 mx-2 text-white cursor-pointer hover:scale-105 ease-in-out duration-300 bg-primary">Join
-                  Nairaland
-                </button>
-              </div>
-              <div class="mt-10 mr-4 lg:hidden">
-                <button
-                  class="rounded-lg w-60 h-12 mx-2 text-white cursor-pointer hover:scale-105 ease-in-out duration-300 bg-primary">Log
-                  in to Nairaland to view
-                </button>
-              </div>
-            </div>
-          </div>
+        <span class="grow"></span>
+        <div class="flex flex-row border-l border-slate-300">
+          <button class="flex-none flex items-center justify-center w-10 h-10 rounded-full text-slate-300" type="button"
+            aria-label="More">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.7824 0.666992C13.2574 0.666992 16.8974 4.30699 16.8974 8.78199C16.8974 10.8933 16.0872 12.8189 14.7613 
+                14.2641L17.3702 16.8676C17.6144 17.1117 17.6152 17.5067 17.3711 17.7509C17.2494 17.8742 17.0886 17.9351 16.9286 
+                17.9351C16.7694 17.9351 16.6094 17.8742 16.4869 17.7526L13.8464 15.1195C12.4575 16.2319 10.6963 16.8978 8.7824 
+                16.8978C4.3074 16.8978 0.666565 13.257 0.666565 8.78199C0.666565 4.30699 4.3074 0.666992 8.7824 0.666992ZM8.7824 
+                1.91699C4.99656 1.91699 1.91656 4.99616 1.91656 8.78199C1.91656 12.5678 4.99656 15.6478 8.7824 15.6478C12.5674 
+                15.6478 15.6474 12.5678 15.6474 8.78199C15.6474 4.99616 12.5674 1.91699 8.7824 1.91699Z"
+                fill="white" />
+            </svg>
+          </button>
         </div>
+      </nav>
 
-        <!-- View statistics of user-->
-        <div class="hidden lg:inline-block bg-white rounded-lg h-full p-5 space-y-5">
-          <p class="text-lg mb-10">Oluwaseun’s Stats</p>
-          <div class="flex flex-row items-center space-x-3">
-            <a class="hover:scale-110 cursor-pointer transition-all duration-300">
-              <button
-                class="flex-none flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full text-slate-300 border border-slate-200"
-                type="button" aria-label="More">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M10.9997 20.1663C16.0623 20.1663 20.1663 16.0623 20.1663 10.9997C20.1663 5.93706 16.0623 1.83301 10.9997 1.83301C5.93706 1.83301 1.83301 5.93706 1.83301 10.9997C1.83301 16.0623 5.93706 20.1663 10.9997 20.1663Z"
-                    stroke="#149F75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M11 5.5V11L14.6667 12.8333" stroke="#149F75" stroke-width="1.4" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-            </a>
-            <div>
-              <p class="text-slate-400">Last Seen</p>
-              <p class="">Today - 3:14pm</p>
-            </div>
-          </div>
-          <div class="flex flex-row items-center space-x-3">
-            <a class="hover:scale-110 cursor-pointer transition-all duration-300">
-              <button
-                class="flex-none flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full text-slate-300 border border-slate-200"
-                type="button" aria-label="More">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M19.25 9.16699C19.25 15.5837 11 21.0837 11 21.0837C11 21.0837 2.75 15.5837 2.75 9.16699C2.75 6.97896 3.61919 4.88054 5.16637 3.33336C6.71354 1.78619 8.81196 0.916992 11 0.916992C13.188 0.916992 15.2865 1.78619 16.8336 3.33336C18.3808 4.88054 19.25 6.97896 19.25 9.16699Z"
-                    stroke="#149F75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M11 11.917C12.5188 11.917 13.75 10.6858 13.75 9.16699C13.75 7.64821 12.5188 6.41699 11 6.41699C9.48122 6.41699 8.25 7.64821 8.25 9.16699C8.25 10.6858 9.48122 11.917 11 11.917Z"
-                    stroke="#149F75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </button>
-            </a>
-            <div>
-              <p class="text-slate-400">Location</p>
-              <p class="">Ikeja, Lagos, Nigeria</p>
-            </div>
-          </div>
-          <div class="flex flex-row items-center space-x-3">
-            <a class="hover:scale-110 cursor-pointer transition-all duration-300">
-              <button
-                class="flex-none flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full text-slate-300 border border-slate-200"
-                type="button" aria-label="More">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M17.4167 3.66699H4.58333C3.57081 3.66699 2.75 4.4878 2.75 5.50033V18.3337C2.75 19.3462 3.57081 20.167 4.58333 20.167H17.4167C18.4292 20.167 19.25 19.3462 19.25 18.3337V5.50033C19.25 4.4878 18.4292 3.66699 17.4167 3.66699Z"
-                    stroke="#149F75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M14.667 1.83301V5.49967" stroke="#149F75" stroke-width="1.4" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path d="M7.33301 1.83301V5.49967" stroke="#149F75" stroke-width="1.4" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path d="M2.75 9.16699H19.25" stroke="#149F75" stroke-width="1.4" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-            </a>
-            <div>
-              <p class="text-slate-400">Date registered on Nairaland</p>
-              <p class="">Sept. 5, 2008</p>
-            </div>
-          </div>
-          <div class="flex flex-row items-center space-x-3">
-            <a class="hover:scale-110 cursor-pointer transition-all duration-300">
-              <button
-                class="flex-none flex bg-gray-100 items-center justify-center w-10 h-10 rounded-full text-slate-300 border border-slate-200"
-                type="button" aria-label="More">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M11 7.33301C12.5188 7.33301 13.75 6.10179 13.75 4.58301C13.75 3.06422 12.5188 1.83301 11 1.83301C9.48122 1.83301 8.25 3.06422 8.25 4.58301C8.25 6.10179 9.48122 7.33301 11 7.33301Z"
-                    stroke="#149F75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M11 20.1663V7.33301" stroke="#149F75" stroke-width="1.4" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                  <path
-                    d="M4.58301 11H1.83301C1.83301 13.4312 2.79878 15.7627 4.51786 17.4818C6.23695 19.2009 8.56852 20.1667 10.9997 20.1667C13.4308 20.1667 15.7624 19.2009 17.4815 17.4818C19.2006 15.7627 20.1663 13.4312 20.1663 11H17.4163"
-                    stroke="#149F75" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </button>
-            </a>
-            <div>
-              <p class="text-slate-400">Gender</p>
-              <p class="">Male</p>
-            </div>
-          </div>
-          <div>
-            <p class="text-slate-400">Signature</p>
-            <p>
-              Take things slow and steady man, they don’t rush success neither
-              do they rush greatness.
-            </p>
-          </div>
-        </div>
-        <!-- Statistics ends here -->
-      </div>
-    </section>
-  </main>
+    <!-- Mobile green background space -->
+    <div class="lg:hidden h-40 bg-primary flex justify-between px-4">
+        <img class="w-8" src="/assets/icons/arrow-left.svg" alt="Arrow left">
+        <img class="w-8" src="/assets/icons/ellipsis-right.svg" alt="Arrow left">
+    </div>
 
-  <footer class="w-full bg-white" include-component="/components/footer/footer.html" class="absolute"></footer>
-  <!-- End your code here -->
+    <!-- Main body  -->
+    <main class="mx-4 lg:mx-24">
+        <section>
+            <div>
+                <img class="hidden lg:inline-block w-full" src="/assets/Images/cover.svg" alt="Green background-img">
+                <img class="h-24 lg:h-32 w-24 lg:w-32 rounded-full lg:ml-4 -mt-8 lg:mt-[-100px]"
+                    src="/assets/Images/Rectangle 23.png" alt="Oluwaseun face" />
+            </div>
+            <!-- User Profile container -->
+            <div class="flex flex-col lg:flex-row w-full justify-between lg:pr-24">
+                <!-- User Profile details -->
+                <div>
+                    <div class="flex space-x-1 items-center">
+                        <p class="font-semibold text-base">@SeunOsewa</p>
+                        <div class="p-1 bg-primary w-max rounded-full"
+                            include-component="../../assets/icons/verified.svg"></div>
+                    </div>
+
+                    <img src="/assets/icons/verified.svg" alt="Verified">
+                    <p class="w-full lg:w-2/3 text-gray-600 pb-1">A billionaire in the future, not by my will but by he
+                        that created me</p>
+                    <!-- Followers and following -->
+                    <div class="flex gap-4">
+                        <div class="flex gap-1">
+                            <p class="font-bold"> 12.3k
+                                <span class=" text-primary">&bull; </span>
+                            </p>
+                            <p class="text-gray-400"> Followers </p>
+                        </div>
+                        <div class="flex gap-1">
+                            <p class="font-bold"> 356
+                                <span class="lg:inline text-primary">&bull; </span>
+                            </p>
+                            <p class="text-gray-400"> Following </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Social media icons -->
+                <div class="flex justify-between">
+                    <div class="flex w-8 gap-4 cursor-pointer mt-2">
+                        <img src="/assets/icons/instagram-on-profile.svg" alt="Black Instagram icon">
+                        <img src="/assets/icons/linkedin-for-profile.svg" alt="Blue Linkedin">
+                        <img src="/assets/icons/twitter-for-profile.svg" alt="Twitter icon">
+                    </div>
+                    <!-- Notification bell -->
+                    <div>
+                        <img class="lg:hidden mt-3 rounded-lg cursor-pointer" src="/assets/icons/bell-for-profile.svg"
+                            alt="Bell svg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User post and following container-->
+        <section>
+            <!-- Tabs for User post and following -->
+            <div>
+                <ul class="list-none flex gap-3 lg:gap-4 text-gray-500 text-sm lg:text-base">
+                    <!-- inactive tab -->
+                    <li class="relative h-14 flex flex-col justify-center cursor-pointer">
+                        <div>Profile</div>
+                        <div class="h-1 w-full absolute bottom-0"></div>
+                    </li>
+                    <!-- Inactive tab -->
+                    <li class="relative h-14 flex flex-col justify-center cursor-pointer">
+                        <div>All Topics</div>
+                        <div class="h-1 w-full absolute bottom-0"></div>
+                    </li>
+                    <!-- active tab -->
+                    <li class="relative h-14 flex flex-col justify-center cursor-pointer">
+                        <div class="text-primary font-semibold">Thread & Replies</div>
+                        <div class="bg-primary h-1 w-full absolute bottom-0"></div>
+                    </li>
+                    <!-- Inactive tab -->
+                    <li class="relative h-14 flex flex-col justify-center cursor-pointer">
+                        <div>Followers</div>
+                        <div class="h-1 w-full absolute bottom-0"></div>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+
+            <!-- User Posts -->
+            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                <div class="p-4">
+                    <!-- USER PROFILE -->
+                    <div class="px-2 py-3 border rounded-lg">Help Us Beg Atiku To Allow Southern Presidency...</div>                    
+                        <div class="ml-4 w-0.5 h-6 bg-gray-200"></div>                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 mb-2">
+                            <!-- User Image -->
+                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                <img src="/assets/Images/segun.jpg" alt="user profile"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <!-- User Handle and Time -->
+                            <div>
+                                <div class="flex space-x-1 items-center">
+                                    <p class="">SeunOsewa</p>
+                                    <div class="p-1 bg-primary w-max rounded-full"
+                                        include-component="../../assets/icons/verified.svg"></div>
+                                </div>
+                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Content -->
+                    <div class="my-2">
+                        <h2 class="ztext-lg text-[#4D4D4D]">
+                            A chieftain of the Peoples Democratic Party (PDP), Prince Kassim Afegbua has urged Nigerians appeal to former zoning of the ticket to the South.
+                        </h2>
+                    </div>
+                </div>
+                <!-- STATISTICS MOBILE -->
+                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                    <!-- === Likes === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/thumbs-up.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">433.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                    </div>
+
+                    <!-- === Comments === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/message-square.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">1280</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Posts -->
+            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                <div class="p-4">
+                    <!-- USER PROFILE -->
+                    <div class="px-2 py-3 border rounded-lg">Help Us Beg Atiku To Allow Southern Presidency...</div>                    
+                        <div class="ml-4 w-0.5 h-6 bg-gray-200"></div>                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 mb-2">
+                            <!-- User Image -->
+                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                <img src="/assets/Images/segun.jpg" alt="user profile"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <!-- User Handle and Time -->
+                            <div>
+                                <div class="flex space-x-1 items-center">
+                                    <p class="">SeunOsewa</p>
+                                    <div class="p-1 bg-primary w-max rounded-full"
+                                        include-component="../../assets/icons/verified.svg"></div>
+                                </div>
+                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Content -->
+                    <div class="my-2">
+                        <h2 class="ztext-lg text-[#4D4D4D]">
+                            A chieftain of the Peoples Democratic Party (PDP), Prince Kassim Afegbua has urged Nigerians appeal to former zoning of the ticket to the South.
+                        </h2>
+                    </div>
+                </div>
+                <!-- STATISTICS MOBILE -->
+                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                    <!-- === Likes === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/thumbs-up.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">433.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                    </div>
+
+                    <!-- === Comments === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/message-square.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">1280</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Posts -->
+            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                <div class="p-4">
+                    <!-- USER PROFILE -->
+                    <div class="px-2 py-3 border rounded-lg">Help Us Beg Atiku To Allow Southern Presidency...</div>                    
+                        <div class="ml-4 w-0.5 h-6 bg-gray-200"></div>                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 mb-2">
+                            <!-- User Image -->
+                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                <img src="/assets/Images/segun.jpg" alt="user profile"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <!-- User Handle and Time -->
+                            <div>
+                                <div class="flex space-x-1 items-center">
+                                    <p class="">SeunOsewa</p>
+                                    <div class="p-1 bg-primary w-max rounded-full"
+                                        include-component="../../assets/icons/verified.svg"></div>
+                                </div>
+                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Content -->
+                    <div class="my-2">
+                        <h2 class="ztext-lg text-[#4D4D4D]">
+                            A chieftain of the Peoples Democratic Party (PDP), Prince Kassim Afegbua has urged Nigerians appeal to former zoning of the ticket to the South.
+                        </h2>
+                    </div>
+                </div>
+                <!-- STATISTICS MOBILE -->
+                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                    <!-- === Likes === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/thumbs-up.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">433.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                    </div>
+
+                    <!-- === Comments === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/message-square.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">1280</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Posts -->
+            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                <div class="p-4">
+                    <!-- USER PROFILE -->
+                    <div class="px-2 py-3 border rounded-lg">Help Us Beg Atiku To Allow Southern Presidency...</div>                    
+                        <div class="ml-4 w-0.5 h-6 bg-gray-200"></div>                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 mb-2">
+                            <!-- User Image -->
+                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                <img src="/assets/Images/segun.jpg" alt="user profile"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <!-- User Handle and Time -->
+                            <div>
+                                <div class="flex space-x-1 items-center">
+                                    <p class="">SeunOsewa</p>
+                                    <div class="p-1 bg-primary w-max rounded-full"
+                                        include-component="../../assets/icons/verified.svg"></div>
+                                </div>
+                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Content -->
+                    <div class="my-2">
+                        <h2 class="ztext-lg text-[#4D4D4D]">
+                            A chieftain of the Peoples Democratic Party (PDP), Prince Kassim Afegbua has urged Nigerians appeal to former zoning of the ticket to the South.
+                        </h2>
+                    </div>
+                </div>
+                <!-- STATISTICS MOBILE -->
+                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                    <!-- === Likes === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/thumbs-up.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">433.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                    </div>
+
+                    <!-- === Comments === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/message-square.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">1280</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Posts -->
+            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                <div class="p-4">
+                    <!-- USER PROFILE -->
+                    <div class="px-2 py-3 border rounded-lg">Help Us Beg Atiku To Allow Southern Presidency...</div>                    
+                        <div class="ml-4 w-0.5 h-6 bg-gray-200"></div>                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 mb-2">
+                            <!-- User Image -->
+                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                <img src="/assets/Images/segun.jpg" alt="user profile"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <!-- User Handle and Time -->
+                            <div>
+                                <div class="flex space-x-1 items-center">
+                                    <p class="">SeunOsewa</p>
+                                    <div class="p-1 bg-primary w-max rounded-full"
+                                        include-component="../../assets/icons/verified.svg"></div>
+                                </div>
+                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Content -->
+                    <div class="my-2">
+                        <h2 class="ztext-lg text-[#4D4D4D]">
+                            A chieftain of the Peoples Democratic Party (PDP), Prince Kassim Afegbua has urged Nigerians appeal to former zoning of the ticket to the South.
+                        </h2>
+                    </div>
+                </div>
+                <!-- STATISTICS MOBILE -->
+                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                    <!-- === Likes === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/thumbs-up.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">433.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                    </div>
+
+                    <!-- === Comments === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/message-square.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">1280</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Posts -->
+            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                <div class="p-4">
+                    <!-- USER PROFILE -->
+                    <div class="px-2 py-3 border rounded-lg">Help Us Beg Atiku To Allow Southern Presidency...</div>                    
+                        <div class="ml-4 w-0.5 h-6 bg-gray-200"></div>                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 mb-2">
+                            <!-- User Image -->
+                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                <img src="/assets/Images/segun.jpg" alt="user profile"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <!-- User Handle and Time -->
+                            <div>
+                                <div class="flex space-x-1 items-center">
+                                    <p class="">SeunOsewa</p>
+                                    <div class="p-1 bg-primary w-max rounded-full"
+                                        include-component="../../assets/icons/verified.svg"></div>
+                                </div>
+                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Content -->
+                    <div class="my-2">
+                        <h2 class="ztext-lg text-[#4D4D4D]">
+                            A chieftain of the Peoples Democratic Party (PDP), Prince Kassim Afegbua has urged Nigerians appeal to former zoning of the ticket to the South.
+                        </h2>
+                    </div>
+                </div>
+                <!-- STATISTICS MOBILE -->
+                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                    <!-- === Likes === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/thumbs-up.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">433.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                    </div>
+
+                    <!-- === Comments === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/message-square.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">1280</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Posts -->
+            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                <div class="p-4">
+                    <!-- USER PROFILE -->
+                    <div class="px-2 py-3 border rounded-lg">Help Us Beg Atiku To Allow Southern Presidency...</div>                    
+                        <div class="ml-4 w-0.5 h-6 bg-gray-200"></div>                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 mb-2">
+                            <!-- User Image -->
+                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                <img src="/assets/Images/segun.jpg" alt="user profile"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <!-- User Handle and Time -->
+                            <div>
+                                <div class="flex space-x-1 items-center">
+                                    <p class="">SeunOsewa</p>
+                                    <div class="p-1 bg-primary w-max rounded-full"
+                                        include-component="../../assets/icons/verified.svg"></div>
+                                </div>
+                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Content -->
+                    <div class="my-2">
+                        <h2 class="ztext-lg text-[#4D4D4D]">
+                            A chieftain of the Peoples Democratic Party (PDP), Prince Kassim Afegbua has urged Nigerians appeal to former zoning of the ticket to the South.
+                        </h2>
+                    </div>
+                </div>
+                <!-- STATISTICS MOBILE -->
+                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                    <!-- === Likes === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/thumbs-up.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">433.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                    </div>
+
+                    <!-- === Comments === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/message-square.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">1280</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Posts -->
+            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                <div class="p-4">
+                    <!-- USER PROFILE -->
+                    <div class="px-2 py-3 border rounded-lg">Help Us Beg Atiku To Allow Southern Presidency...</div>                    
+                        <div class="ml-4 w-0.5 h-6 bg-gray-200"></div>                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 mb-2">
+                            <!-- User Image -->
+                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                <img src="/assets/Images/segun.jpg" alt="user profile"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <!-- User Handle and Time -->
+                            <div>
+                                <div class="flex space-x-1 items-center">
+                                    <p class="">SeunOsewa</p>
+                                    <div class="p-1 bg-primary w-max rounded-full"
+                                        include-component="../../assets/icons/verified.svg"></div>
+                                </div>
+                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Content -->
+                    <div class="my-2">
+                        <h2 class="ztext-lg text-[#4D4D4D]">
+                            A chieftain of the Peoples Democratic Party (PDP), Prince Kassim Afegbua has urged Nigerians appeal to former zoning of the ticket to the South.
+                        </h2>
+                    </div>
+                </div>
+                <!-- STATISTICS MOBILE -->
+                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                    <!-- === Likes === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/thumbs-up.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">433.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                    </div>
+
+                    <!-- === Comments === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/message-square.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">1280</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Posts -->
+            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                <div class="p-4">
+                    <!-- USER PROFILE -->
+                    <div class="px-2 py-3 border rounded-lg">Help Us Beg Atiku To Allow Southern Presidency...</div>                    
+                        <div class="ml-4 w-0.5 h-6 bg-gray-200"></div>                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 mb-2">
+                            <!-- User Image -->
+                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                <img src="/assets/Images/segun.jpg" alt="user profile"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <!-- User Handle and Time -->
+                            <div>
+                                <div class="flex space-x-1 items-center">
+                                    <p class="">SeunOsewa</p>
+                                    <div class="p-1 bg-primary w-max rounded-full"
+                                        include-component="../../assets/icons/verified.svg"></div>
+                                </div>
+                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Content -->
+                    <div class="my-2">
+                        <h2 class="ztext-lg text-[#4D4D4D]">
+                            A chieftain of the Peoples Democratic Party (PDP), Prince Kassim Afegbua has urged Nigerians appeal to former zoning of the ticket to the South.
+                        </h2>
+                    </div>
+                </div>
+                <!-- STATISTICS MOBILE -->
+                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                    <!-- === Likes === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/thumbs-up.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">433.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                    </div>
+
+                    <!-- === Comments === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/message-square.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">1280</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Posts -->
+            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                <div class="p-4">
+                    <!-- USER PROFILE -->
+                    <div class="px-2 py-3 border rounded-lg">Help Us Beg Atiku To Allow Southern Presidency...</div>                    
+                        <div class="ml-4 w-0.5 h-6 bg-gray-200"></div>                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 mb-2">
+                            <!-- User Image -->
+                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                <img src="/assets/Images/segun.jpg" alt="user profile"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <!-- User Handle and Time -->
+                            <div>
+                                <div class="flex space-x-1 items-center">
+                                    <p class="">SeunOsewa</p>
+                                    <div class="p-1 bg-primary w-max rounded-full"
+                                        include-component="../../assets/icons/verified.svg"></div>
+                                </div>
+                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Content -->
+                    <div class="my-2">
+                        <h2 class="ztext-lg text-[#4D4D4D]">
+                            A chieftain of the Peoples Democratic Party (PDP), Prince Kassim Afegbua has urged Nigerians appeal to former zoning of the ticket to the South.
+                        </h2>
+                    </div>
+                </div>
+                <!-- STATISTICS MOBILE -->
+                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                    <!-- === Likes === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/thumbs-up.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">433.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                    </div>
+
+                    <!-- === Comments === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/message-square.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">1280</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Posts -->
+            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                <div class="p-4">
+                    <!-- USER PROFILE -->
+                    <div class="px-2 py-3 border rounded-lg">Help Us Beg Atiku To Allow Southern Presidency...</div>                    
+                        <div class="ml-4 w-0.5 h-6 bg-gray-200"></div>                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 mb-2">
+                            <!-- User Image -->
+                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                <img src="/assets/Images/segun.jpg" alt="user profile"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <!-- User Handle and Time -->
+                            <div>
+                                <div class="flex space-x-1 items-center">
+                                    <p class="">SeunOsewa</p>
+                                    <div class="p-1 bg-primary w-max rounded-full"
+                                        include-component="../../assets/icons/verified.svg"></div>
+                                </div>
+                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Content -->
+                    <div class="my-2">
+                        <h2 class="ztext-lg text-[#4D4D4D]">
+                            A chieftain of the Peoples Democratic Party (PDP), Prince Kassim Afegbua has urged Nigerians appeal to former zoning of the ticket to the South.
+                        </h2>
+                    </div>
+                </div>
+                <!-- STATISTICS MOBILE -->
+                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                    <!-- === Likes === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/thumbs-up.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">433.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                    </div>
+
+                    <!-- === Comments === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/message-square.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">1280</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Posts -->
+            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                <div class="p-4">
+                    <!-- USER PROFILE -->
+                    <div class="px-2 py-3 border rounded-lg">Help Us Beg Atiku To Allow Southern Presidency...</div>                    
+                        <div class="ml-4 w-0.5 h-6 bg-gray-200"></div>                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 mb-2">
+                            <!-- User Image -->
+                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                <img src="/assets/Images/segun.jpg" alt="user profile"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <!-- User Handle and Time -->
+                            <div>
+                                <div class="flex space-x-1 items-center">
+                                    <p class="">SeunOsewa</p>
+                                    <div class="p-1 bg-primary w-max rounded-full"
+                                        include-component="../../assets/icons/verified.svg"></div>
+                                </div>
+                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Content -->
+                    <div class="my-2">
+                        <h2 class="ztext-lg text-[#4D4D4D]">
+                            A chieftain of the Peoples Democratic Party (PDP), Prince Kassim Afegbua has urged Nigerians appeal to former zoning of the ticket to the South.
+                        </h2>
+                    </div>
+                </div>
+                <!-- STATISTICS MOBILE -->
+                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                    <!-- === Likes === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/thumbs-up.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">433.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                    </div>
+
+                    <!-- === Comments === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/message-square.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">1280</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Posts -->
+            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                <div class="p-4">
+                    <!-- USER PROFILE -->
+                    <div class="px-2 py-3 border rounded-lg">Help Us Beg Atiku To Allow Southern Presidency...</div>                    
+                        <div class="ml-4 w-0.5 h-6 bg-gray-200"></div>                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 mb-2">
+                            <!-- User Image -->
+                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                <img src="/assets/Images/segun.jpg" alt="user profile"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <!-- User Handle and Time -->
+                            <div>
+                                <div class="flex space-x-1 items-center">
+                                    <p class="">SeunOsewa</p>
+                                    <div class="p-1 bg-primary w-max rounded-full"
+                                        include-component="../../assets/icons/verified.svg"></div>
+                                </div>
+                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Content -->
+                    <div class="my-2">
+                        <h2 class="ztext-lg text-[#4D4D4D]">
+                            A chieftain of the Peoples Democratic Party (PDP), Prince Kassim Afegbua has urged Nigerians appeal to former zoning of the ticket to the South.
+                        </h2>
+                    </div>
+                </div>
+                <!-- STATISTICS MOBILE -->
+                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                    <!-- === Likes === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/thumbs-up.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">433.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                    </div>
+
+                    <!-- === Comments === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/message-square.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">1280</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Posts -->
+            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                <div class="p-4">
+                    <!-- USER PROFILE -->
+                    <div class="px-2 py-3 border rounded-lg">Help Us Beg Atiku To Allow Southern Presidency...</div>                    
+                        <div class="ml-4 w-0.5 h-6 bg-gray-200"></div>                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 mb-2">
+                            <!-- User Image -->
+                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                <img src="/assets/Images/segun.jpg" alt="user profile"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <!-- User Handle and Time -->
+                            <div>
+                                <div class="flex space-x-1 items-center">
+                                    <p class="">SeunOsewa</p>
+                                    <div class="p-1 bg-primary w-max rounded-full"
+                                        include-component="../../assets/icons/verified.svg"></div>
+                                </div>
+                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Content -->
+                    <div class="my-2">
+                        <h2 class="ztext-lg text-[#4D4D4D]">
+                            A chieftain of the Peoples Democratic Party (PDP), Prince Kassim Afegbua has urged Nigerians appeal to former zoning of the ticket to the South.
+                        </h2>
+                    </div>
+                </div>
+                <!-- STATISTICS MOBILE -->
+                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                    <!-- === Likes === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/thumbs-up.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">433.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                    </div>
+
+                    <!-- === Comments === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/message-square.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">1280</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Posts -->
+            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                <div class="p-4">
+                    <!-- USER PROFILE -->
+                    <div class="px-2 py-3 border rounded-lg">Help Us Beg Atiku To Allow Southern Presidency...</div>                    
+                        <div class="ml-4 w-0.5 h-6 bg-gray-200"></div>                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 mb-2">
+                            <!-- User Image -->
+                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                <img src="/assets/Images/segun.jpg" alt="user profile"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <!-- User Handle and Time -->
+                            <div>
+                                <div class="flex space-x-1 items-center">
+                                    <p class="">SeunOsewa</p>
+                                    <div class="p-1 bg-primary w-max rounded-full"
+                                        include-component="../../assets/icons/verified.svg"></div>
+                                </div>
+                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Content -->
+                    <div class="my-2">
+                        <h2 class="ztext-lg text-[#4D4D4D]">
+                            A chieftain of the Peoples Democratic Party (PDP), Prince Kassim Afegbua has urged Nigerians appeal to former zoning of the ticket to the South.
+                        </h2>
+                    </div>
+                </div>
+                <!-- STATISTICS MOBILE -->
+                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                    <!-- === Likes === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/thumbs-up.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">433.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                    </div>
+
+                    <!-- === Comments === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/message-square.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">1280</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Posts -->
+            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                <div class="p-4">
+                    <!-- USER PROFILE -->
+                    <div class="px-2 py-3 border rounded-lg">Help Us Beg Atiku To Allow Southern Presidency...</div>                    
+                        <div class="ml-4 w-0.5 h-6 bg-gray-200"></div>                    
+                    <div class="flex justify-between items-center">
+                        <div class="flex space-x-2 mb-2">
+                            <!-- User Image -->
+                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                <img src="/assets/Images/segun.jpg" alt="user profile"
+                                    class="w-full h-full object-cover" />
+                            </div>
+                            <!-- User Handle and Time -->
+                            <div>
+                                <div class="flex space-x-1 items-center">
+                                    <p class="">SeunOsewa</p>
+                                    <div class="p-1 bg-primary w-max rounded-full"
+                                        include-component="../../assets/icons/verified.svg"></div>
+                                </div>
+                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Post Content -->
+                    <div class="my-2">
+                        <h2 class="ztext-lg text-[#4D4D4D]">
+                            A chieftain of the Peoples Democratic Party (PDP), Prince Kassim Afegbua has urged Nigerians appeal to former zoning of the ticket to the South.
+                        </h2>
+                    </div>
+                </div>
+                <!-- STATISTICS MOBILE -->
+                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                    <!-- === Likes === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/thumbs-up.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">433.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                    </div>
+
+                    <!-- === Comments === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/message-square.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">1280</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+
+                    <!-- === Shares === -->
+                    <div class="flex space-x-1 items-center">
+                        <!-- icon -->
+                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
+                            include-component="../../assets/icons/share.svg"></div>
+                        <!-- stats -->
+                        <p class="text-xs">13.3k</p>
+                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <div class="w-screen" include-component="/components/pagination/pagination.html" class="absolute"></div>
+    <footer class="w-screen bg-white" include-component="/components/footer/footer.html" class="absolute"></footer>
+    <!-- End your code here -->
 
 
-  <!-- DO NOT TOUCH ==== FROM HERE -->
-  <script src="/assets/js/main.js"></script>
-  <!-- DO NOT TOUCH ==== TO HERE -->
+    <!-- DO NOT TOUCH ==== FROM HERE -->
+    <script src="/assets/js/main.js"></script>
+    <!-- DO NOT TOUCH ==== TO HERE -->
 </body>
 
 </html>
