@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/assets/css/main.css" />
     <!-- DO NOT TOUCH ==== TO HERE -->
 
-    <style type="text/tailwindcss">
+    <!-- <style type="text/tailwindcss">
       @layer utilities {
         .nav-link {
           @apply text-white/75 md:text-black cursor-pointer hover:text-white md:hover:text-primary hover:font-bold hover:border-b-4 hover:border-white md:hover:border-primary hover:pb-2;
@@ -26,28 +26,90 @@
           @apply text-white md:text-primary font-bold border-b-4 border-white md:border-primary pb-2;
         }
       }
-    </style>
+    </style> -->
   </head>
 
-  <body>
-    <div
-      include-component="/components/navbar-desktop/navbar-desktop-logged-in.html"
-    ></div>
+  <body class="bg-gray-50">
+    <!-- Header and navbar section -->
+    <!-- Desktop header -->
+    <header class="bg-white hidden md:block md:px-16 flex items-center relative">
+      <nav class="flex h-20 justify-between items-center w-full">
+        <!-- Left Side -->
+        <div class="flex flex-col md:flex-row md:space-x-14 items-center w-full md:w-max">
+          <!-- brand -->
+          <div class="flex md:block items-center w-full justify-between md:w-max px-7 pt-12 pb-5 md:p-0">
+            <h1 class="text-md md:text-2xl font-bold text-primary">Nairaland Forum</h1>
+            <div class="flex md:hidden space-x-5 items-center">
+              <!-- Mobile Join Nairaland Button -->
+              <button class="md:hidden bg-primary text-white px-4 py-2 text-sm rounded-lg">Join
+                Nairaland</button>
+    
+              <!-- Bugger Icon -->
+              <div class="flex flex-col space-y-2 items-end">
+                <div class="bg-black rounded-full w-6 h-0.5"></div>
+                <div class="bg-black rounded-full w-5 h-0.5"></div>
+                <div class="bg-black rounded-full w-6 h-0.5"></div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- search -->
+          <div class="hidden py-3 px-4 md:flex rounded-lg border border-[#A8ABBD] w-64">
+            <input type="text" placeholder="Search anything..." class="w-full outline-none" />
+            <div include-component="../../assets/icons/Search.svg"></div>
+          </div>
+    
+          <!-- nav links -->
+          <div
+            class="bg-primary w-full md:w-max md:bg-transparent flex items-center justify-between md:block pt-2 md:pt-0 px-7">
+            <ul class="list-none flex space-x-7 pt-2">
+              <li class="nav-link nav-link__active cursor-pointer">Trending</li>
+              <li class="nav-link cursor-pointer">Recent</li>
+              <li class="nav-link cursor-pointer">Latest</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Right Side - notification bell + profile image -->
+        <div class="hidden md:flex space-x-4 cursor-pointer">
+          <img src="/assets/icons/bell-with-shadow.svg" alt="Bell with green shadow">
+          <img src="/assets/Images/profileguy-on-glasses.png" alt="Profile guy on glasses">
+        </div>
+      </nav>
+    </header>
+    <!-- ================================ -->
+    <!-- Mobile header -->
+    <header class="w-screen inline-block lg:hidden bg-white"
+      include-component="/components/mobile-navbar/mobile-navbar.html">
+    </header>
+    
+    <!-- Profile name and navs -->
+    <section class="py-4 px-6 lg:px-24">
+      <p class="font-bold text-2xl pb-3">Hey <span class="text-primary"> Oluwaseun!</span></p>
+      <p class="text-gray-500 pb-2">Nairaland <span class="text-black font-bold"> > </span> <span
+          class="text-gray-500">Business <span class="text-black font-bold"> > </span> <span
+            class="text-primary font-semibold">Create New Topic</span></p>
+    </section>
 
-    <div class="flex justify-evenly px-20">
-      <div class="w-1/2">
-        <h2 class="text-3xl">Create a Topic...</h2>
-<div class="flex flex-col my-6">
+    <!-- Main content -->
+    <div class="flex flex-col lg:flex-row justify-evenly px-4 lg:px-20">
+      <!-- Create topic section -->
+      <div class="w-full lg:w-1/2 bg-white p-6 mb-auto">
+        <h2 class="text-3xl pt-6">Create a Topic...</h2>
+        <div class="flex flex-col my-6">
             <label class="font-medium text-green-600 text-xs pb-1" for="label">Topic Subject</label>
-            <input type="password" id="label" class="rounded-md  h-10 px-3 text-black bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary" placeholder="" />
-            <p class="font-light text-green-600 text-[0.6rem] pt-1">Information about the input</p>
+            <input type="password" id="label" class="rounded-md  h-10 px-3 text-black bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary" placeholder="This sapa is not good, what do I..." />
+            <p class="font-semibold text-primary text-xs pt-1">Information about the input</p>
         </div>
+        <!-- Ronaldo, messi and neymar green sections -->
         <div include-component="/components/content2/content2.html"></div>
-                <div class="border mt-6 py-4 border-dashed w-[689px] flex justify-center items-center mx-auto rounded-[8px]">
-https://user-images.githubusercontent.com/20ec-49d6-93e3-615b3b9864cb.png
-        </div>
 
-                 <div class="w-full my-4 px-4 py-4 border-solid border border-green-500 rounded-md h-16 mb-7 flex justify-start">
+        <!-- Input with user image text placeholder -->
+        <div>
+          <input type="text" class="border mt-6 py-4 pl-3 border-dashed w-full flex justify-center items-center mx-auto rounded-[8px] outline-primary" placeholder="https://user-images.githubusercontent.com/20ec-49d6-93e3-615b3b9864cb.png" />
+        </div> 
+
+        <div class="w-full my-4 px-4 py-4 border-solid border border-green-500 rounded-md h-16 mb-7 flex justify-start">
                      <!-- Put the three icons here -->
                      <button class="bg-green-100 rounded-full w-9 h-9 flex justify-center items-center mr-3">
                          <img src="../../assets/icons/picture.svg" alt="" class="h-6 w-6">
@@ -61,6 +123,9 @@ https://user-images.githubusercontent.com/20ec-49d6-93e3-615b3b9864cb.png
                      <button class="bg-green-100 rounded-full w-9 h-9 flex justify-center items-center mr-3">
                          <img src="../../assets/icons/bar-chart-2.svg" alt="" class="h-6 w-6">
                      </button>
+                      <button class="bg-green-100 rounded-full w-9 h-9 flex justify-center items-center mr-3">
+                        <img src="/assets/icons/texticon-with-shadow.svg" alt="" class="h-6 w-6">
+                      </button>
                  </div>
         <div class="flex justify-end py-4 mt-10 mr-4">
           <button
@@ -69,13 +134,13 @@ https://user-images.githubusercontent.com/20ec-49d6-93e3-615b3b9864cb.png
            Submit Post
         </div>
       </div>
-      <div
-        class="w-1/2"
+      <!-- post rules -->
+      <div class="w-full lg:w-1/2 mt-10 lg:mt-0"
         include-component="/components/frame-509/frame-509.html"
       ></div>
     </div>
 
-    <div include-component="/components/footer/footer.html"></div>
+    <div class="bg-white" include-component="/components/footer/footer.html"></div>
 
     <!-- DO NOT TOUCH ==== FROM HERE -->
     <script src="/assets/js/main.js"></script>
