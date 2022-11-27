@@ -1,181 +1,106 @@
 <!DOCTYPE html>
 <html lang="en" class="overflow-x-hidden">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1"
-    />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
 
-    <title>Sign Up</title>
+        <title>Sign Up</title>
 
-    <!-- DO NOT TOUCH ==== FROM HERE -->
-    <link rel="stylesheet" href="/assets/css/main.css" />
-    <script src="https://cdn.tailwindcss.com/"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- DO NOT TOUCH ==== TO HERE -->
-  </head>
+        <!-- DO NOT TOUCH ==== FROM HERE -->
+        <link rel="stylesheet" href="/assets/css/main.css" />
+        <script src="https://cdn.tailwindcss.com/"></script>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+        <!-- DO NOT TOUCH ==== TO HERE -->
+    </head>
 
-  <body class="w-full bg-[#F8F9F6]">
-    <!-- Start your code here -->
-    <!-- HEADER -->
-    <header
-      class="w-full"
-      include-component="/components/navbar-signup/navbar-signup.html"
-    ></header>
-    <!-- BODY -->
-    <main class="md:flex">
-      <!-- Left image -->
-      <div
-        class="self-center md:shrink-0 bg-[url('/assets/Images/Frame583.svg')]mt-8 md:mr-20 w-4/5 md:w-1/2"
-      >
-        <img
-          src="/assets/Images/signup.svg"
-          alt="A smiling lady holding a black phone"
-          class="relative inset-y-44 hidden pb-0 mb-0 md:inline w-100%"
-        />
-      </div>
-      <!-- hero mobile -->
-      <div
-        class="flex md:hidden justify-center my-12 ml-[25px] md:ml-auto mr-0"
-      >
-        <div class="md:w-3/5 w-[98%] m-auto">
-          <h1 class="self-start text-[24px] mb-8 font-medium leading-31px;">
-            Never miss out on
-            <span class="text-[#149F75]">trending topics,</span> gists, and
-            happenings.
-          </h1>
-          <p class="self-end font-normal text-[18px]">Lets get you started!</p>
-        </div>
-        <div class="items-center my-auto md:w-1/4">
-          <img src="/assets/Images/Group.svg" alt="arrow down" />
-        </div>
-      </div>
-
-      <!-- FORM SECTION -->
-      <div
-        class="md:w-1/2 w-full h-full justify-center items-center mx-0 md:mx-6 md:ml-12 md:mt-60"
-      >
-        <!-- Form header -->
-        <h1
-          class="hidden md:block font-medium text-[24px] text-[#0E7153] items-center py-300px leading-8 h-62px w-100px"
-        >
-          Create an Account. It's
-        </h1>
-        <h1
-          class="hidden md:block font-medium text-[24px] text-[#0E7153] items-center py-300px leading-8 h-62px w-100px"
-        >
-          fast & easy
-        </h1>
-
-        <!-- Form -->
-        <form
-          action=""
-          class="md:w-3/5 w-5/6 mt-8 mb-20 justify-center md:mx-0 mb-0 mx-auto"
-        >
-          <!-- Input 1 -->
-          <div class="">
-            <label class="text-[#149F75] text-[16px] font-normal py-2"
-              >Username</label
-            >
-            <div
-              class="flex mt-2 mb-4 rounded-lg justify-between border border-[#A8ABBD] h-50px w-full px-2 py-2 hover:border-primary hover:border-2"
-            >
-              <span class="relative mr-0 w-5 pr-1 self-center text-[#A8ABBD]"
-                >@</span
-              >
-              <input
-                type="text"
-                placeholder=""
-                class="bg-[#F8F9F6] mr-0 focus: outline-none h-8 self-center w-full"
-              />
+    <body class="w-full bg-[#F8F9F6]">
+        <!-- Start your code here -->
+        <!-- HEADER -->
+        <header class="w-full" include-component="/components/navbar-signup/navbar-signup.html"></header>
+        <!-- BODY -->
+        <main class="md:flex">
+            <!-- Left image -->
+            <div class="self-center md:shrink-0 bg-[url('/assets/Images/Frame583.svg')]mt-8 md:mr-20 w-4/5 md:w-1/2">
+                <img src="/assets/Images/signup.svg" alt="A smiling lady holding a black phone" class="relative inset-y-44 hidden pb-0 mb-0 md:inline w-100%" />
             </div>
-          </div>
-          <!-- Input 2 -->
-          <div class="">
-            <label class="text-[#149F75] text-[16px] font-normal py-2"
-              >Email Address</label
-            >
-            <div
-              class="flex mt-2 mb-4 rounded-lg justify-between border border-[#A8ABBD] h-50px px-2 py-2 hover:border-primary hover:border-2"
-            >
-              <input
-                type="email"
-                placeholder=""
-                class="bg-[#F8F9F6] mr-0 focus: outline-none h-8 self-center w-full"
-              />
+            <!-- hero mobile -->
+            <div class="flex md:hidden justify-center my-12 ml-[25px] md:ml-auto mr-0">
+                <div class="md:w-3/5 w-[98%] m-auto">
+                    <h1 class="self-start text-[24px] mb-8 font-medium leading-31px;">
+                        Never miss out on
+                        <span class="text-[#149F75]">trending topics,</span> gists, and happenings.
+                    </h1>
+                    <p class="self-end font-normal text-[18px]">Lets get you started!</p>
+                </div>
+                <div class="items-center my-auto md:w-1/4">
+                    <img src="/assets/Images/Group.svg" alt="arrow down" />
+                </div>
             </div>
-          </div>
-          <!-- Password -->
-          <div class="mr-0">
-            <label class="text-[#149F75] text-[16px] font-normal py-2"
-              >Password</label
-            >
-            <div
-              class="flex mt-2 mb-4 rounded-lg justify-between border border-[#A8ABBD] h-50px px-2 py-2 hover:border-primary hover:border-2"
-            >
-              <input
-                type="password"
-                placeholder=""
-                class="bg-[#F8F9F6] mr-0 focus: outline-none h-8 self-center w-full"
-              />
-              <span class="relative mr-0 self-center shrink-0"
-                ><img src="/assets/icons/eye.svg" alt="hide password"
-              /></span>
-            </div>
-          </div>
-          <!-- Terms and Policies -->
-          <div class="flex mb-8 items-start">
-            <div class="mr-3">
-              <input
-                type="checkbox"
-                class="appearance-none h-6 w-6 rounded-[5px] border-2 border-primary checked:bg-primary checked:object-scale-down checked:content-[url(/assets/icons/tick.svg)]"
-              />
-            </div>
-            <div>
-              <p class="font-medium text-[15px] mt-0">
-                I agree to
-                <a href="#" class="text-primary"
-                  >Nairaland's terms & policies</a
-                >
-              </p>
-            </div>
-          </div>
-          <!-- Submit button -->
-          <div class="">
-            <input
-              type="submit"
-              value="Create Account"
-              class="bg-primary h-12 w-full rounded-lg text-white"
-            />
-          </div>
-          <!-- Already have account -->
-          <div
-            class="hidden md:block text-right my-4 text-[#0E7153] text-[15px] font-bold"
-          >
-            <a href="#">I have an account already</a>
-          </div>
-          <div
-            class="md:hidden text-right my-4 text-[#0E7153] text-[15px] font-bold"
-          >
-            <a href="#">I have an account</a>
-          </div>
-        </form>
-      </div>
-    </main>
-    <!-- FOOTER -->
-    <footer
-      include-component="/components/footer/footer.html"
-      class="absolute w-full"
-    ></footer>
-    <!-- End your code here -->
 
-    <!-- DO NOT TOUCH ==== FROM HERE -->
-    <script src="/assets/js/main.js"></script>
-    <!-- DO NOT TOUCH ==== TO HERE -->
-  </body>
+            <!-- FORM SECTION -->
+            <div class="md:w-1/2 w-full h-full justify-center items-center mx-0 md:mx-6 md:ml-12 md:mt-60">
+                <!-- Form header -->
+                <h1 class="hidden md:block font-medium text-[24px] text-[#0E7153] items-center py-300px leading-8 h-62px w-100px">Create an Account. It's</h1>
+                <h1 class="hidden md:block font-medium text-[24px] text-[#0E7153] items-center py-300px leading-8 h-62px w-100px">fast & easy</h1>
+
+                <!-- Form -->
+                <form action="" class="md:w-3/5 w-5/6 mt-8 mb-20 justify-center md:mx-0 mb-0 mx-auto">
+                    <!-- Input 1 -->
+                    <div class="">
+                        <label class="text-[#149F75] text-[16px] font-normal py-2">Username</label>
+                        <div class="flex mt-2 mb-4 rounded-lg justify-between border border-[#A8ABBD] h-50px w-full px-2 py-2 hover:border-primary hover:border-2">
+                            <span class="relative mr-0 w-5 pr-1 self-center text-[#A8ABBD]">@</span>
+                            <input type="text" placeholder="" class="bg-[#F8F9F6] mr-0 focus: outline-none h-8 self-center w-full" />
+                        </div>
+                    </div>
+                    <!-- Input 2 -->
+                    <div class="">
+                        <label class="text-[#149F75] text-[16px] font-normal py-2">Email Address</label>
+                        <div class="flex mt-2 mb-4 rounded-lg justify-between border border-[#A8ABBD] h-50px px-2 py-2 hover:border-primary hover:border-2">
+                            <input type="email" placeholder="" class="bg-[#F8F9F6] mr-0 focus: outline-none h-8 self-center w-full" />
+                        </div>
+                    </div>
+                    <!-- Password -->
+                    <div class="mr-0">
+                        <label class="text-[#149F75] text-[16px] font-normal py-2">Password</label>
+                        <div class="flex mt-2 mb-4 rounded-lg justify-between border border-[#A8ABBD] h-50px px-2 py-2 hover:border-primary hover:border-2">
+                            <input type="password" placeholder="" class="bg-[#F8F9F6] mr-0 focus: outline-none h-8 self-center w-full" />
+                            <span class="relative mr-0 self-center shrink-0"><img src="/assets/icons/eye.svg" alt="hide password" /></span>
+                        </div>
+                    </div>
+                    <!-- Terms and Policies -->
+                    <div class="flex mb-8 items-start">
+                        <div class="mr-3">
+                            <input type="checkbox" class="appearance-none h-6 w-6 rounded-[5px] border-2 border-primary checked:bg-primary checked:object-scale-down checked:content-[url(/assets/icons/tick.svg)]" />
+                        </div>
+                        <div>
+                            <p class="font-medium text-[15px] mt-0">
+                                I agree to
+                                <a href="#" class="text-primary">Nairaland's terms & policies</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Submit button -->
+                    <div class="">
+                        <input type="submit" value="Create Account" class="bg-primary h-12 w-full rounded-lg text-white" />
+                    </div>
+                    <!-- Already have account -->
+                    <div class="hidden md:block text-right my-4 text-[#0E7153] text-[15px] font-bold">
+                        <a href="#">I have an account already</a>
+                    </div>
+                    <div class="md:hidden text-right my-4 text-[#0E7153] text-[15px] font-bold">
+                        <a href="#">I have an account</a>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer include-component="/components/footer/footer.html" class="absolute w-full"></footer>
+        <!-- End your code here -->
+
+        <!-- DO NOT TOUCH ==== FROM HERE -->
+        <script src="/assets/js/main.js"></script>
+        <!-- DO NOT TOUCH ==== TO HERE -->
+    </body>
 </html>

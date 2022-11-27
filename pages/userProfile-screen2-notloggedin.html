@@ -1,437 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User profile screen 2</title>
 
-    <title>User profile screen 2</title>
+        <!-- DO NOT TOUCH ==== FROM HERE -->
+        <link rel="stylesheet" href="/assets/css/main.css" />
+        <script src="https://cdn.tailwindcss.com/"></script>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+        <!-- DO NOT TOUCH ==== TO HERE -->
+    </head>
 
-    <!-- DO NOT TOUCH ==== FROM HERE -->
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <script src="https://cdn.tailwindcss.com/"></script>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- DO NOT TOUCH ==== TO HERE -->
-</head>
+    <body class="w-full bg-gray-100">
+        <!-- Start your code here -->
+        <!-- Header section -->
+        <header class="hidden lg:inline-block w-full bg-white" include-component="/components/navbar-desktop/navbar-desktop-default.html"></header>
+        <header class="w-screen inline-block lg:hidden bg-white" include-component="/components/navbar-desktop/navbar-desktop-default.html"></header>
 
-<body class="w-full bg-gray-100">
-
-    <!-- Start your code here -->
-    <!-- Header section -->
-    <header class="hidden lg:inline-block w-full bg-white"
-        include-component="/components/navbar-desktop/navbar-desktop-default.html"></header>
-    <header class="w-screen inline-block lg:hidden bg-white"
-        include-component="/components/navbar-desktop/navbar-desktop-default.html">
-    </header>
-
-    <nav class="flex flex-row items-center bg-primary px-4">
-        <ul class="flex flex-row min-h-fit space-x-5 py-4">
-          <li>
-            <a href="#" class="py-4 text-white hover:border-b-2 hover:font-semibold">Trending</a>
-          </li>
-          <li>
-            <a href="#" class="text-white py-4 hover:border-b-2 hover:font-semibold">Recent</a>
-          </li>
-          <li>
-            <a href="#" class="text-white py-4 hover:border-b-2 hover:font-semibold">New</a>
-          </li>
-        </ul>
-        <span class="grow"></span>
-        <div class="flex flex-row border-l border-slate-300">
-          <button class="flex-none flex items-center justify-center w-10 h-10 rounded-full text-slate-300" type="button"
-            aria-label="More">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M8.7824 0.666992C13.2574 0.666992 16.8974 4.30699 16.8974 8.78199C16.8974 10.8933 16.0872 12.8189 14.7613 
+        <nav class="flex flex-row items-center bg-primary px-4">
+            <ul class="flex flex-row min-h-fit space-x-5 py-4">
+                <li>
+                    <a href="#" class="py-4 text-white hover:border-b-2 hover:font-semibold">Trending</a>
+                </li>
+                <li>
+                    <a href="#" class="text-white py-4 hover:border-b-2 hover:font-semibold">Recent</a>
+                </li>
+                <li>
+                    <a href="#" class="text-white py-4 hover:border-b-2 hover:font-semibold">New</a>
+                </li>
+            </ul>
+            <span class="grow"></span>
+            <div class="flex flex-row border-l border-slate-300">
+                <button class="flex-none flex items-center justify-center w-10 h-10 rounded-full text-slate-300" type="button" aria-label="More">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8.7824 0.666992C13.2574 0.666992 16.8974 4.30699 16.8974 8.78199C16.8974 10.8933 16.0872 12.8189 14.7613 
                 14.2641L17.3702 16.8676C17.6144 17.1117 17.6152 17.5067 17.3711 17.7509C17.2494 17.8742 17.0886 17.9351 16.9286 
                 17.9351C16.7694 17.9351 16.6094 17.8742 16.4869 17.7526L13.8464 15.1195C12.4575 16.2319 10.6963 16.8978 8.7824 
                 16.8978C4.3074 16.8978 0.666565 13.257 0.666565 8.78199C0.666565 4.30699 4.3074 0.666992 8.7824 0.666992ZM8.7824 
                 1.91699C4.99656 1.91699 1.91656 4.99616 1.91656 8.78199C1.91656 12.5678 4.99656 15.6478 8.7824 15.6478C12.5674 
                 15.6478 15.6474 12.5678 15.6474 8.78199C15.6474 4.99616 12.5674 1.91699 8.7824 1.91699Z"
-                fill="white" />
-            </svg>
-          </button>
+                            fill="white"
+                        />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile green background space -->
+        <div class="lg:hidden h-40 bg-primary flex justify-between px-4">
+            <img class="w-8" src="/assets/icons/arrow-left.svg" alt="Arrow left" />
+            <img class="w-8" src="/assets/icons/ellipsis-right.svg" alt="Arrow left" />
         </div>
-      </nav>
 
-    <!-- Mobile green background space -->
-    <div class="lg:hidden h-40 bg-primary flex justify-between px-4">
-        <img class="w-8" src="/assets/icons/arrow-left.svg" alt="Arrow left">
-        <img class="w-8" src="/assets/icons/ellipsis-right.svg" alt="Arrow left">
-    </div>
-
-    <!-- Main body  -->
-    <main class="mx-4 lg:mx-24">
-        <section>
-            <div>
-                <img class="hidden lg:inline-block w-full" src="/assets/Images/cover.svg" alt="Green background-img">
-                <img class="h-24 lg:h-32 w-24 lg:w-32 rounded-full lg:ml-4 -mt-8 lg:mt-[-100px]"
-                    src="/assets/Images/Rectangle 23.png" alt="Oluwaseun face" />
-            </div>
-            <!-- User Profile container -->
-            <div class="flex flex-col lg:flex-row w-full justify-between lg:pr-24">
-                <!-- User Profile details -->
+        <!-- Main body  -->
+        <main class="mx-4 lg:mx-24">
+            <section>
                 <div>
-                    <div class="flex space-x-1 items-center">
-                        <p class="font-semibold text-base">@SeunOsewa</p>
-                        <div class="p-1 bg-primary w-max rounded-full"
-                            include-component="../../assets/icons/verified.svg"></div>
-                    </div>
-
-                    <img src="/assets/icons/verified.svg" alt="Verified">
-                    <p class="w-full lg:w-2/3 text-gray-600 pb-1">A billionaire in the future, not by my will but by he
-                        that created me</p>
-                    <!-- Followers and following -->
-                    <div class="flex gap-4">
-                        <div class="flex gap-1">
-                            <p class="font-bold"> 12.3k
-                                <span class=" text-primary">&bull; </span>
-                            </p>
-                            <p class="text-gray-400"> Followers </p>
-                        </div>
-                        <div class="flex gap-1">
-                            <p class="font-bold"> 356
-                                <span class="lg:inline text-primary">&bull; </span>
-                            </p>
-                            <p class="text-gray-400"> Following </p>
-                        </div>
-                    </div>
+                    <img class="hidden lg:inline-block w-full" src="/assets/Images/cover.svg" alt="Green background-img" />
+                    <img class="h-24 lg:h-32 w-24 lg:w-32 rounded-full lg:ml-4 -mt-8 lg:mt-[-100px]" src="/assets/Images/Rectangle 23.png" alt="Oluwaseun face" />
                 </div>
-                <!-- Social media icons -->
-                <div class="flex justify-between">
-                    <div class="flex w-8 gap-4 cursor-pointer mt-2">
-                        <img src="/assets/icons/instagram-on-profile.svg" alt="Black Instagram icon">
-                        <img src="/assets/icons/linkedin-for-profile.svg" alt="Blue Linkedin">
-                        <img src="/assets/icons/twitter-for-profile.svg" alt="Twitter icon">
-                    </div>
-                    <!-- Notification bell -->
+                <!-- User Profile container -->
+                <div class="flex flex-col lg:flex-row w-full justify-between lg:pr-24">
+                    <!-- User Profile details -->
                     <div>
-                        <img class="lg:hidden mt-3 rounded-lg cursor-pointer" src="/assets/icons/bell-for-profile.svg"
-                            alt="Bell svg">
+                        <div class="flex space-x-1 items-center">
+                            <p class="font-semibold text-base">@SeunOsewa</p>
+                            <div class="p-1 bg-primary w-max rounded-full" include-component="../../assets/icons/verified.svg"></div>
+                        </div>
+
+                        <img src="/assets/icons/verified.svg" alt="Verified" />
+                        <p class="w-full lg:w-2/3 text-gray-600 pb-1">A billionaire in the future, not by my will but by he that created me</p>
+                        <!-- Followers and following -->
+                        <div class="flex gap-4">
+                            <div class="flex gap-1">
+                                <p class="font-bold">
+                                    12.3k
+                                    <span class="text-primary">&bull; </span>
+                                </p>
+                                <p class="text-gray-400">Followers</p>
+                            </div>
+                            <div class="flex gap-1">
+                                <p class="font-bold">
+                                    356
+                                    <span class="lg:inline text-primary">&bull; </span>
+                                </p>
+                                <p class="text-gray-400">Following</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Social media icons -->
+                    <div class="flex justify-between">
+                        <div class="flex w-8 gap-4 cursor-pointer mt-2">
+                            <img src="/assets/icons/instagram-on-profile.svg" alt="Black Instagram icon" />
+                            <img src="/assets/icons/linkedin-for-profile.svg" alt="Blue Linkedin" />
+                            <img src="/assets/icons/twitter-for-profile.svg" alt="Twitter icon" />
+                        </div>
+                        <!-- Notification bell -->
+                        <div>
+                            <img class="lg:hidden mt-3 rounded-lg cursor-pointer" src="/assets/icons/bell-for-profile.svg" alt="Bell svg" />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- User post and following container-->
-        <section>
-            <!-- Tabs for User post and following -->
-            <div>
-                <ul class="list-none flex gap-3 lg:gap-6 text-gray-500 text-sm lg:text-base">
-                    <!-- inactive tabs -->
-                    <li class="relative h-20 flex flex-col justify-center cursor-pointer">
-                        <div>Profile</div>
-                        <div class="h-1 w-full absolute bottom-0"></div>
-                    </li>
-                    <!-- active tab -->
-                    <li class="relative h-20 flex flex-col justify-center cursor-pointer">
-                        <div class="text-primary font-semibold">All Topics</div>
-                        <div class="bg-primary h-1 w-full absolute bottom-0"></div>
-                    </li>
-                    <!-- Inactive tab continues -->
-                    <li class="relative h-20 flex flex-col justify-center cursor-pointer">
-                        <div>Thread & Replies</div>
-                        <div class="h-1 w-full absolute bottom-0"></div>
-                    </li>
-                    <li class="relative h-20 flex flex-col justify-center cursor-pointer">
-                        <div>Followers</div>
-                        <div class="h-1 w-full absolute bottom-0"></div>
-                    </li>
-                </ul>
-            </div>
-            <hr>
+            <!-- User post and following container-->
+            <section>
+                <!-- Tabs for User post and following -->
+                <div>
+                    <ul class="list-none flex gap-3 lg:gap-6 text-gray-500 text-sm lg:text-base">
+                        <!-- inactive tabs -->
+                        <li class="relative h-20 flex flex-col justify-center cursor-pointer">
+                            <div>Profile</div>
+                            <div class="h-1 w-full absolute bottom-0"></div>
+                        </li>
+                        <!-- active tab -->
+                        <li class="relative h-20 flex flex-col justify-center cursor-pointer">
+                            <div class="text-primary font-semibold">All Topics</div>
+                            <div class="bg-primary h-1 w-full absolute bottom-0"></div>
+                        </li>
+                        <!-- Inactive tab continues -->
+                        <li class="relative h-20 flex flex-col justify-center cursor-pointer">
+                            <div>Thread & Replies</div>
+                            <div class="h-1 w-full absolute bottom-0"></div>
+                        </li>
+                        <li class="relative h-20 flex flex-col justify-center cursor-pointer">
+                            <div>Followers</div>
+                            <div class="h-1 w-full absolute bottom-0"></div>
+                        </li>
+                    </ul>
+                </div>
+                <hr />
 
-            <!-- User Posts -->
-            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
-                <div class="p-4">
-                    <!-- USER PROFILE -->
-                    <div class="flex justify-between items-center">
-                        <div class="flex space-x-2 mb-2">
-                            <!-- User Image -->
-                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
-                                <img src="/assets/Images/segun.jpg" alt="user profile"
-                                    class="w-full h-full object-cover" />
-                            </div>
-                            <!-- User Handle and Time -->
-                            <div>
-                                <div class="flex space-x-1 items-center">
-                                    <p class="">SeunOsewa</p>
-                                    <div class="p-1 bg-primary w-max rounded-full"
-                                        include-component="../../assets/icons/verified.svg"></div>
+                <!-- User Posts -->
+                <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                    <div class="p-4">
+                        <!-- USER PROFILE -->
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2 mb-2">
+                                <!-- User Image -->
+                                <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                    <img src="/assets/Images/segun.jpg" alt="user profile" class="w-full h-full object-cover" />
                                 </div>
-                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
-                            </div>
-                        </div>
-                        <!-- icon -->
-                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
-                            include-component="../../assets/icons/more-horizontal.svg"></div>
-                    </div>
-
-                    <!-- Post Content -->
-                    <div class="my-2">
-                        <h2 class="ztext-lg text-[#4D4D4D]">
-                            Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells Nigerians...
-                        </h2>
-                    </div>
-                    <div class="flex space-x-2 h-max items-center">
-                        <div>
-                            <p class="text-[#666] font-light">Security</p>
-                        </div>
-                        <!-- Separator dot -->
-                        <div class="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                        <!-- Follow link -->
-                        <div>
-                            <p class="text-[#666] font-light font-light">Today - 3:48AM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- STATISTICS MOBILE -->
-                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
-                    <!-- === Likes === -->
-                    <div class="flex space-x-1 items-center">
-                        <!-- icon -->
-                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
-                            include-component="../../assets/icons/thumbs-up.svg"></div>
-                        <!-- stats -->
-                        <p class="text-xs">433.3k</p>
-                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
-                  <p class="text-[10px] text-[#808080]">Likes</p> -->
-                    </div>
-
-                    <!-- === Comments === -->
-                    <div class="flex space-x-1 items-center">
-                        <!-- icon -->
-                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
-                            include-component="../../assets/icons/message-square.svg"></div>
-                        <!-- stats -->
-                        <p class="text-xs">1280</p>
-                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
-                  <p class="text-[10px] text-[#808080]">Comments</p> -->
-                    </div>
-
-                    <!-- === Shares === -->
-                    <div class="flex space-x-1 items-center">
-                        <!-- icon -->
-                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
-                            include-component="../../assets/icons/share.svg"></div>
-                        <!-- stats -->
-                        <p class="text-xs">13.3k</p>
-                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
-                  <p class="text-[10px] text-[#808080]">Shares</p> -->
-                    </div>
-
-                    <!-- === Shares === -->
-                    <div class="flex space-x-1 items-center">
-                        <!-- icon -->
-                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
-                            include-component="../../assets/icons/share.svg"></div>
-                        <!-- stats -->
-                        <p class="text-xs">13.3k</p>
-                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
-                  <p class="text-[10px] text-[#808080]">Shares</p> -->
-                    </div>
-                </div>
-            </div>
-            
-            <!-- User Posts -->
-            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
-                <div class="p-4">
-                    <!-- USER PROFILE -->
-                    <div class="flex justify-between items-center">
-                        <div class="flex space-x-2 mb-2">
-                            <!-- User Image -->
-                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
-                                <img src="/assets/Images/segun.jpg" alt="user profile"
-                                    class="w-full h-full object-cover" />
-                            </div>
-                            <!-- User Handle and Time -->
-                            <div>
-                                <div class="flex space-x-1 items-center">
-                                    <p class="">SeunOsewa</p>
-                                    <div class="p-1 bg-primary w-max rounded-full"
-                                        include-component="../../assets/icons/verified.svg"></div>
+                                <!-- User Handle and Time -->
+                                <div>
+                                    <div class="flex space-x-1 items-center">
+                                        <p class="">SeunOsewa</p>
+                                        <div class="p-1 bg-primary w-max rounded-full" include-component="../../assets/icons/verified.svg"></div>
+                                    </div>
+                                    <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
                                 </div>
-                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
                             </div>
+                            <!-- icon -->
+                            <div class="p-1 bg-[#F5F5F5] w-max rounded-full" include-component="../../assets/icons/more-horizontal.svg"></div>
                         </div>
-                        <!-- icon -->
-                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
-                            include-component="../../assets/icons/more-horizontal.svg"></div>
-                    </div>
 
-                    <!-- Post Content -->
-                    <div class="my-2">
-                        <h2 class="ztext-lg text-[#4D4D4D]">
-                            Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells Nigerians...
-                        </h2>
-                    </div>
-                    <div class="flex space-x-2 h-max items-center">
-                        <div>
-                            <p class="text-[#666] font-light">Security</p>
+                        <!-- Post Content -->
+                        <div class="my-2">
+                            <h2 class="ztext-lg text-[#4D4D4D]">Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells Nigerians...</h2>
                         </div>
-                        <!-- Separator dot -->
-                        <div class="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                        <!-- Follow link -->
-                        <div>
-                            <p class="text-[#666] font-light font-light">Today - 3:48AM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- STATISTICS MOBILE -->
-                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
-                    <!-- === Likes === -->
-                    <div class="flex space-x-1 items-center">
-                        <!-- icon -->
-                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
-                            include-component="../../assets/icons/thumbs-up.svg"></div>
-                        <!-- stats -->
-                        <p class="text-xs">433.3k</p>
-                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
-                  <p class="text-[10px] text-[#808080]">Likes</p> -->
-                    </div>
-
-                    <!-- === Comments === -->
-                    <div class="flex space-x-1 items-center">
-                        <!-- icon -->
-                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
-                            include-component="../../assets/icons/message-square.svg"></div>
-                        <!-- stats -->
-                        <p class="text-xs">1280</p>
-                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
-                  <p class="text-[10px] text-[#808080]">Comments</p> -->
-                    </div>
-
-                    <!-- === Shares === -->
-                    <div class="flex space-x-1 items-center">
-                        <!-- icon -->
-                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
-                            include-component="../../assets/icons/share.svg"></div>
-                        <!-- stats -->
-                        <p class="text-xs">13.3k</p>
-                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
-                  <p class="text-[10px] text-[#808080]">Shares</p> -->
-                    </div>
-
-                    <!-- === Shares === -->
-                    <div class="flex space-x-1 items-center">
-                        <!-- icon -->
-                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
-                            include-component="../../assets/icons/share.svg"></div>
-                        <!-- stats -->
-                        <p class="text-xs">13.3k</p>
-                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
-                  <p class="text-[10px] text-[#808080]">Shares</p> -->
-                    </div>
-                </div>
-            </div>
-
-            <!-- User Posts -->
-            <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
-                <div class="p-4">
-                    <!-- USER PROFILE -->
-                    <div class="flex justify-between items-center">
-                        <div class="flex space-x-2 mb-2">
-                            <!-- User Image -->
-                            <div class="w-10 h-10 rounded-full overflow-hidden self-center">
-                                <img src="/assets/Images/segun.jpg" alt="user profile"
-                                    class="w-full h-full object-cover" />
-                            </div>
-                            <!-- User Handle and Time -->
+                        <div class="flex space-x-2 h-max items-center">
                             <div>
-                                <div class="flex space-x-1 items-center">
-                                    <p class="">SeunOsewa</p>
-                                    <div class="p-1 bg-primary w-max rounded-full"
-                                        include-component="../../assets/icons/verified.svg"></div>
-                                </div>
-                                <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                                <p class="text-[#666] font-light">Security</p>
+                            </div>
+                            <!-- Separator dot -->
+                            <div class="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                            <!-- Follow link -->
+                            <div>
+                                <p class="text-[#666] font-light font-light">Today - 3:48AM</p>
                             </div>
                         </div>
-                        <!-- icon -->
-                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
-                            include-component="../../assets/icons/more-horizontal.svg"></div>
                     </div>
 
-                    <!-- Post Content -->
-                    <div class="my-2">
-                        <h2 class="ztext-lg text-[#4D4D4D]">
-                            Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells Nigerians...
-                        </h2>
-                    </div>
-                    <div class="flex space-x-2 h-max items-center">
-                        <div>
-                            <p class="text-[#666] font-light">Security</p>
-                        </div>
-                        <!-- Separator dot -->
-                        <div class="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                        <!-- Follow link -->
-                        <div>
-                            <p class="text-[#666] font-light font-light">Today - 3:48AM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- STATISTICS MOBILE -->
-                <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
-                    <!-- === Likes === -->
-                    <div class="flex space-x-1 items-center">
-                        <!-- icon -->
-                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
-                            include-component="../../assets/icons/thumbs-up.svg"></div>
-                        <!-- stats -->
-                        <p class="text-xs">433.3k</p>
-                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                    <!-- STATISTICS MOBILE -->
+                    <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                        <!-- === Likes === -->
+                        <div class="flex space-x-1 items-center">
+                            <!-- icon -->
+                            <div class="p-1 bg-[#F5F5F5] w-max rounded-full" include-component="../../assets/icons/thumbs-up.svg"></div>
+                            <!-- stats -->
+                            <p class="text-xs">433.3k</p>
+                            <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
                   <p class="text-[10px] text-[#808080]">Likes</p> -->
-                    </div>
+                        </div>
 
-                    <!-- === Comments === -->
-                    <div class="flex space-x-1 items-center">
-                        <!-- icon -->
-                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
-                            include-component="../../assets/icons/message-square.svg"></div>
-                        <!-- stats -->
-                        <p class="text-xs">1280</p>
-                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                        <!-- === Comments === -->
+                        <div class="flex space-x-1 items-center">
+                            <!-- icon -->
+                            <div class="p-1 bg-[#F5F5F5] w-max rounded-full" include-component="../../assets/icons/message-square.svg"></div>
+                            <!-- stats -->
+                            <p class="text-xs">1280</p>
+                            <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
                   <p class="text-[10px] text-[#808080]">Comments</p> -->
-                    </div>
+                        </div>
 
-                    <!-- === Shares === -->
-                    <div class="flex space-x-1 items-center">
-                        <!-- icon -->
-                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
-                            include-component="../../assets/icons/share.svg"></div>
-                        <!-- stats -->
-                        <p class="text-xs">13.3k</p>
-                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                        <!-- === Shares === -->
+                        <div class="flex space-x-1 items-center">
+                            <!-- icon -->
+                            <div class="p-1 bg-[#F5F5F5] w-max rounded-full" include-component="../../assets/icons/share.svg"></div>
+                            <!-- stats -->
+                            <p class="text-xs">13.3k</p>
+                            <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
                   <p class="text-[10px] text-[#808080]">Shares</p> -->
-                    </div>
+                        </div>
 
-                    <!-- === Shares === -->
-                    <div class="flex space-x-1 items-center">
-                        <!-- icon -->
-                        <div class="p-1 bg-[#F5F5F5] w-max rounded-full"
-                            include-component="../../assets/icons/share.svg"></div>
-                        <!-- stats -->
-                        <p class="text-xs">13.3k</p>
-                        <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                        <!-- === Shares === -->
+                        <div class="flex space-x-1 items-center">
+                            <!-- icon -->
+                            <div class="p-1 bg-[#F5F5F5] w-max rounded-full" include-component="../../assets/icons/share.svg"></div>
+                            <!-- stats -->
+                            <p class="text-xs">13.3k</p>
+                            <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
                   <p class="text-[10px] text-[#808080]">Shares</p> -->
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </section>
-    </main>
+                <!-- User Posts -->
+                <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                    <div class="p-4">
+                        <!-- USER PROFILE -->
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2 mb-2">
+                                <!-- User Image -->
+                                <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                    <img src="/assets/Images/segun.jpg" alt="user profile" class="w-full h-full object-cover" />
+                                </div>
+                                <!-- User Handle and Time -->
+                                <div>
+                                    <div class="flex space-x-1 items-center">
+                                        <p class="">SeunOsewa</p>
+                                        <div class="p-1 bg-primary w-max rounded-full" include-component="../../assets/icons/verified.svg"></div>
+                                    </div>
+                                    <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                                </div>
+                            </div>
+                            <!-- icon -->
+                            <div class="p-1 bg-[#F5F5F5] w-max rounded-full" include-component="../../assets/icons/more-horizontal.svg"></div>
+                        </div>
 
-    <div class="w-screen" include-component="/components/pagination/pagination.html" class="absolute"></div>
-    <footer class="w-screen bg-white" include-component="/components/footer/footer.html" class="absolute"></footer>
-    <!-- End your code here -->
+                        <!-- Post Content -->
+                        <div class="my-2">
+                            <h2 class="ztext-lg text-[#4D4D4D]">Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells Nigerians...</h2>
+                        </div>
+                        <div class="flex space-x-2 h-max items-center">
+                            <div>
+                                <p class="text-[#666] font-light">Security</p>
+                            </div>
+                            <!-- Separator dot -->
+                            <div class="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                            <!-- Follow link -->
+                            <div>
+                                <p class="text-[#666] font-light font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- STATISTICS MOBILE -->
+                    <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                        <!-- === Likes === -->
+                        <div class="flex space-x-1 items-center">
+                            <!-- icon -->
+                            <div class="p-1 bg-[#F5F5F5] w-max rounded-full" include-component="../../assets/icons/thumbs-up.svg"></div>
+                            <!-- stats -->
+                            <p class="text-xs">433.3k</p>
+                            <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                        </div>
 
-    <!-- DO NOT TOUCH ==== FROM HERE -->
-    <script src="/assets/js/main.js"></script>
-    <!-- DO NOT TOUCH ==== TO HERE -->
-</body>
+                        <!-- === Comments === -->
+                        <div class="flex space-x-1 items-center">
+                            <!-- icon -->
+                            <div class="p-1 bg-[#F5F5F5] w-max rounded-full" include-component="../../assets/icons/message-square.svg"></div>
+                            <!-- stats -->
+                            <p class="text-xs">1280</p>
+                            <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                        </div>
 
+                        <!-- === Shares === -->
+                        <div class="flex space-x-1 items-center">
+                            <!-- icon -->
+                            <div class="p-1 bg-[#F5F5F5] w-max rounded-full" include-component="../../assets/icons/share.svg"></div>
+                            <!-- stats -->
+                            <p class="text-xs">13.3k</p>
+                            <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                        </div>
+
+                        <!-- === Shares === -->
+                        <div class="flex space-x-1 items-center">
+                            <!-- icon -->
+                            <div class="p-1 bg-[#F5F5F5] w-max rounded-full" include-component="../../assets/icons/share.svg"></div>
+                            <!-- stats -->
+                            <p class="text-xs">13.3k</p>
+                            <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Posts -->
+                <div class="rounded-lg bg-white w-full max-w-xxl mx-auto my-5">
+                    <div class="p-4">
+                        <!-- USER PROFILE -->
+                        <div class="flex justify-between items-center">
+                            <div class="flex space-x-2 mb-2">
+                                <!-- User Image -->
+                                <div class="w-10 h-10 rounded-full overflow-hidden self-center">
+                                    <img src="/assets/Images/segun.jpg" alt="user profile" class="w-full h-full object-cover" />
+                                </div>
+                                <!-- User Handle and Time -->
+                                <div>
+                                    <div class="flex space-x-1 items-center">
+                                        <p class="">SeunOsewa</p>
+                                        <div class="p-1 bg-primary w-max rounded-full" include-component="../../assets/icons/verified.svg"></div>
+                                    </div>
+                                    <p class="text-xs text-[#808080] font-light">Today - 3:48AM</p>
+                                </div>
+                            </div>
+                            <!-- icon -->
+                            <div class="p-1 bg-[#F5F5F5] w-max rounded-full" include-component="../../assets/icons/more-horizontal.svg"></div>
+                        </div>
+
+                        <!-- Post Content -->
+                        <div class="my-2">
+                            <h2 class="ztext-lg text-[#4D4D4D]">Help Us Beg Atiku To Allow Southern Presidency In 2023, Afegbua Tells Nigerians...</h2>
+                        </div>
+                        <div class="flex space-x-2 h-max items-center">
+                            <div>
+                                <p class="text-[#666] font-light">Security</p>
+                            </div>
+                            <!-- Separator dot -->
+                            <div class="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                            <!-- Follow link -->
+                            <div>
+                                <p class="text-[#666] font-light font-light">Today - 3:48AM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STATISTICS MOBILE -->
+                    <div class="p-4 border-t border-color-[#BFBFBF] flex justify-between">
+                        <!-- === Likes === -->
+                        <div class="flex space-x-1 items-center">
+                            <!-- icon -->
+                            <div class="p-1 bg-[#F5F5F5] w-max rounded-full" include-component="../../assets/icons/thumbs-up.svg"></div>
+                            <!-- stats -->
+                            <p class="text-xs">433.3k</p>
+                            <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Likes</p> -->
+                        </div>
+
+                        <!-- === Comments === -->
+                        <div class="flex space-x-1 items-center">
+                            <!-- icon -->
+                            <div class="p-1 bg-[#F5F5F5] w-max rounded-full" include-component="../../assets/icons/message-square.svg"></div>
+                            <!-- stats -->
+                            <p class="text-xs">1280</p>
+                            <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Comments</p> -->
+                        </div>
+
+                        <!-- === Shares === -->
+                        <div class="flex space-x-1 items-center">
+                            <!-- icon -->
+                            <div class="p-1 bg-[#F5F5F5] w-max rounded-full" include-component="../../assets/icons/share.svg"></div>
+                            <!-- stats -->
+                            <p class="text-xs">13.3k</p>
+                            <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                        </div>
+
+                        <!-- === Shares === -->
+                        <div class="flex space-x-1 items-center">
+                            <!-- icon -->
+                            <div class="p-1 bg-[#F5F5F5] w-max rounded-full" include-component="../../assets/icons/share.svg"></div>
+                            <!-- stats -->
+                            <p class="text-xs">13.3k</p>
+                            <!-- <div class="w-0.5 h-0.5 bg-[#808080] rounded-full"></div>
+                  <p class="text-[10px] text-[#808080]">Shares</p> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="w-screen" include-component="/components/pagination/pagination.html" class="absolute"></div>
+        <footer class="w-screen bg-white" include-component="/components/footer/footer.html" class="absolute"></footer>
+        <!-- End your code here -->
+
+        <!-- DO NOT TOUCH ==== FROM HERE -->
+        <script src="/assets/js/main.js"></script>
+        <!-- DO NOT TOUCH ==== TO HERE -->
+    </body>
 </html>

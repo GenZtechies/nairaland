@@ -3,7 +3,7 @@
 @tailwind utilities;
 html,
 body {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /* use this to debug sizing errors - Tochi*/

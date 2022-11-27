@@ -1,262 +1,237 @@
 <!DOCTYPE html>
-<html lang="en" style="overflow-x:hidden">
+<html lang="en" style="overflow-x: hidden">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Creating post without ad - desktop 36</title>
 
-    <title>Creating post without ad - desktop 36
-    </title>
+        <!-- DO NOT TOUCH ==== FROM HERE -->
+        <link rel="stylesheet" href="/assets/css/main.css" />
+        <script src="https://cdn.tailwindcss.com/"></script>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+        <!-- DO NOT TOUCH ==== TO HERE -->
+    </head>
 
-    <!-- DO NOT TOUCH ==== FROM HERE -->
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <script src="https://cdn.tailwindcss.com/"></script>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- DO NOT TOUCH ==== TO HERE -->
-</head>
+    <body class="bg-gray-100" style="overflow-x: hidden">
+        <!-- Start your code here -->
+        <!-- Header section -->
+        <header class="bg-white hidden md:block md:px-16 flex items-center relative mb-16">
+            <nav class="flex h-20 justify-between items-center w-full">
+                <!-- Left Side -->
+                <div class="flex flex-col md:flex-row md:space-x-14 items-center w-full md:w-max">
+                    <!-- brand -->
+                    <div class="flex md:block items-center w-full justify-between md:w-max px-7 pt-12 pb-5 md:p-0">
+                        <h1 class="text-md md:text-2xl font-bold text-primary">Nairaland Forum</h1>
+                        <div class="flex md:hidden space-x-5 items-center">
+                            <!-- Mobile Join Nairaland Button -->
+                            <button class="md:hidden bg-primary text-white px-4 py-2 text-sm rounded-lg">Join Nairaland</button>
 
-<body class="bg-gray-100" style="overflow-x: hidden;">
+                            <!-- Bugger Icon -->
+                            <div class="flex flex-col space-y-2 items-end">
+                                <div class="bg-black rounded-full w-6 h-0.5"></div>
+                                <div class="bg-black rounded-full w-5 h-0.5"></div>
+                                <div class="bg-black rounded-full w-6 h-0.5"></div>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- Start your code here -->
-    <!-- Header section -->
-    <header class="bg-white hidden md:block md:px-16 flex items-center relative mb-16">
-        <nav class="flex h-20 justify-between items-center w-full">
-            <!-- Left Side -->
-            <div class="flex flex-col md:flex-row md:space-x-14 items-center w-full md:w-max">
-                <!-- brand -->
-                <div class="flex md:block items-center w-full justify-between md:w-max px-7 pt-12 pb-5 md:p-0">
-                    <h1 class="text-md md:text-2xl font-bold text-primary">Nairaland Forum</h1>
-                    <div class="flex md:hidden space-x-5 items-center">
-                        <!-- Mobile Join Nairaland Button -->
-                        <button class="md:hidden bg-primary text-white px-4 py-2 text-sm rounded-lg">Join
-              Nairaland</button>
+                    <!-- search -->
+                    <div class="hidden py-3 px-4 md:flex rounded-lg border border-[#A8ABBD] w-64">
+                        <input type="text" placeholder="Search anything..." class="w-full outline-none" />
+                        <div include-component="../../assets/icons/Search.svg"></div>
+                    </div>
 
-                        <!-- Bugger Icon -->
-                        <div class="flex flex-col space-y-2 items-end">
-                            <div class="bg-black rounded-full w-6 h-0.5"></div>
-                            <div class="bg-black rounded-full w-5 h-0.5"></div>
-                            <div class="bg-black rounded-full w-6 h-0.5"></div>
+                    <!-- nav links -->
+                    <div class="bg-primary w-full md:w-max md:bg-transparent flex items-center justify-between md:block pt-2 md:pt-0 px-7">
+                        <ul class="list-none flex space-x-7 pt-2">
+                            <li class="nav-link nav-link__active cursor-pointer">Trending</li>
+                            <li class="nav-link">Recent</li>
+                            <li class="nav-link">Latest</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Side - notification bell + profile image -->
+                <div class="hidden md:flex space-x-4 cursor-pointer">
+                    <img src="/assets/icons/bell-with-shadow.svg" alt="Bell with green shadow" />
+                    <img src="/assets/Images/profileguy-on-glasses.png" alt="Profile guy on glasses" />
+                </div>
+            </nav>
+        </header>
+        <!-- ================================ -->
+        <!-- Mobile header -->
+        <header class="w-screen inline-block lg:hidden bg-white" include-component="/components/mobile-navbar/mobile-navbar.html"></header>
+
+        <!-- Main body -->
+        <!-- Profile name and navs -->
+        <section class="py-6 md:py-4 px-6 lg:px-24">
+            <p class="font-bold text-xl md:text-2xl pb-3">Hey <span class="text-primary"> 3mmie4sure!</span></p>
+            <p class="text-gray-500 pb-2 text-sm md:text-base">Nairaland <span class="text-black font-bold"> > </span> <span class="text-gray-500">Business</span> <span class="text-black font-bold"> > </span> <span class="text-primary font-semibold">Create New Topic</span></p>
+        </section>
+
+        <!-- ==================================== -->
+        <!-- Creating topic and post rules-->
+        <section class="flex flex-col lg:flex-row justify-center gap-4 lg:gap-1 pb-20">
+            <!-- Tabs for creating topic -->
+            <div class="p-6 ml-5 bg-white mx-5 lg:w-6/12 mb-auto text-primary rounded-md pb-20">
+                <div class="m-auto">
+                    <div>
+                        <h3 class="text-left text-black text-xl md:text-2xl lg:text-3xl font-semibold mb-3 md:mb-8">Create a Topic...</h3>
+                    </div>
+                    <div class="flex flex-col">
+                        <div>
+                            <form>
+                                <div class="mb-5">
+                                    <label class="text-base block mb-3">Topic Subject</label>
+                                    <input type="text" class="form-input w-full p-2 md:p-3 bg-transparent border-solid border border-primary rounded-md focus:outline-none mb-2 placeholder:text-green-800" placeholder="This Sapa is not good what do we do... I" />
+                                    <p class="text-xs"><a href="#">Information about the input</a></p>
+                                </div>
+
+                                <div class="mb-5">
+                                    <div class="flex justify-between mb-3 items-end">
+                                        <label class="block text-green-800">Write your Discussion....</label>
+                                        <!-- put the cancel button here -->
+                                        <button class="bg-green-100 rounded-full w-7 h-7 flex justify-center items-center">
+                                            <img src="../../assets/icons/x.svg" alt="" class="h-3 w-3 md:h-4 md:w-4" />
+                                        </button>
+                                    </div>
+                                    <div class="w-full bg-transparent rounded-md focus:outline-none border-solid border border-primary p-2 md:p-4">
+                                        <div class="flex py-3">
+                                            <div class="flex justify-start mr-5">
+                                                <!-- Input those text icons -->
+                                                <button>
+                                                    <img src="../../assets/icons/bold.svg" alt="" class="h-4 w-4 mr-3" />
+                                                </button>
+                                                <button>
+                                                    <img src="../../assets/icons/italic.svg" alt="" class="h-4 w-4 mr-3" />
+                                                </button>
+                                                <button>
+                                                    <img src="../../assets/icons/underline.svg" alt="" class="h-4 w-4 mr-3" />
+                                                </button>
+                                            </div>
+
+                                            <div class="flex justify-start mr-5">
+                                                <!-- Input those text icons -->
+                                                <button>
+                                                    <img src="../../assets/icons/align-left.svg" alt="" class="h-4 w-4 mr-3" />
+                                                </button>
+                                                <button>
+                                                    <img src="../../assets/icons/align-center.svg" alt="" class="h-4 w-4 mr-3" />
+                                                </button>
+                                                <button>
+                                                    <img src="../../assets/icons/align-right.svg" alt="" class="h-4 w-4 mr-3" />
+                                                </button>
+                                                <button>
+                                                    <img src="../../assets/icons/align-justify.svg" alt="" class="h-4 w-4 mr-3" />
+                                                </button>
+                                                <button>
+                                                    <img src="../../assets/icons/list.svg" alt="" class="h-4 w-4 mr-3" />
+                                                </button>
+                                            </div>
+
+                                            <!-- For mobile screen to widen the input text icons-->
+                                            <div class="inline-block lg:hidden flex justify-start">
+                                                <button>
+                                                    <img src="/assets/icons/3dots-icon.svg" alt="To view more 3 dots" class="h-4 w-4 mr-3" />
+                                                </button>
+                                            </div>
+
+                                            <!-- Hide in big screen for the create topic textarea -->
+                                            <div class="hidden lg:inline-block flex justify-start">
+                                                <!-- Input those text icons -->
+                                                <button>
+                                                    <img src="../../assets/icons/link-2.svg" alt="" class="h-4 w-4 mr-3" />
+                                                </button>
+                                                <button>
+                                                    <img src="../../assets/icons/link.svg" alt="" class="h-4 w-4 mr-3" />
+                                                </button>
+                                                <button>
+                                                    <img src="../../assets/icons/minus.svg" alt="" class="h-4 w-4 mr-3" />
+                                                </button>
+                                                <button>
+                                                    <img src="../../assets/icons/paperclip.svg" alt="" class="h-4 w-4 mr-3" />
+                                                </button>
+                                                <button>
+                                                    <img src="../../assets/icons/twitch.svg" alt="" class="h-4 w-4 mr-3" />
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        <textarea type="text" placeholder="Type your content here" class="bg-transparent focus:border-none focus:outline-none w-full h-48"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="w-full px-4 py-4 border-solid border border-primary rounded-md h-16 mb-7 flex justify-around lg:justify-start">
+                                    <!-- Put the three icons here -->
+                                    <button class="bg-green-100 rounded-full px-1 md:px-0 md:w-9 md:h-9 flex justify-center items-center mr-3">
+                                        <img src="../../assets/icons/picture.svg" alt="" class="md:h-6 md:w-6 w-5 h-5" />
+                                    </button>
+                                    <button class="bg-green-100 rounded-full px-1 md:px-0 md:w-9 md:h-9 flex justify-center items-center mr-3">
+                                        <img src="../../assets/icons/video.svg" alt="" class="md:h-6 md:w-6 w-5 h-5" />
+                                    </button>
+                                    <button class="bg-green-100 rounded-full px-1 md:px-0 md:w-9 md:h-9 flex justify-center items-center mr-3">
+                                        <img src="../../assets/icons/link-down-2.svg" alt="" class="md:h-6 md:w-6 w-5 h-5" />
+                                    </button>
+                                    <button class="bg-green-100 rounded-full px-1 md:px-0 md:w-9 md:h-9 flex justify-center items-center mr-3">
+                                        <img src="../../assets/icons/bar-chart-2.svg" alt="" class="md:h-6 md:w-6 w-5 h-5" />
+                                    </button>
+                                    <button class="bg-green-100 rounded-full px-1 md:px-0 md:w-9 md:h-9 flex justify-center items-center mr-3">
+                                        <img src="/assets/icons/texticon-with-shadow.svg" alt="" class="md:h-6 md:w-6 w-5 h-5" />
+                                    </button>
+                                </div>
+
+                                <div class="flex justify-end">
+                                    <button class="bg-primary hover:scale-105 ease-in-out duration-300 px-12 py-2 text-white rounded-md" type="submit">Submit Post</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-
-                <!-- search -->
-                <div class="hidden py-3 px-4 md:flex rounded-lg border border-[#A8ABBD] w-64">
-                    <input type="text" placeholder="Search anything..." class="w-full outline-none" />
-                    <div include-component="../../assets/icons/Search.svg"></div>
-                </div>
-
-                <!-- nav links -->
-                <div class="bg-primary w-full md:w-max md:bg-transparent flex items-center justify-between md:block pt-2 md:pt-0 px-7">
-                    <ul class="list-none flex space-x-7 pt-2">
-                        <li class="nav-link nav-link__active cursor-pointer">Trending</li>
-                        <li class="nav-link">Recent</li>
-                        <li class="nav-link">Latest</li>
-                    </ul>
-                </div>
             </div>
 
-            <!-- Right Side - notification bell + profile image -->
-            <div class="hidden md:flex space-x-4 cursor-pointer">
-                <img src="/assets/icons/bell-with-shadow.svg" alt="Bell with green shadow">
-                <img src="/assets/Images/profileguy-on-glasses.png" alt="Profile guy on glasses">
-            </div>
-        </nav>
-    </header>
-    <!-- ================================ -->
-    <!-- Mobile header -->
-    <header class="w-screen inline-block lg:hidden bg-white" include-component="/components/mobile-navbar/mobile-navbar.html">
-    </header>
+            <!-- Post rules -->
+            <section class="pb-4 lg:pb-24">
+                <main class="flex flex-col py-8 justify-center w-[90%] lg:w-full sm:max-w-[450px] mx-auto bg-[#fff] rounded-xl font-primary">
+                    <div class="flex mb-5 gap-3 items-center px-5">
+                        <div class="text-yellow-400 bg-amber-50 rounded-[50%] flex items-center p-3">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-9 w-9">
+                                <path d="M17.6477 33C25.8278 33 32.4591 26.2843 32.4591 18C32.4591 9.71573 25.8278 3 17.6477 3C9.46768 3 2.83643 9.71573 2.83643 18C2.83643 26.2843 9.46768 33 17.6477 33Z" stroke="#FFB300" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17.6477 12V18" stroke="#FFB300" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M17.6477 24H17.6627" stroke="#FFB300" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
 
-    <!-- Main body -->
-    <!-- Profile name and navs -->
-    <section class="py-6 md:py-4 px-6 lg:px-24">
-        <p class="font-bold text-xl md:text-2xl pb-3">Hey <span class="text-primary"> 3mmie4sure!</span></p>
-        <p class="text-gray-500 pb-2 text-sm md:text-base">Nairaland <span class="text-black font-bold"> > </span> <span class="text-gray-500">Business <span class="text-black font-bold"> > </span> <span class="text-primary font-semibold">Create New Topic</span></p>
-    </section>
+                        <h2 class="text-xl font-bold font-inherit"><span class="text-primary">Rules</span> to observe before making a post</h2>
+                    </div>
 
-    <!-- ==================================== -->
-    <!-- Creating topic and post rules-->
-    <section class="flex flex-col lg:flex-row justify-center gap-4 lg:gap-1 pb-20">
-        <!-- Tabs for creating topic -->
-        <div class="p-6 ml-5 bg-white mx-5 lg:w-6/12 mb-auto text-primary rounded-md pb-20">
-            <div class="m-auto">
-                <div>
-                    <h3 class="text-left text-black text-xl md:text-2xl lg:text-3xl font-semibold mb-3 md:mb-8">Create a Topic...</h3>
-                </div>
-                <div class="flex flex-col">
                     <div>
-                        <form>
-                            <div class="mb-5">
-                                <label class="text-base block mb-3">Topic Subject</label>
-                                <input type="text" class="form-input w-full p-2 md:p-3 bg-transparent border-solid border border-primary rounded-md focus:outline-none mb-2 placeholder:text-green-800" placeholder="This Sapa is not good what do we do... I">
-                                <p class="text-xs"><a href="#">Information about the input</a></p>
-                            </div>
-
-                            <div class="mb-5">
-                                <div class="flex justify-between mb-3 items-end">
-                                    <label class="block text-green-800">Write your Discussion....</label>
-                                    <!-- put the cancel button here -->
-                                    <button class="bg-green-100 rounded-full w-7 h-7 flex justify-center items-center">
-                    <img src="../../assets/icons/x.svg" alt="" class="h-3 w-3 md:h-4 md:w-4">
-                  </button>
-                                </div>
-                                <div class="w-full bg-transparent rounded-md focus:outline-none border-solid border border-primary p-2 md:p-4 ">
-                                    <div class="flex py-3">
-                                        <div class="flex justify-start mr-5">
-                                            <!-- Input those text icons -->
-                                            <button>
-                        <img src="../../assets/icons/bold.svg" alt="" class="h-4 w-4 mr-3">
-                      </button>
-                                            <button>
-                        <img src="../../assets/icons/italic.svg" alt="" class="h-4 w-4 mr-3">
-                      </button>
-                                            <button>
-                        <img src="../../assets/icons/underline.svg" alt="" class="h-4 w-4 mr-3">
-                      </button>
-                                        </div>
-
-                                        <div class="flex justify-start mr-5">
-                                            <!-- Input those text icons -->
-                                            <button>
-                        <img src="../../assets/icons/align-left.svg" alt="" class="h-4 w-4 mr-3">
-                      </button>
-                                            <button>
-                        <img src="../../assets/icons/align-center.svg" alt="" class="h-4 w-4 mr-3">
-                      </button>
-                                            <button>
-                        <img src="../../assets/icons/align-right.svg" alt="" class="h-4 w-4 mr-3">
-                      </button>
-                                            <button>
-                        <img src="../../assets/icons/align-justify.svg" alt="" class="h-4 w-4 mr-3">
-                      </button>
-                                            <button>
-                        <img src="../../assets/icons/list.svg" alt="" class="h-4 w-4 mr-3">
-                      </button>
-                                        </div>
-
-                                        <!-- For mobile screen to widen the input text icons-->
-                                        <div class="inline-block lg:hidden flex justify-start">
-                                            <button>
-                        <img src="/assets/icons/3dots-icon.svg" alt="To view more 3 dots" class="h-4 w-4 mr-3">
-                      </button>
-                                        </div>
-
-                                        <!-- Hide in big screen for the create topic textarea -->
-                                        <div class="hidden lg:inline-block flex justify-start">
-                                            <!-- Input those text icons -->
-                                            <button>
-                        <img src="../../assets/icons/link-2.svg" alt="" class="h-4 w-4 mr-3">
-                      </button>
-                                            <button>
-                        <img src="../../assets/icons/link.svg" alt="" class="h-4 w-4 mr-3">
-                      </button>
-                                            <button>
-                        <img src="../../assets/icons/minus.svg" alt="" class="h-4 w-4 mr-3">
-                      </button>
-                                            <button>
-                        <img src="../../assets/icons/paperclip.svg" alt="" class="h-4 w-4 mr-3">
-                      </button>
-                                            <button>
-                        <img src="../../assets/icons/twitch.svg" alt="" class="h-4 w-4 mr-3">
-                      </button>
-                                        </div>
-                                    </div>
-
-                                    <textarea type="text" placeholder="Type your content here" class="bg-transparent focus:border-none focus:outline-none w-full h-48"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="w-full px-4 py-4 border-solid border border-primary rounded-md h-16 mb-7 flex justify-around lg:justify-start">
-                                <!-- Put the three icons here -->
-                                <button class="bg-green-100 rounded-full px-1 md:px-0 md:w-9 md:h-9 flex justify-center items-center mr-3">
-                  <img src="../../assets/icons/picture.svg" alt="" class="md:h-6 md:w-6 w-5 h-5">
-                </button>
-                                <button class="bg-green-100 rounded-full px-1 md:px-0 md:w-9 md:h-9 flex justify-center items-center mr-3">
-                  <img src="../../assets/icons/video.svg" alt="" class="md:h-6 md:w-6 w-5 h-5">
-                </button>
-                                <button class="bg-green-100 rounded-full px-1 md:px-0 md:w-9 md:h-9 flex justify-center items-center mr-3">
-                  <img src="../../assets/icons/link-down-2.svg" alt="" class="md:h-6 md:w-6 w-5 h-5">
-                </button>
-                                <button class="bg-green-100 rounded-full px-1 md:px-0 md:w-9 md:h-9 flex justify-center items-center mr-3">
-                  <img src="../../assets/icons/bar-chart-2.svg" alt="" class="md:h-6 md:w-6 w-5 h-5">
-                </button>
-                                <button class="bg-green-100 rounded-full px-1 md:px-0 md:w-9 md:h-9 flex justify-center items-center mr-3">
-                  <img src="/assets/icons/texticon-with-shadow.svg" alt="" class="md:h-6 md:w-6 w-5 h-5">
-                </button>
-                            </div>
-
-                            <div class="flex justify-end">
-                                <button class="bg-primary hover:scale-105 ease-in-out duration-300 px-12 py-2 text-white rounded-md" type="submit">Submit Post</button>
-                            </div>
-                        </form>
+                        <p class="py-4 border-[0.34px] border-[#D9D9D9] border-x-[0] text-[#595959] px-7 font-medium">Please post all threads in the right section and don't derail thread by posting off topic.</p>
+                        <p class="hidden lg:inline-block py-4 border-b-[0.34px] border-[#D9D9D9] text-[#595959] px-7 font-medium">Don't abuse, bully, deliberately insult/provoke, fight, or wish harm to Nairaland members OR THEIR TRIBES.</p>
+                        <p class="hidden lg:inline-block py-4 border-b-[0.34px] border-[#D9D9D9] text-[#595959] px-7 font-medium">Don't threaten, support or DEFEND violent acts against any person, tribe, race, animals, or group (e.g. rape).</p>
+                        <p class="py-4 border-b-[0.34px] border-[#D9D9D9] text-[#595959] px-7 font-medium">Discussion of the art of love-making should be restricted to the hidden sexuality section.</p>
+                        <p class="hidden lg:inline-block py-4 border-b-[0.34px] border-[#D9D9D9] text-[#595959] px-7 font-medium">Don't post pornographic or disgusting pictures or videos on any section of Nairaland.</p>
+                        <p class="hidden lg:inline-block py-4 border-b-[0.34px] border-[#D9D9D9] text-[#595959] px-7 font-medium">Don't say or THREATEN to do anything that is detrimental to the security, success, or reputation of Nairaland.</p>
+                        <p class="hidden lg:inline-block py-4 border-b-[0.34px] border-[#D9D9D9] text-[#595959] px-7 font-medium">Don't violate the privacy of any people e.g. by posting their private pics, info, or chats without permission.</p>
+                        <p class="hidden lg:inline-block py-4 border-b-[0.34px] border-[#D9D9D9] text-[#595959] px-7 font-medium">Don't promote shady investments like betting, HYIP, MLM, FOREX, binary options, and cryptocurrencies on Nairaland.</p>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Post rules -->
-        <section class="pb-4 lg:pb-24">
-            <main class="flex flex-col py-8 justify-center w-[90%] lg:w-full sm:max-w-[450px] mx-auto bg-[#fff] rounded-xl font-primary">
-                <div class="flex mb-5 gap-3 items-center px-5">
-                    <div class="text-yellow-400 bg-amber-50 rounded-[50%] flex items-center p-3">
-                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-9 w-9">
-              <path
-                d="M17.6477 33C25.8278 33 32.4591 26.2843 32.4591 18C32.4591 9.71573 25.8278 3 17.6477 3C9.46768 3 2.83643 9.71573 2.83643 18C2.83643 26.2843 9.46768 33 17.6477 33Z"
-                stroke="#FFB300" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M17.6477 12V18" stroke="#FFB300" stroke-width="2.4" stroke-linecap="round"
-                stroke-linejoin="round" />
-              <path d="M17.6477 24H17.6627" stroke="#FFB300" stroke-width="2.4" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-
+                    <div class="flex justify-end py-4 mt-10 mr-4">
+                        <button class="rounded-lg w-60 h-12 mx-2 text-white cursor-pointer hover:scale-105 ease-in-out duration-300 bg-primary">View All Rules</button>
                     </div>
+                </main>
+            </section>
 
-                    <h2 class="text-xl font-bold font-inherit"><span class="text-primary">Rules</span> to observe before making a post</h2>
-                </div>
-
-                <div>
-                    <p class="py-4 border-[0.34px] border-[#D9D9D9] border-x-[0] text-[#595959] px-7 font-medium">Please post all threads in the right section and don't derail thread by posting off topic.</p>
-                    <p class="hidden lg:inline-block py-4 border-b-[0.34px] border-[#D9D9D9] text-[#595959] px-7 font-medium">
-                        Don't abuse, bully, deliberately insult/provoke, fight, or wish harm to Nairaland members OR THEIR TRIBES.
-                    </p>
-                    <p class="hidden lg:inline-block py-4 border-b-[0.34px] border-[#D9D9D9] text-[#595959] px-7 font-medium">
-                        Don't threaten, support or DEFEND violent acts against any person, tribe, race, animals, or group (e.g. rape).</p>
-                    <p class="py-4 border-b-[0.34px] border-[#D9D9D9] text-[#595959] px-7 font-medium">Discussion of the art of love-making should be restricted to the hidden sexuality section.</p>
-                    <p class="hidden lg:inline-block py-4 border-b-[0.34px] border-[#D9D9D9] text-[#595959] px-7 font-medium">
-                        Don't post pornographic or disgusting pictures or videos on any section of Nairaland.</p>
-                    <p class="hidden lg:inline-block py-4 border-b-[0.34px] border-[#D9D9D9] text-[#595959] px-7 font-medium">
-                        Don't say or THREATEN to do anything that is detrimental to the security, success, or reputation of Nairaland.</p>
-                    <p class="hidden lg:inline-block py-4 border-b-[0.34px] border-[#D9D9D9] text-[#595959] px-7 font-medium">
-                        Don't violate the privacy of any people e.g. by posting their private pics, info, or chats without permission.
-                    </p>
-                    <p class="hidden lg:inline-block py-4 border-b-[0.34px] border-[#D9D9D9] text-[#595959] px-7 font-medium">
-                        Don't promote shady investments like betting, HYIP, MLM, FOREX, binary options, and cryptocurrencies on Nairaland.</p>
-                </div>
-                <div class="flex justify-end py-4 mt-10 mr-4">
-                    <button class="rounded-lg w-60 h-12 mx-2 text-white cursor-pointer hover:scale-105 ease-in-out duration-300 bg-primary">View
-            All Rules
-          </button>
-                </div>
-            </main>
+            <!-- Post rules ends -->
         </section>
 
-        <!-- Post rules ends -->
-        </div>
-    </section>
+        <!-- ============================= -->
+        <!-- Footer -->
+        <div class="bg-white" include-component="/components/footer/footer.html"></div>
+        <!-- End your code here -->
 
-    <!-- ============================= -->
-    <!-- Footer -->
-    <div class="bg-white" include-component="/components/footer/footer.html">
-
-    </div>
-    <!-- End your code here -->
-
-
-    <!-- DO NOT TOUCH ==== FROM HERE -->
-    <script src="/assets/js/main.js"></script>
-    <!-- DO NOT TOUCH ==== TO HERE -->
-</body>
-
+        <!-- DO NOT TOUCH ==== FROM HERE -->
+        <script src="/assets/js/main.js"></script>
+        <!-- DO NOT TOUCH ==== TO HERE -->
+    </body>
 </html>
