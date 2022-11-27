@@ -1,26 +1,345 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<div class="p-5 overflow-hidden">
+<!-- INPUT TYPES -->
+<div class="flex w-5/6 justify-evenly items-center py-9">
+    <!-- text input 1 -->
+    <div class="flex flex-col mx-2">
+        <label class="font-medium text-green-400 text-xs pb-1" for="label">Label</label>
+        <input type="password" id="label" class="rounded-md w-64 h-9 px-3 text-black bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary" placeholder="" />
+        <p class="font-light text-gray-600 text-[0.6rem] pt-1">Information about the label</p>
+    </div>
 
-        <title>Demo Page</title>
+    <!--text input 2-->
+    <div class="flex flex-col mx-2">
+        <label class="font-medium text-green-400 text-xs pb-1" for="email">Email Address</label>
+        <input id="email" type="label" class="rounded-md w-64 h-9 px-3 text-black bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary" />
+        <p class="font-light text-gray-600 text-[0.6rem] pt-1">Example. mano@gmail.com</p>
+    </div>
 
-        <!-- DO NOT TOUCH ==== FROM HERE -->
-        <link rel="stylesheet" href="/assets/css/main.css" />
-        <script src="https://cdn.tailwindcss.com/"></script>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
-        <!-- DO NOT TOUCH ==== TO HERE -->
-    </head>
+    <div class="flex flex-col mx-2">
+        <label class="font-medium text-green-400 text-xs pb-1" for="password">Password</label>
+        <div class="flex flex-row items-center justify-between rounded-md bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary px-3">
+            <input id="password" type="email" class="w-64 h-9 px-3 text-black border-0 focus:outline-none hover:border-0 focus:border-0" />
+            <img src="/assets/images/input/eye.svg" />
+        </div>
+        <p class="font-light text-gray-600 text-[0.6rem] pt-1">Upto 8 characters with an Uppercase, symbol and number</p>
+    </div>
 
-    <body>
-        <!-- Start your code here -->
-        <div include-component="input.html"></div>
-        <!-- End your code here -->
+    <div class="flex flex-col mx-1">
+        <label for="Mobile Nummber" class="font-medium text-green-400 text-xs pb-1" id="phoneNumber">Mobile Number</label>
+        <div class="flex flex-row justify-between w-64">
+            <select aria-labelledby="phoneNumber" name="" id="" class="rounded-md mr-2 w-24 h-9 px-3 text-black bg-white border border-gray-200 text-[0.75rem] pt-1hover:border-primary focus:outline-none focus:border-primary">
+                <option value="text">+234</option>
+            </select>
+            <div>
+                <input aria-labelledby="phoneNumber" type="text" class="rounded-md w-44 h-9 px-3 text-black bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary" />
+            </div>
+        </div>
+        <p class="font-light text-gray-600 text-[0.6rem] pt-1">Information about the input</p>
+    </div>
+</div>
 
-        <!-- DO NOT TOUCH ==== FROM HERE -->
-        <script src="/assets/js/main.js"></script>
-        <!-- DO NOT TOUCH ==== TO HERE -->
-    </body>
-</html>
+<div class="flex w-5/6 justify-evenly items-center py-9">
+    <div class="flex flex-col mx-2">
+        <label class="font-medium text-green-400 text-xs pb-1" for="label1">Label</label>
+        <input id="label1" type="text" name="Emma" value="Emma |" class="rounded-md w-64 h-9 px-3 text-black bg-white border border-gray-200 text-[0.75rem] pt-1 hover:border-primary focus:outline-none focus:border-primary" />
+        <p class="font-light text-gray-600 text-[0.6rem] pt-1">Information about the input</p>
+    </div>
+
+    <div class="flex flex-col mx-2">
+        <label class="font-medium text-green-400 text-xs pb-1" for="email1">Email Address</label>
+        <input
+            id="email1"
+            type="text"
+            name="Emma"
+            value="emmy4sure.web@gmail.co |"
+            class="rounded-md w-64 h-9 px-3 text-black bg-white border border-gray-200 text-[0.75rem] pt-1 hover:border-primary focus:outline-none focus:border-primary"
+        />
+        <p class="font-light text-gray-600 text-[0.6rem] pt-1">Example. mano@gmail.com</p>
+    </div>
+
+    <div class="flex flex-col mx-2">
+        <label class="font-medium text-green-400 text-xs pb-1" for="pass">Password</label>
+        <div class="flex flex-row items-center justify-between rounded-md bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary px-3">
+            <input id="pass" type="email" class="w-20 h-9 text-black border-0 focus:outline-none hover:border-0 focus:border-0" />
+            <img src="/assets/images/input/eye.svg" />
+        </div>
+        <p class="font-light text-gray-600 text-[0.6rem] pt-1">Upto 8 characters with an Uppercase, symbol and number</p>
+    </div>
+    <div class="flex flex-col mx-1">
+        <label for="Mobile Nummber" class="font-medium text-green-400 text-xs pb-1" id="number">Mobile Number</label>
+        <div class="flex flex-row justify-between w-64">
+            <select aria-labelledby="number" name="" id="" class="rounded-md mr-2 w-24 h-9 px-2 text-black bg-white border border-gray-200 text-[0.75rem] pt-1 hover:border-primary focus:outline-none focus:border-primary">
+                <option value="text">+234</option>
+            </select>
+            <div>
+                <input
+                    aria-labelledby="number"
+                    type="text"
+                    name="Emma"
+                    value="7015 |"
+                    class="rounded-md w-44 h-9 px-3 text-black bg-white border border-gray-200 text-[0.75rem] pt-1 hover:border-primary focus:outline-none focus:border-primary"
+                />
+            </div>
+        </div>
+        <p class="font-light text-gray-600 text-[0.6rem] pt-1">Information about the input</p>
+    </div>
+</div>
+
+<div class="flex w-5/6 justify-evenly items-center py-9">
+    <div class="flex flex-col mx-2">
+        <label class="font-medium text-green-400 text-xs pb-1" for="label2">Label</label>
+        <input
+            id="label2"
+            type="text"
+            name="Emma"
+            value="Emma Adeeko"
+            class="rounded-md w-64 h-9 px-3 text-black bg-white border border-gray-200 text-[0.75rem] font-semibold pt-1 hover:border-primary focus:outline-none focus:border-primary"
+        />
+        <p class="font-light text-gray-600 text-[0.6rem] pt-1">Information about the input</p>
+    </div>
+
+    <div class="flex flex-col mx-2">
+        <label class="font-medium text-green-400 text-xs pb-1" for="email2">Email Address</label>
+        <input
+            id="email2"
+            type="text"
+            name="Emma"
+            value="emmy4sure.web@gmail.co |"
+            class="rounded-md w-64 h-9 px-3 text-black bg-white border border-gray-200 text-[0.75rem] font-semibold pt-1 hover:border-primary focus:outline-none focus:border-primary"
+        />
+        <p class="font-light text-gray-600 text-[0.6rem] pt-1">Example. mano@gmail.com</p>
+    </div>
+
+    <div class="flex flex-col mx-2">
+        <label class="font-medium text-green-400 text-xs pb-1" for="password1">Password</label>
+        <div class="flex flex-row items-center justify-between rounded-md bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary px-3">
+            <input id="password1" type="password" class="w-64 h-9 text-black border-0 focus:outline-none hover:border-0 focus:border-0" />
+            <img src="/assets/images/input/eye.svg" />
+        </div>
+        <p class="font-light text-gray-600 text-[0.6rem] pt-1">Upto 8 characters with an Uppercase, symbol and number</p>
+    </div>
+
+    <div class="flex flex-col mx-1">
+        <label for="Mobile Nummber" class="font-medium text-green-400 text-xs pb-1" id="number2">Mobile Number</label>
+        <div class="flex flex-row justify-between w-64">
+            <select aria-labelledby="number2" name="" id="" class="rounded-md mr-2 w-24 h-9 px-2 text-black bg-white border border-gray-200 text-[0.75rem] pt-1 hover:border-primary focus:outline-none focus:border-primary">
+                <option value="text">+234</option>
+            </select>
+            <div>
+                <input
+                    aria-labelledby="number2"
+                    type="text"
+                    name="Emma"
+                    value="7015263711 |"
+                    class="rounded-md w-44 h-9 px-3 text-black bg-white border border-gray-200 text-[0.75rem] pt-1 hover:border-primary focus:outline-none focus:border-primary"
+                />
+            </div>
+        </div>
+        <p class="font-light text-gray-600 text-[0.6rem] pt-1">Information about the input</p>
+    </div>
+</div>
+
+<div>
+    <div class="flex w-5/6 justify-evenly items-center py-9">
+        <div class="flex flex-col mx-2">
+            <label class="font-medium text-gray-200 text-xs pb-1" for="label4">Label</label>
+            <div class="flex flex-row items-center justify-between rounded-md bg-grey-500 border border-gray-200 px-3">
+                <input id="label4" type="text" name="Emma" class="w-64 h-9 text-black border-0 focus:outline-none hover:border-0 focus:border-0" />
+            </div>
+            <p class="font-light text-gray-200 text-[0.6rem] pt-1">Information about the input</p>
+        </div>
+
+        <div class="flex flex-col mx-2">
+            <label class="font-medium text-gray-200 text-xs pb-1" for="email4">Email Address</label>
+            <div class="flex flex-row items-center justify-between rounded-md bg-grey-500 border border-gray-200 px-3">
+                <input id="email4" type="text" name="Emma" class="w-64 h-9 text-black border-0 focus:outline-none hover:border-0 focus:border-0" />
+            </div>
+            <p class="font-light text-gray-200 text-gray-600 text-[0.6rem] pt-1">This part is disabled</p>
+        </div>
+
+        <div class="flex flex-col mx-2">
+            <label class="font-medium text-gray-200 text-xs pb-1" for="password5">Password</label>
+            <div class="flex flex-row items-center justify-between rounded-md bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary px-3">
+                <input id="password5" type="email" class="w-64 h-9 text-black border-0 focus:outline-none hover:border-0 focus:border-0" />
+            </div>
+            <p class="font-light text-gray-200 text-gray-600 text-[0.6rem] pt-1">This part is disabled</p>
+        </div>
+    </div>
+
+    <div class="flex w-5/6 justify-evenly items-center py-9">
+        <div class="flex flex-col mx-2">
+            <label class="font-medium text-black text-xs pb-1" for="label5">Label</label>
+            <div class="flex items-center border hover:border-primary px-3 rounded-md focus:outline-none focus:border-primary border-red-500 hover:border-primary focus:outline-none focus:border-primary">
+                <input id="label5" type="text" name="Emma" value="Emma |" class="w-64 h-9 text-black bg-white text-[0.75rem] font-semibold pt-1" />
+                <img src="/assets/images/input/alert-circle.svg" class="" />
+            </div>
+            <p class="font-light text-gray-600 text-[0.6rem] pt-1">Information about the input</p>
+        </div>
+
+        <div class="flex flex-col mx-2">
+            <label class="font-medium text-black text-xs pb-1" for="email5">Email Address</label>
+            <div class="flex flex-row items-center justify-between rounded-md bg-white border border-red-500 hover:border-primary focus:outline-none focus:border-primary px-3">
+                <input id="email5" type="text" name="Emma" value="emmy4.web@gmail.coop" class="w-44 h-9 text-black border-0 focus:outline-none hover:border-0 focus:border-0" />
+                <img src="/assets/images/input/alert-circle.svg" class="" />
+            </div>
+            <p class="font-light text-red-500 text-[0.6rem] pt-1">You have a missing .com</p>
+        </div>
+
+        <div class="flex flex-col mx-2">
+            <label class="font-medium text-black text-xs pb-1" for="password6">Password</label>
+            <div class="flex flex-row items-center justify-between rounded-md bg-white border border-red-500 hover:border-primary focus:outline-none focus:border-primary px-3">
+                <input id="password6" type="email" class="w-44 h-9 text-black border-0 focus:outline-none hover:border-0 focus:border-0" />
+                <img src="/assets/images/input/alert-circle.svg" class="" />
+            </div>
+            <p class="font-light text-red-500 text-[0.6rem] pt-1">Password doesn't match requirement</p>
+        </div>
+        <div class="flex flex-col mx-1">
+            <label for="Mobile Nummber" class="font-medium text-black text-xs pb-1" id="number6">Mobile Number</label>
+            <div class="flex flex-row justify-between w-64">
+                <select aria-labelledby="number6" name="" id="" class="rounded-md mr-2 w-24 h-9 px-2 text-black bg-white border border-red-500 text-[0.75rem] pt-1 hover:border-primary focus:outline-none focus:border-primary">
+                    <option value="text">+234</option>
+                </select>
+                <div class="flex items-center border hover:border-primary px-3 rounded-md focus:outline-none focus:border-primary border-red-500 hover:border-primary focus:outline-none focus:border-primary">
+                    <input aria-labelledby="number6" type="text" name="Emma" value="7015 |" class="w-44 h-9 text-black border-0 focus:outline-none hover:border-0 focus:border-0" />
+                    <img src="/assets/images/input/alert-circle.svg" class="" />
+                </div>
+            </div>
+            <p class="font-light text-gray-600 text-[0.6rem] pt-1">Information about the input</p>
+        </div>
+    </div>
+    <div class="flex w-5/6 justify-evenly items-center py-9">
+        <div class="flex flex-col mx-2">
+            <div class="flex flex-row items-center justify-between rounded-md bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary px-3">
+                <label for="search">
+                    <input type="type" id="search" class="w-64 h-9 px-3 text-black border-0 focus:outline-none hover:border-0 focus:border-0" placeholder="Search for item here..." />
+                </label>
+                <img src="/assets/images/input/Search.svg" class="object-scale-down h-6 w-4" />
+            </div>
+        </div>
+        <div class="flex flex-col mx-2">
+            <div class="flex flex-row items-center justify-between rounded-md bg-white border border-green-400 hover:border-primary focus:outline-none focus:border-primary px-3">
+                <label>
+                    <input type="type" for="select" class="w-64 h-9 px-3 text-black border-0 focus:outline-none hover:border-0 focus:border-0" value="John Dike" />
+                </label>
+                <img src="/assets/images/input/arrow-right.svg" class="object-scale-down h-6 w-4" />
+            </div>
+        </div>
+        <div class="flex flex-col mx-2">
+            <div class="flex flex-row items-center justify-between rounded-md bg-grey-500 border border-gray-200 hover:border-primary focus:outline-none focus:border-primary px-3">
+                <input type="type" class="w-64 h-9 px-3 text-black border-0 focus:outline-none hover:border-0 focus:border-0" placeholder="Search Is Disabled" />
+                <img src="/assets/images/input/Search (1).svg" class="object-scale-down h-6 w-4" />
+            </div>
+        </div>
+    </div>
+    <div class="flex w-5/6 justify-evenly items-center py-9">
+        <div class="flex flex-col mx-2">
+            <div class="flex flex-row items-center justify-between rounded-md bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary px-3">
+                <input id="search3" title="one" type="type" class="w-64 h-9 px-3 text-black border-0 focus:outline-none hover:border-0 focus:border-0" value="Pick an Item" />
+                <img src="/assets/images/input/chevron-down.svg" class="object-scale-down h-6 w-4" />
+            </div>
+        </div>
+        <div class="flex flex-col mx-2">
+            <div class="flex flex-row items-center justify-between rounded-md bg-grey-300 border border-green-400 hover:border-primary focus:outline-none focus:border-primary px-3">
+                <input id="search4" title="two" type="type" class="w-64 h-9 px-3 text-black border-0 focus:outline-none hover:border-0 focus:border-0" value="Option" />
+                <img src="/assets/images/input/chevron-down.svg" class="object-scale-down h-6 w-4" />
+            </div>
+        </div>
+        <div class="flex flex-col mx-2">
+            <div class="flex flex-row items-center justify-between rounded-md bg-grey-500 border border-gray-200 hover:border-primary focus:outline-none focus:border-primary px-3">
+                <input type="type" class="w-64 h-9 px-3 text-black border-0 focus:outline-none hover:border-0 focus:border-0" placeholder="Search Is Disabled" />
+                <img src="/assets/images/input/vector.svg" class="object-scale-down h-6 w-4" />
+            </div>
+        </div>
+    </div>
+    <div class="flex w-5/6 justify-evenly items-center py-9">
+        <div class="flex flex-col mx-2">
+            <div class="flex flex-row items-center justify-between rounded-md bg-grey-300 border border-black hover:border-primary focus:outline-none focus:border-primary px-3">
+                <img src="/assets/images/input/Filter 2.svg" class="" />
+                <label id="option6">
+                    <select title="options" aria-labelledby="option6" type="type" class="w-64 h-9 px-3 text-black border-0 focus:outline-none hover:border-0 focus:border-0" value="Option">
+                        <option>Filter Item</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+        <div class="flex flex-col mx-2">
+            <div class="flex flex-row items-center justify-between rounded-md bg-grey-300 border border-black hover:border-primary focus:outline-none focus:border-primary px-3">
+                <img src="/assets/images/input/Filter 2.svg" class="" />
+                <select title="option1" type="type" class="w-64 h-9 px-3 text-black border-0 focus:outline-none hover:border-0 focus:border-0" value="Option">
+                    <option>Filter Option -1</option>
+                    <option>Filter Option -2</option>
+                    <option>Filter Option -3</option>
+                    <option>Filter Option -3</option>
+                    <option>Filter Option -3</option>
+                </select>
+            </div>
+        </div>
+        <div class="flex flex-col mx-2">
+            <div class="flex flex-row items-center justify-between rounded-md bg-blue-100 border border-black hover:border-primary focus:outline-none focus:border-primary px-3">
+                <img src="/assets/images/input/filter-blue.svg" class="" />
+                <label id="option3">
+                    <select aria-labelledby="option3" title="option3" type="type" class="w-64 h-9 px-3 text-black bg-blue-100 border-0 focus:outline-none hover:border-0 focus:border-0" value="Option">
+                        <option>Filter Option -1</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="flex w-5/6 justify-evenly items-center py-9">
+        <div class="flex flex-col mx-2">
+            <label class="font-medium text-green-400 text-xs pb-1">Textarea</label>
+            <textarea
+                placeholder="Type your content here..."
+                rows="3"
+                class="form-control block rounded-md w-64 h-32 text-black bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary px-3 py-1.5"
+            ></textarea>
+        </div>
+        <div class="flex flex-col mx-2">
+            <label class="font-medium text-green-400 text-xs pb-1">Label</label>
+            <textarea rows="3" title="textarea" class="form-control block rounded-md w-64 h-32 text-black bg-white border border-green-400 hover:border-primary focus:outline-none focus:border-primary px-3 py-1.5">
+I would be a great UI UX Desi
+            </textarea>
+        </div>
+        <div class="flex flex-col mx-2">
+            <label class="font-medium text-green-400 text-xs pb-1">Label</label>
+            <div class="flex items-center border hover:border-primary px-3 rounded-md focus:outline-none focus:border-primary border-red-500 hover:border-primary focus:outline-none focus:border-primary">
+                <textarea title="textarea1" rows="3" class="form-control block rounded-md w-64 h-32 text-black bg-white px-3 py-1.5">I would be a great UI UX Desi</textarea>
+                <img src="/assets/images/input/alert-circle.svg" class="" />
+            </div>
+        </div>
+        <div class="flex flex-col mx-2">
+            <label class="font-medium text-green-400 text-xs pb-1">Textarea</label>
+            <textarea
+                placeholder="Type your content here..."
+                rows="3"
+                class="form-control text-black font-bold block rounded-md w-64 h-32 bg-white border border-gray-500 hover:border-primary focus:outline-none focus:border-primary px-3 py-1.5"
+            >Type your content here...
+            </textarea>
+        </div>
+    </div>
+    <div class="flex w-5/6 justify-evenly items-center py-9">
+        <div class="flex flex-col mx-2">
+            <label class="font-medium text-green-400 text-xs pb-1">Textarea</label>
+            <textarea
+                rows="3"
+                class="form-control block rounded-md w-64 h-32 rounded-md bg-gray-200 border border-gray-200 text-grey-200 hover:border-primary focus:outline-none focus:border-primary px-3"
+                placeholder="Type your content here..."
+            ></textarea>
+        </div>
+    </div>
+    <div class="flex w-5/6 justify-evenly items-center py-9">
+        <div class="flex flex-col mx-2">
+            <label for="date2" class="font-medium text-gray-200 text-xs pb-1">Select A Date</label>
+            <input id="date2" type="date" class="rounded-md w-64 h-9 px-3 text-black bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary" />
+        </div>
+        <div class="flex flex-col mx-2">
+            <label for="date1" class="font-medium text-gray-200 text-xs pb-1">Select A Date</label>
+            <input id="date1" type="date" class="rounded-md w-64 h-9 px-3 text-black bg-white border border-green-400 hover:border-primary focus:outline-none focus:border-primary" />
+        </div>
+        <div class="flex flex-col mx-2">
+            <label for="date" class="font-medium text-gray-200 text-xs pb-1">Select A Date</label>
+            <input id="date" type="date" class="rounded-md w-64 h-9 px-3 text-black bg-white border border-black hover:border-primary focus:outline-none focus:border-primary" />
+        </div>
+    </div>
+</div>
+</div>
