@@ -20,19 +20,23 @@
   <body class="min-h-screen">
     <!-- Start your code here -->
     <!-- Header -->
-    <header class=" lg:inline-block w-full bg-white"
-    include-component="/components/navbar-desktop/navbar-desktop-default.html"></header>
+    <header
+      class="lg:inline-block w-full bg-white"
+      include-component="/components/navbar-desktop/navbar-desktop-default.html"
+    ></header>
 
-  <!-- Form container and input -->
-  <div
-      class="px-1 lg:px-10 pt-2 lg:pt-16 pb-10 lg:pb-28 font-primary bg-white lg:bg-gradient-to-b from-green-100 via-green-50 to-white flex items-center justify-center">
+    <!-- Form container and input -->
+    <div
+      class="px-1 lg:px-10 pt-2 lg:pt-16 pb-10 lg:pb-28 font-primary bg-white lg:bg-gradient-to-b from-green-100 via-green-50 to-white flex items-center justify-center"
+    >
       <form class="w-full lg:w-2/6 bg-white rounded-lg px-1 mx-1 lg:px-5 py-12">
         <h1 class="w-1/2 lg:w-full font-medium md:font-bold text-2xl">
           Welcome Back to <span class="text-primary">Nairaland</span>
         </h1>
         <div class="flex flex-col my-7 mx-2">
           <label class="font-medium text-[#149F75] text-xs pb-1" for="label"
-            >Username</label>
+            >Username</label
+          >
           <input
             type="text"
             id="label"
@@ -45,31 +49,39 @@
             >Password</label
           >
           <div
-            class="flex flex-row items-center justify-between rounded-md bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary px-3">
+            class="flex flex-row items-center justify-between rounded-md bg-white border border-gray-200 hover:border-primary focus:outline-none focus:border-primary px-3"
+          >
             <input
               id="password"
               type="password"
               class="w-full h-9 px-3 text-black border-0 focus:outline-none hover:border-0 focus:border-0"
             />
-            <div include-component="../assets/icons/eye.svg" class="cursor-pointer"></div>
+            <div
+              include-component="../assets/icons/eye.svg"
+              class="cursor-pointer"
+            ></div>
           </div>
         </div>
         <div class="flex mx-2 items-center">
           <div class="mr-3">
             <input
               type="checkbox"
-              class="appearance-none h-6 w-6 rounded-[5px] border-2 border-primary checked:bg-primary checked:object-scale-down checked:content-[url(/assets/icons/tick.svg)] cursor-pointer"/>
+              class="appearance-none h-6 w-6 rounded-[5px] border-2 border-primary checked:bg-primary checked:object-scale-down checked:content-[url(/assets/icons/tick.svg)] cursor-pointer"
+            />
           </div>
           <p class="text-sm font-[400]">Keep me signed in</p>
         </div>
         <div class="flex mx-2 my-4">
           <button
-            class="rounded w-full h-12 text-white cursor-pointer bg-primary duration-300 transition-all">
+            class="rounded w-full h-12 text-white cursor-pointer bg-primary duration-300 transition-all"
+          >
             Sign In
           </button>
         </div>
         <div class="flex justify-end text-sm">
-          <p class="text-black md:text-primary font-bold cursor-pointer">Forgot password?</p>
+          <p class="text-black md:text-primary font-bold cursor-pointer">
+            Forgot password?
+          </p>
         </div>
       </form>
     </div>
@@ -77,7 +89,7 @@
     <!-- End your code here -->
 
     <!-- DO NOT TOUCH ==== FROM HERE -->
-    <script src="/assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
     <!-- DO NOT TOUCH ==== TO HERE -->
   </body>
 </html>
